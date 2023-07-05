@@ -1,6 +1,7 @@
 # Ideas
 
 - Dar la opción de combate igualado usando el tier de los pokemon
+- Mostrar un fondo distinto segun el tipo, mostrarlo junto con el grito
 - Mostrar los Stats y Tier
 - Cuando se complete el equipo mostrarlos a todos en escala (añadir scale al json de 0 a 1)
 - Al final que griten todos

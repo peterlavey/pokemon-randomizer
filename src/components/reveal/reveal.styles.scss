@@ -1,12 +1,16 @@
 .main {
   background-color: #C7B4F3;
 
-  .reveal {
-    animation: reveal 6s linear;
+  .revealImage {
+    animation: revealImage 6s linear;
+  }
+
+  .revealInfo {
+    animation: revealInfo 6s linear;
   }
 }
 
-@keyframes reveal {
+@keyframes revealImage {
   0% {
     opacity: 0;
     filter: brightness(0);
@@ -25,5 +29,19 @@
   80% {
     opacity: 1;
     filter: brightness(1);
+  }
+}
+
+@keyframes revealInfo {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
