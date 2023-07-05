@@ -1,17 +1,19 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useRef} from "react";
 import './reveal.styles.scss';
 
 export const Reveal = ({id}) => {
+    const imageRef = useRef(null);
+
+    const reveal = () => {
+        imageRef.current.classList.remove('reveal');
+        window.requestAnimationFrame(() => imageRef.current.classList.add('reveal'));
+    }
     useEffect(() => {
-        const dist = document.querySelector('img');
-        dist.classList.remove('reveal');
-        window.requestAnimationFrame(function() {
-            dist.classList.add('reveal');
-        });
+        reveal();
     }, [id]);
     return (
         <div className='main'>
-            <img src={`images/${id}.png`} alt={''}/>
+            <img src={`images/${id}.png`} alt={''} ref={imageRef}/>
             <audio src={`sfx/${id}.wav`} autoPlay/>
         </div>
     )
