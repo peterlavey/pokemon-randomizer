@@ -1,0 +1,29 @@
+.main {
+  background-color: #C7B4F3;
+
+  .reveal {
+    animation: reveal 6s linear;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+
+  40% {
+    opacity: 0.01;
+    filter: brightness(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(0);
+  }
+
+  80% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}

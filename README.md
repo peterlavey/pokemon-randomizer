@@ -1,3 +1,14 @@
+# Ideas
+
+- Dar la opción de combate igualado usando el tier de los pokemon
+- Mostrar los Stats y Tier
+- Cuando se complete el equipo mostrarlos a todos en escala (añadir scale al json de 0 a 1)
+- Al final que griten todos
+
+## Fuentes
+- https://nintendo.fandom.com/wiki/Category:First_generation_Pok%C3%A9mon_images
+- https://www.sounds-resource.com/nintendo_64/pokemonstadium/sound/34243/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
