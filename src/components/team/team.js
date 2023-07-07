@@ -10,7 +10,7 @@ export const Team = () => {
     const [pokemon, setPokemon] = useState();
     const getPokemon = () => {
         const id = Math.floor((Math.random() * quantity) + 1);
-        const pokemonChoosen = pokemons.find(pokemon => pokemon.id === id)
+        const pokemonChoosen = pokemons.find(pokemon => pokemon.id === id);
         setPokemon(pokemonChoosen);
     }
     const clean = () => setPokemon(undefined);

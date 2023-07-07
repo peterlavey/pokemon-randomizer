@@ -7,6 +7,9 @@
 - Al final que griten todos
 - Actualizar lista con datos del stadium 1
 
+## Bugs
+- Parasec #47 muestra error
+
 ## Imagenes con errores
 - 46
 - 52
