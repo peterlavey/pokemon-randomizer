@@ -5,6 +5,13 @@
 - Mostrar los Stats y Tier
 - Cuando se complete el equipo mostrarlos a todos en escala (añadir scale al json de 0 a 1)
 - Al final que griten todos
+- Actualizar lista con datos del stadium 1
+
+## Imagenes con errores
+- 46
+- 52
+- 71
+- 105
 
 ## Fuentes
 - https://nintendo.fandom.com/wiki/Category:First_generation_Pok%C3%A9mon_images

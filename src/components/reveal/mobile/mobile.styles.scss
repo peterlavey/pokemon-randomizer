@@ -1,0 +1,127 @@
+.mobile {
+  .reveal {
+    img {
+      width: -webkit-fill-available;
+    }
+
+    .revealImage {
+      animation: revealImage 6s linear;
+    }
+
+    .revealInfo {
+      animation: revealInfo 6s linear;
+      color: black;
+      font-size: small;
+      margin-top: -10%;
+    }
+
+    .container {
+      height: 100vh;
+      padding: 2em;
+    }
+
+    .grass {
+      // background-color: darkolivegreen;
+    }
+
+    .poison {
+      // background-color: darkorchid;
+    }
+
+    .fire {
+      // background-color: orangered;
+    }
+
+    .flying {
+      // background-color: skyblue;
+    }
+
+    .water {
+      // background-color: royalblue;
+    }
+
+    .bug {
+      // background-color: cadetblue;
+    }
+
+    .normal {
+      // background-color: antiquewhite;
+    }
+
+    .electric {
+      // background-color: lightyellow;
+    }
+
+    .ground {
+      // background-color: sandybrown;
+    }
+
+    .fairy {
+      // background-color: hotpink;
+    }
+
+    .fighting {
+      // background-color: burlywood;
+    }
+
+    .psychic {
+      // background-color: mediumpurple;
+    }
+
+    .rock {
+      // background-color: lightslategray;
+    }
+
+    .steel {
+      // background-color: lightsteelblue;
+    }
+
+    .ice {
+      // background-color: aliceblue;
+    }
+
+    .ghost {
+      // background-color: rebeccapurple;
+    }
+
+    .dragon {
+      // background-color: darkgoldenrod;
+    }
+  }
+
+  @keyframes revealImage {
+    0% {
+      opacity: 0;
+      filter: brightness(0);
+    }
+
+    40% {
+      opacity: 0.01;
+      filter: brightness(0);
+    }
+
+    50% {
+      opacity: 1;
+      filter: brightness(0);
+    }
+
+    80% {
+      opacity: 1;
+      filter: brightness(1);
+    }
+  }
+
+  @keyframes revealInfo {
+    0% {
+      opacity: 0;
+    }
+
+    80% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}

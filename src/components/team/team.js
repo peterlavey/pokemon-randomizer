@@ -1,21 +1,24 @@
 import React, {useState} from "react";
-import Reveal from "../reveal/reveal";
+import Reveal, {TYPE} from "../reveal/reveal";
 import pokemons from "../../resources/pokemons.json";
+import './team.styles.scss';
+import PokeButton from "../pokeButton/pokeButton";
 
-const quantity = 10;
+const quantity = 151;
 
 export const Team = () => {
-    const [pokemon, setPokemon] = useState({});
+    const [pokemon, setPokemon] = useState();
     const getPokemon = () => {
         const id = Math.floor((Math.random() * quantity) + 1);
-        const test = pokemons.find(pokemon => pokemon.id === id)
-        console.log(test)
-        setPokemon(test);
+        const pokemonChoosen = pokemons.find(pokemon => pokemon.id === id)
+        setPokemon(pokemonChoosen);
     }
+    const clean = () => setPokemon(undefined);
+
     return (
-        <div>
-            <button onClick={getPokemon}>I choose you!</button>
-            {pokemon && <Reveal {...pokemon}/>}
+        <div className='team'>
+            {!pokemon && <PokeButton onClick={getPokemon}/>}
+            {pokemon && <Reveal clean={clean} type={TYPE.MOBILE} pokemon={pokemon}/>}
         </div>
     )
 };

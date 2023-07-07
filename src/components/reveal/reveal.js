@@ -1,7 +1,14 @@
 import React, {useEffect, useRef} from "react";
 import './reveal.styles.scss';
+import Pokedex from "./pokedex/pokedex";
+import Mobile from "./mobile/mobile";
 
-export const Reveal = ({id, name}) => {
+export const TYPE = {
+    POKEDEX: 'POKEDEX',
+    MOBILE: 'MOBILE'
+};
+
+export const Reveal = ({clean, type, pokemon}) => {
     const imageRef = useRef(null);
     const infoRef = useRef(null);
 
@@ -13,16 +20,16 @@ export const Reveal = ({id, name}) => {
         window.requestAnimationFrame(() => infoRef.current.classList.add('revealInfo'));
     }
     useEffect(() => {
-        console.log(id)
         reveal();
-    }, [id]);
+    }, [pokemon]);
     return (
-        <div className='main'>
-            <div ref={infoRef}>
-                <h1>{name.english}</h1>
-            </div>
-            <img src={`images/${id}.png`} alt={''} ref={imageRef}/>
-            <audio src={`sfx/${id}.wav`} autoPlay/>
+        <div className='reveal' onClick={clean}>
+            {
+                {
+                    [TYPE.POKEDEX]: <Pokedex infoRef={infoRef} imageRef={imageRef} {...pokemon}/>,
+                    [TYPE.MOBILE]: <Mobile infoRef={infoRef} imageRef={imageRef} {...pokemon}/>
+                }[type]
+            }
         </div>
     )
 };
