@@ -1,11 +1,14 @@
 # Ideas
-
-- Dar la opción de combate igualado usando el tier de los pokemon
 - Mostrar un fondo distinto segun el tipo, mostrarlo junto con el grito
 - Mostrar los Stats y Tier
-- Cuando se complete el equipo mostrarlos a todos en escala (añadir scale al json de 0 a 1)
-- Al final que griten todos
+- Reemplazar pokeball css con imagenes para mostrar los otros tipos
 - Actualizar lista con datos del stadium 1
+- **Modos de juego**
+- - Dar la opción de combate igualado usando el tier de los pokemon
+- - Dar opción de probabilidad según pokeball
+- **mostrar pantalla de versus**
+- - Cuando se complete el equipo mostrarlos a todos en escala (añadir scale al json de 0 a 1)
+- - Al final que griten todos
 
 ## Bugs
 - Parasec #47 muestra error
