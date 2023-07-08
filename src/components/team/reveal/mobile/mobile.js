@@ -1,6 +1,6 @@
 import React from "react";
 import './mobile.styles.scss';
-import Type from "../../type/type";
+import Type from "./type/type";
 import Stats from "./stats/stats";
 
 export const Mobile = ({infoRef, imageRef, id, name, type, base}) => {
@@ -13,7 +13,7 @@ export const Mobile = ({infoRef, imageRef, id, name, type, base}) => {
                     <h1>{`#${id}-${name.english}`}</h1>
                     <div className='stats'>
                         {
-                            type.map((_type) => <Type type={_type}/>)
+                            type.map((_type) => <Type type={_type} key={_type}/>)
                         }
                         <Stats {...base}/>
                     </div>

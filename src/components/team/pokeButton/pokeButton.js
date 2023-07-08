@@ -1,10 +1,10 @@
 import React, {useRef} from "react";
 import './pokeButton.styles.scss';
+import {delay} from "../../../utils/utils";
 
 export const PokeButton = ({onClick}) => {
     const pokeball = useRef();
     const pokeballButton = useRef();
-    const delay = ms => new Promise(res => setTimeout(res, ms));
     const blink = async () => {
         pokeball.current.classList.remove('shaking');
         window.requestAnimationFrame(() => pokeballButton.current.classList.add('blink'));
