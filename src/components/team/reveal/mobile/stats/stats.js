@@ -4,12 +4,15 @@ import './stats.styles.scss';
 export const Stats = ({hp, attack, defense, spAttack, spDefense, speed}) => {
     return (
         <div className='stats'>
-            <p>HP: {hp}</p>
-            <p>Attack: {attack}</p>
-            <p>Defense: {defense}</p>
-            <p>Sp.Attack: {spAttack}</p>
-            <p>Sp.Defense: {spDefense}</p>
-            <p>Speed: {speed}</p>
+            <p>
+                <strong>HP:</strong> {hp} - <strong>Speed:</strong> {speed}
+            </p>
+            <p>
+                <strong>Attack:</strong> {attack} - <strong>Sp.Attack:</strong> {spAttack}
+            </p>
+            <p>
+                <strong>Defense:</strong> {defense} - <strong>Sp.Defense:</strong> {spDefense}
+            </p>
         </div>
     )
 };
