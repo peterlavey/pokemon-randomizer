@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Pokeballs from "./pokeballs/pokeballs";
 import PokeButton from "./pokeButton/pokeButton";
 import Reveal, {TYPE} from "./reveal/reveal";
@@ -38,12 +38,20 @@ export const Team = () => {
         }
     };
 
+    useEffect(() => {
+        const team = [];
+        for (let index = 0; index < 6; index++) {
+            const id = Math.floor((Math.random() * quantity) + 1);
+            const pokemonChoosen = pokemons.find(pokemon => pokemon.id === id);
+            team.push(pokemonChoosen);
+
+        }
+        setPokemonTeam(team);
+    }, []);
+
     return (
         <div className='team'>
-            <Pokeballs pokeballs={pokeballs} team={pokemonTeam}/>
-            {(!pokemon && !completed) && <PokeButton onClick={getPokemon}/>}
-            {(pokemon && !completed) && <Reveal clean={clean} type={TYPE.MOBILE} pokemon={pokemon}/>}
-            {completed && <Presentation team={pokemonTeam}/>}
+            <Presentation team={pokemonTeam}/>
         </div>
     );
 };
