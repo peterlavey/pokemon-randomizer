@@ -2,18 +2,40 @@ import React, {useEffect, useRef, useState} from "react";
 import './pokeball.styles.scss';
 import {delay} from "../../../../utils/utils";
 
-export const POKEBALL = {
-    NORMAL: 'normal',
-    SUPER: 'super',
-    ULTRA: 'ultra',
-    MASTER: 'master'
+const TIER = {
+    S: 'S',
+    A: 'A',
+    B: 'B',
+    C: 'C',
+    D: 'D',
 };
 
-export const Pokeball = ({type, pokemonId = 0}) => {
+export const POKEBALL = {
+    NORMAL: {
+        name: 'Pokeball',
+        img: 'images/pokeballs/normal.png',
+        tiers: [TIER.D, TIER.C]
+    },
+    SUPER: {
+        name: 'Superball',
+        img: 'images/pokeballs/super.png',
+        tiers: [TIER.B]
+    },
+    ULTRA: {
+        name: 'Ultraball',
+        img: 'images/pokeballs/ultra.png',
+        tiers: [TIER.A]
+    },
+    MASTER: {
+        name: 'Masterball',
+        img: 'images/pokeballs/master.png',
+        tiers: [TIER.S]
+    }
+};
+
+export const Pokeball = ({type, pokemonImg }) => {
     const pokeballImg = useRef();
     const [pokemonCatched, setPokemonCatched] = useState(false);
-    const pokeball = `images/pokeballs/${type}.png`;
-    const pokemon = `images/${pokemonId}.png`
 
     const reveal = async () => {
         await delay(5000);
@@ -24,16 +46,16 @@ export const Pokeball = ({type, pokemonId = 0}) => {
     }
 
     useEffect(() => {
-        if(pokemonId) {
+        if(pokemonImg) {
             reveal();
         }
-    }, [pokemonId]);
+    }, [pokemonImg]);
 
     return (
         <div className='pokeballContainer'>
-            <img src={pokeball} alt='pokeball' ref={pokeballImg}/>
+            <img src={type.img} alt={type.name} ref={pokeballImg}/>
             {
-                pokemonCatched && <img src={pokemon} alt={'pokemon'} className='pokemon'/>
+                pokemonCatched && <img src={pokemonImg} alt={pokemonImg} className='pokemon'/>
             }
         </div>
     )

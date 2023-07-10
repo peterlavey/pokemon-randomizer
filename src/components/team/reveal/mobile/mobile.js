@@ -3,11 +3,11 @@ import './mobile.styles.scss';
 import Type from "./type/type";
 import Stats from "./stats/stats";
 
-export const Mobile = ({infoRef, imageRef, id, name, species, type, description, height, weight, base}) => {
+export const Mobile = ({infoRef, imageRef, id, image: { hires }, name, species, type, description, height, weight, base}) => {
     return (
         <div className='mobile'>
             <div className={'container ' + type[0].toLowerCase()}>
-                <img src={`images/${id}.png`} alt={''} ref={imageRef}/>
+                <img src={hires} alt={''} ref={imageRef}/>
 
                 <div ref={infoRef} align='center' className='info'>
                     <h1>{`#${id}-${name.english}`}</h1>

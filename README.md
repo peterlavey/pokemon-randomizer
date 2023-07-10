@@ -11,7 +11,6 @@
 - - Al final que griten todos
 
 ## Bugs
-- No se deben mostrar repetidos
 - Parasec #47 muestra error
 
 ## Imagenes con errores
@@ -24,6 +23,7 @@
 - https://nintendo.fandom.com/wiki/Category:First_generation_Pok%C3%A9mon_images
 - https://www.sounds-resource.com/nintendo_64/pokemonstadium/sound/34243/
 - https://github.com/Purukitto/pokemon-data.json/tree/master
+- https://tiermaker.com/categories/pokemon/pokemon-first-generation-62534
 
 # Getting Started with Create React App
 

@@ -7,7 +7,7 @@ export const Pokeballs = ({pokeballs, team}) => {
     return (
         <div className='pokeballs'>
             {
-                pokeballs.map((pokeball, i) => <Pokeball type={pokeball} pokemonId={team[i] ? team[i].id : 0} key={i}/>)
+                pokeballs.map((pokeball, i) => <Pokeball type={pokeball} pokemonImg={team[i] ? team[i].image.sprite : ''} key={i}/>)
             }
         </div>
     )

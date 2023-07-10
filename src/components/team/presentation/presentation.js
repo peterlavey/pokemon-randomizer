@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import './presentation.styles.scss';
+import {delay} from "../../../utils/utils";
 
 
 export const Presentation = ({team}) => {
@@ -39,6 +40,11 @@ export const Presentation = ({team}) => {
         const scale = 200;
         return (pokemon.height / maxHeight) * scale;
     }
+    const teamCry = async () => {
+        await delay(1000);
+        document.querySelectorAll('audio').forEach((audio) => audio.play());
+    }
+
     useEffect(() => {
         if (team.length) {
             prepareMembers();
@@ -48,21 +54,26 @@ export const Presentation = ({team}) => {
         setMaxHeight(Math.max(...members.map(({height}) => height)));
     }, [members]);
 
+    useEffect(() => {
+        teamCry();
+    }, []);
+
     return (
         <div className='presentation'>
             {
                 members.map((pokemon, index) => {
                     const zIndex = Math.round(maxHeight - pokemon.height) * 10;
-                    console.log(`pokemon: ${pokemon.name.english} height: ${pokemon.height}`)
                     return (
-                        <img
-                            src={`images/${pokemon.id}.png`}
-                            width={getScaleHeight(pokemon)}
-                            className={`member${index}`}
-                            style={{zIndex}}
-                            key={pokemon.id}
-                            alt={pokemon.name.english}
-                        />
+                        <div key={pokemon.id}>
+                            <img
+                                src={pokemon.image.hires}
+                                width={getScaleHeight(pokemon)}
+                                className={`member${index}`}
+                                style={{zIndex}}
+                                alt={pokemon.name.english}
+                            />
+                            <audio src={`sfx/${pokemon.id}.wav`} autoPlay/>
+                        </div>
                     );
                 })
             }
