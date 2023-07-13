@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import './presentation.styles.scss';
 import {delay} from "../../../utils/utils";
 
@@ -25,7 +25,7 @@ export const Presentation = ({team}) => {
             return pokemon
         });
     }
-    const prepareMembers = () => {
+    const prepareMembers = useCallback(() => {
         const _members = [];
         const ordered = team.sort(byHeight);
         _members.push(ordered[5]);
@@ -35,7 +35,7 @@ export const Presentation = ({team}) => {
         _members.push(ordered[3]);
         _members.push(ordered[0]);
         setMembers(adjustHeight(_members));
-    };
+    }, [team]);
     const getScaleHeight = (pokemon) => {
         const scale = 200;
         return (pokemon.height / maxHeight) * scale;
@@ -44,19 +44,16 @@ export const Presentation = ({team}) => {
         await delay(1000);
         document.querySelectorAll('audio').forEach((audio) => audio.play());
     }
-
-    useEffect(() => {
-        if (team.length) {
-            prepareMembers();
-        }
-    }, [team]);
     useEffect(() => {
         setMaxHeight(Math.max(...members.map(({height}) => height)));
     }, [members]);
 
     useEffect(() => {
-        teamCry();
-    }, []);
+        if (team.length) {
+            prepareMembers();
+            teamCry();
+        }
+    }, [team.length, prepareMembers]);
 
     return (
         <div className='presentation'>
