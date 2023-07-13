@@ -1,10 +1,8 @@
 import React, {useEffect, useRef} from "react";
 import './reveal.styles.scss';
-import Pokedex from "./pokedex/pokedex";
 import Mobile from "./mobile/mobile";
 
 export const TYPE = {
-    POKEDEX: 'POKEDEX',
     MOBILE: 'MOBILE'
 };
 
@@ -26,7 +24,6 @@ export const Reveal = ({clean, type, pokemon}) => {
         <div className='reveal' onClick={clean}>
             {
                 {
-                    [TYPE.POKEDEX]: <Pokedex infoRef={infoRef} imageRef={imageRef} {...pokemon}/>,
                     [TYPE.MOBILE]: <Mobile infoRef={infoRef} imageRef={imageRef} {...pokemon}/>
                 }[type]
             }
