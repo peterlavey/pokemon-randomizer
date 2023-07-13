@@ -1,0 +1,140 @@
+.pokedex {
+  background-image: url("../../../../../public/images/pokedex.png");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .reveal {
+    z-index: 1;
+    width: 22%;
+    height: 32%;
+    position: fixed;
+    top: 16em;
+    left: 27em;
+
+    img {
+      height: 19em;
+      margin-left: 14%;
+    }
+
+    .revealImage {
+      animation: revealImage 6s linear;
+    }
+
+    .revealInfo {
+      animation: revealInfo 6s linear;
+      position: absolute;
+      color: yellow;
+      font-size: small;
+      top: 2em;
+      left: 160%;
+      width: 84%;
+    }
+
+    .grass {
+      background-color: darkolivegreen;
+    }
+
+    .poison {
+      background-color: darkorchid;
+    }
+
+    .fire {
+      background-color: orangered;
+    }
+
+    .flying {
+      background-color: skyblue;
+    }
+
+    .water {
+      background-color: royalblue;
+    }
+
+    .bug {
+      background-color: cadetblue;
+    }
+
+    .normal {
+      background-color: antiquewhite;
+    }
+
+    .electric {
+      background-color: lightyellow;
+    }
+
+    .ground {
+      background-color: sandybrown;
+    }
+
+    .fairy {
+      background-color: hotpink;
+    }
+
+    .fighting {
+      background-color: burlywood;
+    }
+
+    .psychic {
+      background-color: mediumpurple;
+    }
+
+    .rock {
+      background-color: lightslategray;
+    }
+
+    .steel {
+      background-color: lightsteelblue;
+    }
+
+    .ice {
+      background-color: aliceblue;
+    }
+
+    .ghost {
+      background-color: rebeccapurple;
+    }
+
+    .dragon {
+      background-color: darkgoldenrod;
+    }
+  }
+
+  @keyframes revealImage {
+    0% {
+      opacity: 0;
+      filter: brightness(0);
+    }
+
+    40% {
+      opacity: 0.01;
+      filter: brightness(0);
+    }
+
+    50% {
+      opacity: 1;
+      filter: brightness(0);
+    }
+
+    80% {
+      opacity: 1;
+      filter: brightness(1);
+    }
+  }
+
+  @keyframes revealInfo {
+    0% {
+      opacity: 0;
+    }
+
+    80% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}

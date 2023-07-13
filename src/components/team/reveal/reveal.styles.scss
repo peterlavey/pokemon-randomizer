@@ -1,0 +1,58 @@
+.reveal {
+  img {
+    width: 100%;
+  }
+
+  .revealImage {
+    animation: revealImage 6s linear;
+  }
+
+  .info {
+    opacity: 0;
+  }
+
+  .revealInfo {
+    animation: revealInfo 5s linear;
+    color: black;
+    font-size: small;
+    margin-top: -10%;
+    opacity: 1;
+    transition: opacity;
+  }
+}
+
+@keyframes revealImage {
+  0% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+
+  40% {
+    opacity: 0.01;
+    filter: brightness(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(0);
+  }
+
+  80% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+@keyframes revealInfo {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

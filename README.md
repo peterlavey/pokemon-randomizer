@@ -1,3 +1,30 @@
+# Ideas
+- Mostrar un fondo distinto segun el tipo, mostrarlo junto con el grito
+- Mostrar los Stats y Tier
+- Reemplazar pokeball css con imagenes para mostrar los otros tipos
+- Actualizar lista con datos del stadium 1
+- **Modos de juego**
+- - Dar la opción de combate igualado usando el tier de los pokemon
+- - Dar opción de probabilidad según pokeball
+- **mostrar pantalla de versus**
+- - Cuando se complete el equipo mostrarlos a todos en escala (añadir scale al json de 0 a 1)
+- - Al final que griten todos
+
+## Bugs
+- Parasec #47 muestra error
+
+## Imagenes con errores
+- 46
+- 52
+- 71
+- 105
+
+## Fuentes
+- https://nintendo.fandom.com/wiki/Category:First_generation_Pok%C3%A9mon_images
+- https://www.sounds-resource.com/nintendo_64/pokemonstadium/sound/34243/
+- https://github.com/Purukitto/pokemon-data.json/tree/master
+- https://tiermaker.com/categories/pokemon/pokemon-first-generation-62534
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
