@@ -13,22 +13,22 @@ const TIER = {
 export const POKEBALL = {
     NORMAL: {
         name: 'Pokeball',
-        img: 'images/pokeballs/normal.png',
+        img: 'https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokeballs/normal.png',
         tiers: [TIER.D, TIER.C]
     },
     SUPER: {
         name: 'Superball',
-        img: 'images/pokeballs/super.png',
+        img: 'https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokeballs/super.png',
         tiers: [TIER.B]
     },
     ULTRA: {
         name: 'Ultraball',
-        img: 'images/pokeballs/ultra.png',
+        img: 'https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokeballs/ultra.png',
         tiers: [TIER.A]
     },
     MASTER: {
         name: 'Masterball',
-        img: 'images/pokeballs/master.png',
+        img: 'https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokeballs/master.png',
         tiers: [TIER.S]
     }
 };
