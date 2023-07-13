@@ -38,10 +38,10 @@ export const Pokeball = ({type, pokemonImg }) => {
     const [pokemonCatched, setPokemonCatched] = useState(false);
 
     const reveal = async () => {
-        await delay(5000);
+        await delay(4000);
         pokeballImg.current.classList.remove('catch');
         window.requestAnimationFrame(() => pokeballImg.current.classList.add('catch'));
-        await delay(1500);
+        await delay(500);
         setPokemonCatched(true);
     }
 

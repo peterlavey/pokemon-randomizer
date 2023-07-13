@@ -72,7 +72,7 @@ export const Presentation = ({team}) => {
                                 style={{zIndex}}
                                 alt={pokemon.name.english}
                             />
-                            <audio src={`sfx/${pokemon.id}.wav`} autoPlay/>
+                            <audio src={pokemon.cry} autoPlay/>
                         </div>
                     );
                 })

@@ -55,7 +55,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/001.png"
     },
     "height":0.7,
-    "weight":6.9
+    "weight":6.9,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/1.wav"
   },
   {
     "id":2,
@@ -117,7 +118,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/002.png"
     },
     "height":1,
-    "weight":13
+    "weight":13,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/2.wav"
   },
   {
     "id":3,
@@ -173,7 +175,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/003.png"
     },
     "height":2,
-    "weight":100
+    "weight":100,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/3.wav"
   },
   {
     "id":4,
@@ -194,7 +197,7 @@
       "spDefense":50,
       "speed":65
     },
-    "tier":"C",
+    "tier":"A",
     "species":"Lizard Pokémon",
     "description":"The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
     "evolution":{
@@ -230,7 +233,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/004.png"
     },
     "height":0.6,
-    "weight":8.5
+    "weight":8.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/4.wav"
   },
   {
     "id":5,
@@ -291,7 +295,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/005.png"
     },
     "height":1.1,
-    "weight":19
+    "weight":19,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/5.wav"
   },
   {
     "id":6,
@@ -313,7 +318,7 @@
       "spDefense":85,
       "speed":100
     },
-    "tier":"A",
+    "tier":"S",
     "species":"Flame Pokémon",
     "description":"Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
     "evolution":{
@@ -347,7 +352,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/006.png"
     },
     "height":1.7,
-    "weight":90.5
+    "weight":90.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/6.wav"
   },
   {
     "id":7,
@@ -368,7 +374,7 @@
       "spDefense":64,
       "speed":43
     },
-    "tier":"B",
+    "tier":"A",
     "species":"Tiny Turtle Pokémon",
     "description":"Squirtle’s shell is not merely used for protection. The shell’s rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.",
     "evolution":{
@@ -404,7 +410,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/007.png"
     },
     "height":0.5,
-    "weight":9
+    "weight":9,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/7.wav"
   },
   {
     "id":8,
@@ -425,7 +432,7 @@
       "spDefense":80,
       "speed":58
     },
-    "tier":"A",
+    "tier":"B",
     "species":"Turtle Pokémon",
     "description":"Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon’s toughness as a battler.",
     "evolution":{
@@ -465,7 +472,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/008.png"
     },
     "height":1,
-    "weight":22.5
+    "weight":22.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/8.wav"
   },
   {
     "id":9,
@@ -520,7 +528,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/009.png"
     },
     "height":1.6,
-    "weight":85.5
+    "weight":85.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/9.wav"
   },
   {
     "id":10,
@@ -541,7 +550,7 @@
       "spDefense":20,
       "speed":45
     },
-    "tier":"D",
+    "tier":"C",
     "species":"Worm Pokémon",
     "description":"Its body is soft and weak. In nature, its perpetual fate is to be seen by others as food.",
     "evolution":{
@@ -576,7 +585,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/010.png"
     },
     "height":0.3,
-    "weight":2.9
+    "weight":2.9,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/10.wav"
   },
   {
     "id":11,
@@ -632,7 +642,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/011.png"
     },
     "height":0.7,
-    "weight":9.9
+    "weight":9.9,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/11.wav"
   },
   {
     "id":12,
@@ -654,7 +665,7 @@
       "spDefense":80,
       "speed":70
     },
-    "tier":"C",
+    "tier":"A",
     "species":"Butterfly Pokémon",
     "description":"Nectar from pretty flowers is its favorite food. In fields of flowers, it has heated battles with Cutiefly for territory.",
     "evolution":{
@@ -687,7 +698,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/012.png"
     },
     "height":1.1,
-    "weight":32
+    "weight":32,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/12.wav"
   },
   {
     "id":13,
@@ -744,7 +756,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/013.png"
     },
     "height":0.3,
-    "weight":3.2
+    "weight":3.2,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/13.wav"
   },
   {
     "id":14,
@@ -766,7 +779,7 @@
       "spDefense":25,
       "speed":35
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Cocoon Pokémon",
     "description":"Kakuna remains virtually immobile as it clings to a tree. However, on the inside, it is extremely busy as it prepares for its coming evolution. This is evident from how hot the shell becomes to the touch.",
     "evolution":{
@@ -801,7 +814,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/014.png"
     },
     "height":0.6,
-    "weight":10
+    "weight":10,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/14.wav"
   },
   {
     "id":15,
@@ -823,7 +837,7 @@
       "spDefense":80,
       "speed":75
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Poison Bee Pokémon",
     "description":"Beedrill is extremely territorial. No one should ever approach its nest—this is for their own safety. If angered, they will attack in a furious swarm.",
     "evolution":{
@@ -856,7 +870,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/015.png"
     },
     "height":1,
-    "weight":29.5
+    "weight":29.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/15.wav"
   },
   {
     "id":16,
@@ -878,7 +893,7 @@
       "spDefense":35,
       "speed":56
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Tiny Bird Pokémon",
     "description":"Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
     "evolution":{
@@ -917,7 +932,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/016.png"
     },
     "height":0.3,
-    "weight":1.8
+    "weight":1.8,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/16.wav"
   },
   {
     "id":17,
@@ -939,7 +955,7 @@
       "spDefense":50,
       "speed":71
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Bird Pokémon",
     "description":"Pidgeotto claims a large area as its own territory. This Pokémon flies around, patrolling its living space. If its territory is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.",
     "evolution":{
@@ -982,7 +998,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/017.png"
     },
     "height":1.1,
-    "weight":30
+    "weight":30,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/17.wav"
   },
   {
     "id":18,
@@ -1004,7 +1021,7 @@
       "spDefense":70,
       "speed":101
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Bird Pokémon",
     "description":"This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose Pidgeot as their Pokémon.",
     "evolution":{
@@ -1041,7 +1058,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/018.png"
     },
     "height":1.5,
-    "weight":39.5
+    "weight":39.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/18.wav"
   },
   {
     "id":19,
@@ -1062,7 +1080,7 @@
       "spDefense":35,
       "speed":72
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Mouse Pokémon",
     "description":"This Pokémon is common but hazardous. Its sharp incisors can easily cut right through hard wood.",
     "evolution":{
@@ -1101,7 +1119,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/019.png"
     },
     "height":0.3,
-    "weight":3.5
+    "weight":3.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/19.wav"
   },
   {
     "id":20,
@@ -1122,7 +1141,7 @@
       "spDefense":70,
       "speed":97
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Mouse Pokémon",
     "description":"Its whiskers are essential for maintaining its balance. No matter how friendly you are, it will get angry and bite you if you touch its whiskers.",
     "evolution":{
@@ -1159,7 +1178,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/020.png"
     },
     "height":0.7,
-    "weight":18.5
+    "weight":18.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/20.wav"
   },
   {
     "id":21,
@@ -1181,7 +1201,7 @@
       "spDefense":31,
       "speed":70
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Tiny Bird Pokémon",
     "description":"Due to its short wings, it can’t fly long distances. It wanders about restlessly and pecks at bug Pokémon.",
     "evolution":{
@@ -1216,7 +1236,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/021.png"
     },
     "height":0.3,
-    "weight":2
+    "weight":2,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/21.wav"
   },
   {
     "id":22,
@@ -1238,7 +1259,7 @@
       "spDefense":61,
       "speed":100
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Beak Pokémon",
     "description":"In Alola, fish Pokémon are its prey. It can be seen circling above the ocean searching for food.",
     "evolution":{
@@ -1271,7 +1292,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/022.png"
     },
     "height":1.2,
-    "weight":38
+    "weight":38,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/22.wav"
   },
   {
     "id":23,
@@ -1292,7 +1314,7 @@
       "spDefense":54,
       "speed":55
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Snake Pokémon",
     "description":"The eggs of bird Pokémon are its favorite food. It swallows eggs whole, so sometimes an egg gets stuck, and Ekans faints.",
     "evolution":{
@@ -1332,7 +1354,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/023.png"
     },
     "height":2,
-    "weight":6.9
+    "weight":6.9,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/23.wav"
   },
   {
     "id":24,
@@ -1353,7 +1376,7 @@
       "spDefense":79,
       "speed":80
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Cobra Pokémon",
     "description":"After stunning its opponents with the pattern on its stomach, it quickly wraps them up in its body and waits for them to stop moving.",
     "evolution":{
@@ -1391,7 +1414,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/024.png"
     },
     "height":3.5,
-    "weight":65
+    "weight":65,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/24.wav"
   },
   {
     "id":25,
@@ -1412,7 +1436,7 @@
       "spDefense":50,
       "speed":90
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Mouse Pokémon",
     "description":"While sleeping, it generates electricity in the sacs in its cheeks. If it’s not getting enough sleep, it will be able to use only weak electricity.",
     "evolution":{
@@ -1452,7 +1476,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/025.png"
     },
     "height":0.4,
-    "weight":6
+    "weight":6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/25.wav"
   },
   {
     "id":26,
@@ -1473,7 +1498,7 @@
       "spDefense":80,
       "speed":110
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Mouse Pokémon",
     "description":"Because so many Trainers like the way Pikachu looks, you don’t see this Pokémon very often.",
     "evolution":{
@@ -1507,7 +1532,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/026.png"
     },
     "height":0.8,
-    "weight":30
+    "weight":30,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/26.wav"
   },
   {
     "id":27,
@@ -1528,7 +1554,7 @@
       "spDefense":30,
       "speed":40
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Mouse Pokémon",
     "description":"When its skin gets wrinkled from moisture, it heads for a volcano. It lies flat on a spot with a lot of geothermal heat and dries itself out.",
     "evolution":{
@@ -1563,7 +1589,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/027.png"
     },
     "height":0.6,
-    "weight":12
+    "weight":12,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/27.wav"
   },
   {
     "id":28,
@@ -1584,7 +1611,7 @@
       "spDefense":55,
       "speed":65
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Mouse Pokémon",
     "description":"Thanks to its thick claws, it’s good at climbing trees. There are plenty of Sandslash that park themselves in trees and go right to sleep.",
     "evolution":{
@@ -1617,7 +1644,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/028.png"
     },
     "height":1,
-    "weight":29.5
+    "weight":29.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/28.wav"
   },
   {
     "id":29,
@@ -1638,7 +1666,7 @@
       "spDefense":40,
       "speed":41
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Poison Pin Pokémon",
     "description":"Nidoran♀ has barbs that secrete a powerful poison. They are thought to have developed as protection for this small-bodied Pokémon. When enraged, it releases a horrible toxin from its horn.",
     "evolution":{
@@ -1678,7 +1706,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/029.png"
     },
     "height":0.4,
-    "weight":7
+    "weight":7,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/29.wav"
   },
   {
     "id":30,
@@ -1699,7 +1728,7 @@
       "spDefense":55,
       "speed":56
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Poison Pin Pokémon",
     "description":"When Nidorina are with their friends or family, they keep their barbs tucked away to prevent hurting each other. This Pokémon appears to become nervous if separated from the others.",
     "evolution":{
@@ -1742,7 +1771,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/030.png"
     },
     "height":0.8,
-    "weight":20
+    "weight":20,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/30.wav"
   },
   {
     "id":31,
@@ -1764,7 +1794,7 @@
       "spDefense":85,
       "speed":76
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Drill Pokémon",
     "description":"Nidoqueen’s body is encased in extremely hard scales. It is adept at sending foes flying with harsh tackles. This Pokémon is at its strongest when it is defending its young.",
     "evolution":{
@@ -1801,7 +1831,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/031.png"
     },
     "height":1.3,
-    "weight":60
+    "weight":60,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/31.wav"
   },
   {
     "id":32,
@@ -1822,7 +1853,7 @@
       "spDefense":40,
       "speed":50
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Poison Pin Pokémon",
     "description":"Nidoran♂ has developed muscles for moving its ears. Thanks to them, the ears can be freely moved in any direction. Even the slightest sound does not escape this Pokémon’s notice.",
     "evolution":{
@@ -1862,7 +1893,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/032.png"
     },
     "height":0.5,
-    "weight":9
+    "weight":9,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/32.wav"
   },
   {
     "id":33,
@@ -1883,7 +1915,7 @@
       "spDefense":55,
       "speed":65
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Poison Pin Pokémon",
     "description":"Nidorino has a horn that is harder than a diamond. If it senses a hostile presence, all the barbs on its back bristle up at once, and it challenges the foe with all its might.",
     "evolution":{
@@ -1927,7 +1959,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/033.png"
     },
     "height":0.9,
-    "weight":19.5
+    "weight":19.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/33.wav"
   },
   {
     "id":34,
@@ -1949,7 +1982,7 @@
       "spDefense":75,
       "speed":85
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Drill Pokémon",
     "description":"Nidoking’s thick tail packs enormously destructive power. With one swing, it can topple a metal transmission tower. Once this Pokémon goes on a rampage, there is no stopping it.",
     "evolution":{
@@ -1987,7 +2020,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/034.png"
     },
     "height":1.4,
-    "weight":62
+    "weight":62,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/34.wav"
   },
   {
     "id":35,
@@ -2008,7 +2042,7 @@
       "spDefense":65,
       "speed":35
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Fairy Pokémon",
     "description":"Bathed in moonlight, its wings glow faintly. Without even flapping, Clefairy rises into the air, where it dances around.",
     "evolution":{
@@ -2051,7 +2085,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/035.png"
     },
     "height":0.6,
-    "weight":7.5
+    "weight":7.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/35.wav"
   },
   {
     "id":36,
@@ -2072,7 +2107,7 @@
       "spDefense":90,
       "speed":60
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Fairy Pokémon",
     "description":"Some scientists believe that it gazes intently at the sky on nights with a full moon because it’s homesick.",
     "evolution":{
@@ -2109,7 +2144,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/036.png"
     },
     "height":1.3,
-    "weight":40
+    "weight":40,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/36.wav"
   },
   {
     "id":37,
@@ -2130,7 +2166,7 @@
       "spDefense":65,
       "speed":65
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Fox Pokémon",
     "description":"It manipulates balls of fire to catch its prey. If you raise one from when it’s young, it will grow close to you like a puppy Pokémon.",
     "evolution":{
@@ -2165,7 +2201,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/037.png"
     },
     "height":0.6,
-    "weight":9.9
+    "weight":9.9,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/37.wav"
   },
   {
     "id":38,
@@ -2186,7 +2223,7 @@
       "spDefense":100,
       "speed":100
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Fox Pokémon",
     "description":"The flickering flames it spews from its mouth leave its opponents hypnotized. Then, this extremely intelligent Pokémon attacks.",
     "evolution":{
@@ -2219,7 +2256,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/038.png"
     },
     "height":1.1,
-    "weight":19.9
+    "weight":19.9,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/38.wav"
   },
   {
     "id":39,
@@ -2241,7 +2279,7 @@
       "spDefense":25,
       "speed":20
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Balloon Pokémon",
     "description":"The songs they sing are totally different depending on the region they live in. Some even sound like they’re shouting!",
     "evolution":{
@@ -2284,7 +2322,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/039.png"
     },
     "height":0.5,
-    "weight":5.5
+    "weight":5.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/39.wav"
   },
   {
     "id":40,
@@ -2306,7 +2345,7 @@
       "spDefense":50,
       "speed":45
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Balloon Pokémon",
     "description":"When it gets angry, it inhales with all its might, and its body gradually inflates. Sometimes they can grow 20 times larger!",
     "evolution":{
@@ -2343,7 +2382,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/040.png"
     },
     "height":1,
-    "weight":12
+    "weight":12,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/40.wav"
   },
   {
     "id":41,
@@ -2365,7 +2405,7 @@
       "spDefense":40,
       "speed":55
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Bat Pokémon",
     "description":"Their skin is so thin that they’ll be burned if sunlight hits them. When it gets cold out, they gather together to warm one another’s bodies.",
     "evolution":{
@@ -2400,7 +2440,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/041.png"
     },
     "height":0.8,
-    "weight":7.5
+    "weight":7.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/41.wav"
   },
   {
     "id":42,
@@ -2422,7 +2463,7 @@
       "spDefense":75,
       "speed":90
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Bat Pokémon",
     "description":"They can suck down over 10 ounces of blood in one go. They have been known to drink so much blood that they can no longer fly.",
     "evolution":{
@@ -2461,7 +2502,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/042.png"
     },
     "height":1.6,
-    "weight":55
+    "weight":55,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/42.wav"
   },
   {
     "id":43,
@@ -2483,7 +2525,7 @@
       "spDefense":65,
       "speed":30
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Weed Pokémon",
     "description":"Oddish searches for fertile, nutrient-rich soil, then plants itself. During the daytime, while it is planted, this Pokémon’s feet are thought to change shape and become similar to the roots of trees.",
     "evolution":{
@@ -2518,7 +2560,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/043.png"
     },
     "height":0.5,
-    "weight":5.4
+    "weight":5.4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/43.wav"
   },
   {
     "id":44,
@@ -2540,7 +2583,7 @@
       "spDefense":75,
       "speed":40
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Weed Pokémon",
     "description":"From its mouth Gloom drips honey that smells absolutely horrible. Apparently, it loves the horrid stench. It sniffs the noxious fumes and then drools even more of its honey.",
     "evolution":{
@@ -2583,7 +2626,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/044.png"
     },
     "height":0.8,
-    "weight":8.6
+    "weight":8.6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/44.wav"
   },
   {
     "id":45,
@@ -2605,7 +2649,7 @@
       "spDefense":90,
       "speed":50
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Flower Pokémon",
     "description":"Vileplume has the world’s largest petals. They are used to attract prey that are then doused with toxic spores. Once the prey are immobilized, this Pokémon catches and devours them.",
     "evolution":{
@@ -2638,7 +2682,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/045.png"
     },
     "height":1.2,
-    "weight":18.6
+    "weight":18.6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/45.wav"
   },
   {
     "id":46,
@@ -2660,7 +2705,7 @@
       "spDefense":55,
       "speed":25
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Mushroom Pokémon",
     "description":"The mushrooms, known as tochukaso, are controlling the bug. Even if the bug bugs the mushrooms, they tell it to bug off.",
     "evolution":{
@@ -2700,7 +2745,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/046.png"
     },
     "height":0.3,
-    "weight":5.4
+    "weight":5.4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/46.wav"
   },
   {
     "id":47,
@@ -2722,7 +2768,7 @@
       "spDefense":80,
       "speed":30
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Mushroom Pokémon",
     "description":"Its poisonous spores are also used in traditional medicine. Apparently, spores produced in Alola are not of very good quality.",
     "evolution":{
@@ -2760,7 +2806,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/047.png"
     },
     "height":1,
-    "weight":29.5
+    "weight":29.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/47.wav"
   },
   {
     "id":48,
@@ -2782,7 +2829,7 @@
       "spDefense":55,
       "speed":45
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Insect Pokémon",
     "description":"Venonat is said to have evolved with a coat of thin, stiff hair that covers its entire body for protection. It possesses large eyes that never fail to spot even minuscule prey.",
     "evolution":{
@@ -2821,7 +2868,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/048.png"
     },
     "height":1,
-    "weight":30
+    "weight":30,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/48.wav"
   },
   {
     "id":49,
@@ -2843,7 +2891,7 @@
       "spDefense":75,
       "speed":90
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Poison Moth Pokémon",
     "description":"Venomoth is nocturnal—it is a Pokémon that only becomes active at night. Its favorite prey are small insects that gather around streetlights, attracted by the light in the darkness.",
     "evolution":{
@@ -2880,7 +2928,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/049.png"
     },
     "height":1.5,
-    "weight":12.5
+    "weight":12.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/49.wav"
   },
   {
     "id":50,
@@ -2901,7 +2950,7 @@
       "spDefense":45,
       "speed":95
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Mole Pokémon",
     "description":"Around their crops, farmers plant the kind of tree that Diglett like to eat as a way of getting Diglett to plow the fields for them.",
     "evolution":{
@@ -2940,7 +2989,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/050.png"
     },
     "height":0.2,
-    "weight":0.8
+    "weight":0.8,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/50.wav"
   },
   {
     "id":51,
@@ -2961,7 +3011,7 @@
       "spDefense":70,
       "speed":120
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Mole Pokémon",
     "description":"Dugtrio’s heads are sleek and smooth and incredibly hard. It can dig through any soil with its headbutts.",
     "evolution":{
@@ -2998,7 +3048,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/051.png"
     },
     "height":0.7,
-    "weight":33.3
+    "weight":33.3,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/51.wav"
   },
   {
     "id":52,
@@ -3019,7 +3070,7 @@
       "spDefense":40,
       "speed":90
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Scratch Cat Pokémon",
     "description":"It loves coins, so if you give it one, you can make friends with Meowth easily. But it’s fickle, so you can’t count on that friendship lasting.",
     "evolution":{
@@ -3058,7 +3109,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/052.png"
     },
     "height":0.4,
-    "weight":4.2
+    "weight":4.2,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/52.wav"
   },
   {
     "id":53,
@@ -3079,7 +3131,7 @@
       "spDefense":65,
       "speed":115
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Classy Cat Pokémon",
     "description":"This Pokémon is popular with rich people. It’s also targeted by hunters who are after the jewel in its forehead.",
     "evolution":{
@@ -3116,7 +3168,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/053.png"
     },
     "height":1,
-    "weight":32
+    "weight":32,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/53.wav"
   },
   {
     "id":54,
@@ -3137,7 +3190,7 @@
       "spDefense":50,
       "speed":55
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Duck Pokémon",
     "description":"It has been found that its brain cells are 10 times more active when Psyduck is experiencing a headache.",
     "evolution":{
@@ -3177,7 +3230,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/054.png"
     },
     "height":0.8,
-    "weight":19.6
+    "weight":19.6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/54.wav"
   },
   {
     "id":55,
@@ -3198,7 +3252,7 @@
       "spDefense":80,
       "speed":85
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Duck Pokémon",
     "description":"A professional swimmer, it can continue swimming for two days straight by waving its long tail skillfully.",
     "evolution":{
@@ -3236,7 +3290,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/055.png"
     },
     "height":1.7,
-    "weight":76.6
+    "weight":76.6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/55.wav"
   },
   {
     "id":56,
@@ -3257,7 +3312,7 @@
       "spDefense":45,
       "speed":70
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Pig Monkey Pokémon",
     "description":"If one gets angry, all the others around it will get angry, so silence is a rare visitor in a troop of Mankey.",
     "evolution":{
@@ -3296,7 +3351,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/056.png"
     },
     "height":0.5,
-    "weight":28
+    "weight":28,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/56.wav"
   },
   {
     "id":57,
@@ -3317,7 +3373,7 @@
       "spDefense":70,
       "speed":95
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Pig Monkey Pokémon",
     "description":"The blood vessels in its brain are sturdier than those of other Pokémon, so it can stay healthy despite its constant raging.",
     "evolution":{
@@ -3354,7 +3410,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/057.png"
     },
     "height":1,
-    "weight":32
+    "weight":32,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/57.wav"
   },
   {
     "id":58,
@@ -3375,7 +3432,7 @@
       "spDefense":50,
       "speed":60
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Puppy Pokémon",
     "description":"It has lived alongside humans since ages ago. Its bones have been found in excavations of ruins from the Stone Age.",
     "evolution":{
@@ -3414,7 +3471,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/058.png"
     },
     "height":0.7,
-    "weight":19
+    "weight":19,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/58.wav"
   },
   {
     "id":59,
@@ -3435,7 +3493,7 @@
       "spDefense":80,
       "speed":95
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Legendary Pokémon",
     "description":"There are so many old tales about them that they’re called legendary Pokémon, but there are way more of them around than you’d expect.",
     "evolution":{
@@ -3472,7 +3530,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/059.png"
     },
     "height":1.9,
-    "weight":155
+    "weight":155,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/59.wav"
   },
   {
     "id":60,
@@ -3493,7 +3552,7 @@
       "spDefense":40,
       "speed":90
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Tadpole Pokémon",
     "description":"The direction of the swirl on their stomachs differs depending on where they live. Poliwag aficionados can tell them apart at a glance.",
     "evolution":{
@@ -3532,7 +3591,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/060.png"
     },
     "height":0.6,
-    "weight":12.4
+    "weight":12.4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/60.wav"
   },
   {
     "id":61,
@@ -3553,7 +3613,7 @@
       "spDefense":50,
       "speed":90
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Tadpole Pokémon",
     "description":"Its health suffers when its skin dries out, so be sure to moisturize it diligently.",
     "evolution":{
@@ -3600,7 +3660,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/061.png"
     },
     "height":1,
-    "weight":20
+    "weight":20,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/61.wav"
   },
   {
     "id":62,
@@ -3622,7 +3683,7 @@
       "spDefense":90,
       "speed":70
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Tadpole Pokémon",
     "description":"The muscles it has developed through swimming are thick and powerful. When it lands a square punch, it can turn huge boulders to dust.",
     "evolution":{
@@ -3659,7 +3720,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/062.png"
     },
     "height":1.3,
-    "weight":54
+    "weight":54,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/62.wav"
   },
   {
     "id":63,
@@ -3680,7 +3742,7 @@
       "spDefense":55,
       "speed":90
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Psi Pokémon",
     "description":"It can read others’ minds and will teleport away when danger approaches. You must clear your mind if you want to catch it.",
     "evolution":{
@@ -3719,7 +3781,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/063.png"
     },
     "height":0.9,
-    "weight":19.5
+    "weight":19.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/63.wav"
   },
   {
     "id":64,
@@ -3740,7 +3803,7 @@
       "spDefense":70,
       "speed":105
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Psi Pokémon",
     "description":"It possesses strong mental capabilities, but its psychic powers are halved when it’s not holding a silver spoon.",
     "evolution":{
@@ -3783,7 +3846,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/064.png"
     },
     "height":1.3,
-    "weight":56.5
+    "weight":56.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/64.wav"
   },
   {
     "id":65,
@@ -3804,7 +3868,7 @@
       "spDefense":95,
       "speed":120
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Psi Pokémon",
     "description":"If it trusts someone deeply, it will let them have one of its spoons. Anything you eat with that spoon is apparently delicious.",
     "evolution":{
@@ -3841,7 +3905,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/065.png"
     },
     "height":1.5,
-    "weight":48
+    "weight":48,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/65.wav"
   },
   {
     "id":66,
@@ -3862,7 +3927,7 @@
       "spDefense":35,
       "speed":35
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Superpower Pokémon",
     "description":"It likes food that’s highly nutritious because its instincts drive it to build muscle efficiently.",
     "evolution":{
@@ -3901,7 +3966,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/066.png"
     },
     "height":0.8,
-    "weight":19.5
+    "weight":19.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/66.wav"
   },
   {
     "id":67,
@@ -3922,7 +3988,7 @@
       "spDefense":60,
       "speed":45
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Superpower Pokémon",
     "description":"A popular motif for sculptures, its incredibly well-developed muscles have captured the imagination of many an artist.",
     "evolution":{
@@ -3965,7 +4031,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/067.png"
     },
     "height":1.5,
-    "weight":70.5
+    "weight":70.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/67.wav"
   },
   {
     "id":68,
@@ -3986,7 +4053,7 @@
       "spDefense":85,
       "speed":55
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Superpower Pokémon",
     "description":"With four arms, it can attack and defend simultaneously. It’s said to have mastered every martial art in the world.",
     "evolution":{
@@ -4023,7 +4090,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/068.png"
     },
     "height":1.6,
-    "weight":130
+    "weight":130,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/68.wav"
   },
   {
     "id":69,
@@ -4045,7 +4113,7 @@
       "spDefense":30,
       "speed":40
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Flower Pokémon",
     "description":"Bellsprout’s thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this Pokémon spits a corrosive fluid that melts even iron.",
     "evolution":{
@@ -4080,7 +4148,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/069.png"
     },
     "height":0.7,
-    "weight":4
+    "weight":4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/69.wav"
   },
   {
     "id":70,
@@ -4102,7 +4171,7 @@
       "spDefense":45,
       "speed":55
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Flycatcher Pokémon",
     "description":"Weepinbell has a large hook on its rear end. At night, the Pokémon hooks on to a tree branch and goes to sleep. If it moves around in its sleep, it may wake up to find itself on the ground.",
     "evolution":{
@@ -4141,7 +4210,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/070.png"
     },
     "height":1,
-    "weight":6.4
+    "weight":6.4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/70.wav"
   },
   {
     "id":71,
@@ -4163,7 +4233,7 @@
       "spDefense":70,
       "speed":70
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Flycatcher Pokémon",
     "description":"Victreebel has a long vine that extends from its head. This vine is waved and flicked about as if it were an animal to attract prey. When an unsuspecting prey draws near, this Pokémon swallows it whole.",
     "evolution":{
@@ -4196,7 +4266,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/071.png"
     },
     "height":1.7,
-    "weight":15.5
+    "weight":15.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/71.wav"
   },
   {
     "id":72,
@@ -4218,7 +4289,7 @@
       "spDefense":100,
       "speed":70
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Jellyfish Pokémon",
     "description":"Its body is 99% water. The remaining 1% contains the organ that makes its poison.",
     "evolution":{
@@ -4257,7 +4328,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/072.png"
     },
     "height":0.9,
-    "weight":45.5
+    "weight":45.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/72.wav"
   },
   {
     "id":73,
@@ -4279,7 +4351,7 @@
       "spDefense":120,
       "speed":100
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Jellyfish Pokémon",
     "description":"It communicates with others of its kind by lighting up the red orbs on its head. When the orbs are blinking, it’s a warning sign.",
     "evolution":{
@@ -4316,7 +4388,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/073.png"
     },
     "height":1.6,
-    "weight":55
+    "weight":55,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/73.wav"
   },
   {
     "id":74,
@@ -4338,7 +4411,7 @@
       "spDefense":30,
       "speed":20
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Rock Pokémon",
     "description":"It uses both hands to climb precipitous cliffs. People who see it in action have been known to take up bouldering.",
     "evolution":{
@@ -4377,7 +4450,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/074.png"
     },
     "height":0.4,
-    "weight":20
+    "weight":20,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/74.wav"
   },
   {
     "id":75,
@@ -4399,7 +4473,7 @@
       "spDefense":45,
       "speed":35
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Rock Pokémon",
     "description":"It travels by rolling down cliffs. If it falls into a river, it will explode with its last gasp.",
     "evolution":{
@@ -4442,7 +4516,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/075.png"
     },
     "height":1,
-    "weight":105
+    "weight":105,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/75.wav"
   },
   {
     "id":76,
@@ -4464,7 +4539,7 @@
       "spDefense":65,
       "speed":45
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Megaton Pokémon",
     "description":"It detonates its own body. The power from that explosion can propel it up steep mountain paths with amazing speed.",
     "evolution":{
@@ -4501,7 +4576,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/076.png"
     },
     "height":1.4,
-    "weight":300
+    "weight":300,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/76.wav"
   },
   {
     "id":77,
@@ -4522,7 +4598,7 @@
       "spDefense":65,
       "speed":90
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Fire Horse Pokémon",
     "description":"Ponyta is very weak at birth. It can barely stand up. This Pokémon becomes stronger by stumbling and falling to keep up with its parent.",
     "evolution":{
@@ -4561,7 +4637,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/077.png"
     },
     "height":1,
-    "weight":30
+    "weight":30,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/77.wav"
   },
   {
     "id":78,
@@ -4582,7 +4659,7 @@
       "spDefense":80,
       "speed":105
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Fire Horse Pokémon",
     "description":"Rapidash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph.",
     "evolution":{
@@ -4619,7 +4696,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/078.png"
     },
     "height":1.7,
-    "weight":95
+    "weight":95,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/78.wav"
   },
   {
     "id":79,
@@ -4641,7 +4719,7 @@
       "spDefense":40,
       "speed":15
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Dopey Pokémon",
     "description":"Although their tails, which fall off naturally, can easily be found lying around, they’re a precious ingredient for cooking.",
     "evolution":{
@@ -4685,7 +4763,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/079.png"
     },
     "height":1.2,
-    "weight":36
+    "weight":36,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/79.wav"
   },
   {
     "id":80,
@@ -4707,7 +4786,7 @@
       "spDefense":80,
       "speed":30
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Hermit Crab Pokémon",
     "description":"Shellder, in its greed to suck out more and more sweetness from Slowbro’s tail, has metamorphosed into a spiral-shaped shell.",
     "evolution":{
@@ -4745,7 +4824,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/080.png"
     },
     "height":1.6,
-    "weight":78.5
+    "weight":78.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/80.wav"
   },
   {
     "id":81,
@@ -4767,7 +4847,7 @@
       "spDefense":55,
       "speed":45
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Magnet Pokémon",
     "description":"Perhaps because electrical lines are often buried these days, the number of Magnemite attacks on power plants has increased.",
     "evolution":{
@@ -4806,7 +4886,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/081.png"
     },
     "height":0.3,
-    "weight":6
+    "weight":6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/81.wav"
   },
   {
     "id":82,
@@ -4828,7 +4909,7 @@
       "spDefense":70,
       "speed":70
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Magnet Pokémon",
     "description":"When rain clouds form, many Magneton gather in high places to wait for lightning to strike.",
     "evolution":{
@@ -4871,7 +4952,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/082.png"
     },
     "height":1,
-    "weight":60
+    "weight":60,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/82.wav"
   },
   {
     "id":83,
@@ -4893,7 +4975,7 @@
       "spDefense":62,
       "speed":60
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Wild Duck Pokémon",
     "description":"Farfetch’d is always seen with a stalk from a plant of some sort. Apparently, there are good stalks and bad stalks. This Pokémon has been known to fight with others over stalks.",
     "evolution":{
@@ -4928,7 +5010,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/083.png"
     },
     "height":0.8,
-    "weight":15
+    "weight":15,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/83.wav"
   },
   {
     "id":84,
@@ -4950,7 +5033,7 @@
       "spDefense":35,
       "speed":75
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Twin Bird Pokémon",
     "description":"Doduo’s two heads contain completely identical brains. A scientific study reported that on rare occasions, there will be examples of this Pokémon possessing different sets of brains.",
     "evolution":{
@@ -4989,7 +5072,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/084.png"
     },
     "height":1.4,
-    "weight":39.2
+    "weight":39.2,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/84.wav"
   },
   {
     "id":85,
@@ -5011,7 +5095,7 @@
       "spDefense":60,
       "speed":110
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Triple Bird Pokémon",
     "description":"Apparently, the heads aren’t the only parts of the body that Dodrio has three of. It has three sets of hearts and lungs as well, so it is capable of running long distances without rest.",
     "evolution":{
@@ -5048,7 +5132,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/085.png"
     },
     "height":1.8,
-    "weight":85.2
+    "weight":85.2,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/85.wav"
   },
   {
     "id":86,
@@ -5069,7 +5154,7 @@
       "spDefense":70,
       "speed":45
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Sea Lion Pokémon",
     "description":"Thanks to its thick fat, cold seas don’t bother it at all, but it gets tired pretty easily in warm waters.",
     "evolution":{
@@ -5109,7 +5194,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/086.png"
     },
     "height":1.1,
-    "weight":90
+    "weight":90,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/86.wav"
   },
   {
     "id":87,
@@ -5131,7 +5217,7 @@
       "spDefense":95,
       "speed":70
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Sea Lion Pokémon",
     "description":"It sunbathes on the beach after meals. The rise in its body temperature helps its digestion.",
     "evolution":{
@@ -5169,7 +5255,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/087.png"
     },
     "height":1.7,
-    "weight":120
+    "weight":120,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/87.wav"
   },
   {
     "id":88,
@@ -5190,7 +5277,7 @@
       "spDefense":50,
       "speed":25
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Sludge Pokémon",
     "description":"The wastewater coming from factories is clean these days, so Grimer have nothing to eat. They’re said to be on the verge of extinction.",
     "evolution":{
@@ -5229,7 +5316,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/088.png"
     },
     "height":0.9,
-    "weight":30
+    "weight":30,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/88.wav"
   },
   {
     "id":89,
@@ -5250,7 +5338,7 @@
       "spDefense":100,
       "speed":50
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Sludge Pokémon",
     "description":"Because they scatter germs everywhere, they’ve long been targeted for extermination, leading to a steep decline in their population.",
     "evolution":{
@@ -5287,7 +5375,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/089.png"
     },
     "height":1.2,
-    "weight":30
+    "weight":30,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/89.wav"
   },
   {
     "id":90,
@@ -5308,7 +5397,7 @@
       "spDefense":25,
       "speed":40
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Bivalve Pokémon",
     "description":"Even when its shell is closed, its tongue still hangs out. If you give its tongue a good yank, the shock will cause Shellder to open its shell.",
     "evolution":{
@@ -5347,7 +5436,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/090.png"
     },
     "height":0.3,
-    "weight":4
+    "weight":4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/90.wav"
   },
   {
     "id":91,
@@ -5369,7 +5459,7 @@
       "spDefense":45,
       "speed":70
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Bivalve Pokémon",
     "description":"Slowpoke tails are its favorite food. It has even been known to come up on land to look for Slowpoke from time to time.",
     "evolution":{
@@ -5406,7 +5496,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/091.png"
     },
     "height":1.5,
-    "weight":132.5
+    "weight":132.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/91.wav"
   },
   {
     "id":92,
@@ -5428,7 +5519,7 @@
       "spDefense":35,
       "speed":80
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Gas Pokémon",
     "description":"Poisonous gas comprises 95% of its body. It’s said that the remaining 5% is made up of the souls of those who died from the gas.",
     "evolution":{
@@ -5459,7 +5550,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/092.png"
     },
     "height":1.3,
-    "weight":0.1
+    "weight":0.1,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/92.wav"
   },
   {
     "id":93,
@@ -5481,7 +5573,7 @@
       "spDefense":55,
       "speed":95
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Gas Pokémon",
     "description":"It’s dangerous to go outside alone on nights when you’re feeling sad. Haunter will catch you, and you won’t be able to go back home.",
     "evolution":{
@@ -5516,7 +5608,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/093.png"
     },
     "height":1.6,
-    "weight":0.1
+    "weight":0.1,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/93.wav"
   },
   {
     "id":94,
@@ -5538,7 +5631,7 @@
       "spDefense":75,
       "speed":110
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Shadow Pokémon",
     "description":"Even your home isn’t safe. Gengar will lurk in whatever dark corner of a room it can find and wait for its chance to catch its prey.",
     "evolution":{
@@ -5567,7 +5660,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/094.png"
     },
     "height":1.5,
-    "weight":40.5
+    "weight":40.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/94.wav"
   },
   {
     "id":95,
@@ -5589,7 +5683,7 @@
       "spDefense":45,
       "speed":70
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Rock Snake Pokémon",
     "description":"Onix has a magnet in its brain. It acts as a compass so that this Pokémon does not lose direction while it is tunneling. As it grows older, its body becomes increasingly rounder and smoother.",
     "evolution":{
@@ -5628,7 +5722,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/095.png"
     },
     "height":8.8,
-    "weight":210
+    "weight":210,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/95.wav"
   },
   {
     "id":96,
@@ -5649,7 +5744,7 @@
       "spDefense":90,
       "speed":42
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Hypnosis Pokémon",
     "description":"It puts its prey to sleep and devours their dreams. It seems that bad dreams taste sour, so Drowzee doesn’t particularly like eating them.",
     "evolution":{
@@ -5688,7 +5783,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/096.png"
     },
     "height":1,
-    "weight":32.4
+    "weight":32.4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/96.wav"
   },
   {
     "id":97,
@@ -5709,7 +5805,7 @@
       "spDefense":115,
       "speed":67
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Hypnosis Pokémon",
     "description":"There are some Hypno that assist doctors with patients who can’t sleep at night in hospitals.",
     "evolution":{
@@ -5746,7 +5842,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/097.png"
     },
     "height":1.6,
-    "weight":75.6
+    "weight":75.6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/97.wav"
   },
   {
     "id":98,
@@ -5767,7 +5864,7 @@
       "spDefense":25,
       "speed":50
     },
-    "tier":" ",
+    "tier":"D",
     "species":"River Crab Pokémon",
     "description":"Krabby live on beaches, burrowed inside holes dug into the sand. On sandy beaches with little in the way of food, these Pokémon can be seen squabbling with each other over territory.",
     "evolution":{
@@ -5806,7 +5903,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/098.png"
     },
     "height":0.4,
-    "weight":6.5
+    "weight":6.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/98.wav"
   },
   {
     "id":99,
@@ -5827,7 +5925,7 @@
       "spDefense":50,
       "speed":75
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Pincer Pokémon",
     "description":"Kingler has an enormous, oversized claw. It waves this huge claw in the air to communicate with others. However, because the claw is so heavy, the Pokémon quickly tires.",
     "evolution":{
@@ -5864,7 +5962,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/099.png"
     },
     "height":1.3,
-    "weight":60
+    "weight":60,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/99.wav"
   },
   {
     "id":100,
@@ -5885,7 +5984,7 @@
       "spDefense":55,
       "speed":100
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Ball Pokémon",
     "description":"Voltorb is extremely sensitive—it explodes at the slightest of shocks. It is rumored that it was first created when a Poké Ball was exposed to a powerful pulse of energy.",
     "evolution":{
@@ -5924,7 +6023,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/100.png"
     },
     "height":0.5,
-    "weight":10.4
+    "weight":10.4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/100.wav"
   },
   {
     "id":101,
@@ -5945,7 +6045,7 @@
       "spDefense":80,
       "speed":150
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Ball Pokémon",
     "description":"One of Electrode’s characteristics is its attraction to electricity. It is a problematical Pokémon that congregates mostly at electrical power plants to feed on electricity that has just been generated.",
     "evolution":{
@@ -5982,7 +6082,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/101.png"
     },
     "height":1.2,
-    "weight":66.6
+    "weight":66.6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/101.wav"
   },
   {
     "id":102,
@@ -6004,7 +6105,7 @@
       "spDefense":45,
       "speed":40
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Egg Pokémon",
     "description":"Although they are the same size as other Exeggcute, the ones produced in Alola are quite heavy. Their shells are packed full.",
     "evolution":{
@@ -6039,7 +6140,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/102.png"
     },
     "height":0.4,
-    "weight":2.5
+    "weight":2.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/102.wav"
   },
   {
     "id":103,
@@ -6061,7 +6163,7 @@
       "spDefense":75,
       "speed":55
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Coconut Pokémon",
     "description":"Each of its three heads has its own thoughts. When they want to go in different directions, Exeggutor becomes unable to move.",
     "evolution":{
@@ -6094,7 +6196,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/103.png"
     },
     "height":2,
-    "weight":120
+    "weight":120,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/103.wav"
   },
   {
     "id":104,
@@ -6115,7 +6218,7 @@
       "spDefense":50,
       "speed":35
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Lonely Pokémon",
     "description":"It wears its mother’s skull on its head, so no one knows what its bare face looks like. However, it’s clear that it’s always crying.",
     "evolution":{
@@ -6154,7 +6257,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/104.png"
     },
     "height":0.4,
-    "weight":6.5
+    "weight":6.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/104.wav"
   },
   {
     "id":105,
@@ -6175,7 +6279,7 @@
       "spDefense":80,
       "speed":45
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Bone Keeper Pokémon",
     "description":"They thump their bones rhythmically to communicate among themselves. There are nearly 50 different rhythmic patterns.",
     "evolution":{
@@ -6212,7 +6316,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/105.png"
     },
     "height":1,
-    "weight":45
+    "weight":45,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/105.wav"
   },
   {
     "id":106,
@@ -6233,7 +6338,7 @@
       "spDefense":110,
       "speed":87
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Kicking Pokémon",
     "description":"Hitmonlee’s legs freely contract and stretch. Using these springlike legs, it bowls over foes with devastating kicks. After battle, it rubs down its legs and loosens the muscles to overcome fatigue.",
     "evolution":{
@@ -6270,7 +6375,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/106.png"
     },
     "height":1.5,
-    "weight":49.8
+    "weight":49.8,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/106.wav"
   },
   {
     "id":107,
@@ -6291,7 +6397,7 @@
       "spDefense":110,
       "speed":76
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Punching Pokémon",
     "description":"Hitmonchan is said to possess the spirit of a boxer who had been working toward a world championship. This Pokémon has an indomitable spirit and will never give up in the face of adversity.",
     "evolution":{
@@ -6328,7 +6434,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/107.png"
     },
     "height":1.4,
-    "weight":50.2
+    "weight":50.2,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/107.wav"
   },
   {
     "id":108,
@@ -6349,7 +6456,7 @@
       "spDefense":75,
       "speed":30
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Licking Pokémon",
     "description":"It licks filth clean with its tongue. Whatever it licks always stinks afterward, so whether it’s really clean is...questionable.",
     "evolution":{
@@ -6388,7 +6495,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/108.png"
     },
     "height":1.2,
-    "weight":65.5
+    "weight":65.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/108.wav"
   },
   {
     "id":109,
@@ -6409,7 +6517,7 @@
       "spDefense":45,
       "speed":35
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Poison Gas Pokémon",
     "description":"Koffing embodies toxic substances. It mixes the toxins with raw garbage to set off a chemical reaction that results in a terribly powerful poison gas. The higher the temperature, the more gas is concocted by this Pokémon.",
     "evolution":{
@@ -6440,7 +6548,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/109.png"
     },
     "height":0.6,
-    "weight":1
+    "weight":1,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/109.wav"
   },
   {
     "id":110,
@@ -6461,7 +6570,7 @@
       "spDefense":70,
       "speed":60
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Poison Gas Pokémon",
     "description":"Weezing alternately shrinks and inflates its twin bodies to mix together toxic gases inside. The more the gases are mixed, the more powerful the toxins become. The Pokémon also becomes more putrid.",
     "evolution":{
@@ -6490,7 +6599,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/110.png"
     },
     "height":1.2,
-    "weight":9.5
+    "weight":9.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/110.wav"
   },
   {
     "id":111,
@@ -6512,7 +6622,7 @@
       "spDefense":30,
       "speed":25
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Spikes Pokémon",
     "description":"Rhyhorn’s brain is very small. It is so dense, while on a run it forgets why it started running in the first place. It apparently remembers sometimes if it demolishes something.",
     "evolution":{
@@ -6552,7 +6662,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/111.png"
     },
     "height":1,
-    "weight":115
+    "weight":115,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/111.wav"
   },
   {
     "id":112,
@@ -6574,7 +6685,7 @@
       "spDefense":45,
       "speed":40
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Drill Pokémon",
     "description":"Rhydon has a horn that serves as a drill. It is used for destroying rocks and boulders. This Pokémon occasionally rams into streams of magma, but the armor-like hide prevents it from feeling the heat.",
     "evolution":{
@@ -6618,7 +6729,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/112.png"
     },
     "height":1.9,
-    "weight":120
+    "weight":120,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/112.wav"
   },
   {
     "id":113,
@@ -6639,7 +6751,7 @@
       "spDefense":105,
       "speed":50
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Egg Pokémon",
     "description":"Because the eggs on their bellies have been overharvested by people in the past, the Chansey population remains very small.",
     "evolution":{
@@ -6682,7 +6794,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/113.png"
     },
     "height":1.1,
-    "weight":34.6
+    "weight":34.6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/113.wav"
   },
   {
     "id":114,
@@ -6703,7 +6816,7 @@
       "spDefense":40,
       "speed":60
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Vine Pokémon",
     "description":"Tangela’s vines snap off easily if they are grabbed. This happens without pain, allowing it to make a quick getaway. The lost vines are replaced by newly grown vines the very next day.",
     "evolution":{
@@ -6742,7 +6855,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/114.png"
     },
     "height":1,
-    "weight":35
+    "weight":35,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/114.wav"
   },
   {
     "id":115,
@@ -6763,7 +6877,7 @@
       "spDefense":80,
       "speed":90
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Parent Pokémon",
     "description":"You shouldn’t get close to the child when it’s playing outside its mother’s pouch. Its mother is always nearby watching over it.",
     "evolution":{
@@ -6797,7 +6911,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/115.png"
     },
     "height":2.2,
-    "weight":80
+    "weight":80,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/115.wav"
   },
   {
     "id":116,
@@ -6818,7 +6933,7 @@
       "spDefense":25,
       "speed":60
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Dragon Pokémon",
     "description":"If Horsea senses danger, it will reflexively spray a dense black ink from its mouth and try to escape. This Pokémon swims by cleverly flapping the fin on its back.",
     "evolution":{
@@ -6858,7 +6973,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/116.png"
     },
     "height":0.4,
-    "weight":8
+    "weight":8,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/116.wav"
   },
   {
     "id":117,
@@ -6879,7 +6995,7 @@
       "spDefense":45,
       "speed":85
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Dragon Pokémon",
     "description":"Seadra generates whirlpools by spinning its body. The whirlpools are strong enough to swallow even fishing boats. This Pokémon weakens prey with these currents, then swallows it whole.",
     "evolution":{
@@ -6923,7 +7039,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/117.png"
     },
     "height":1.2,
-    "weight":25
+    "weight":25,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/117.wav"
   },
   {
     "id":118,
@@ -6944,7 +7061,7 @@
       "spDefense":50,
       "speed":63
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Goldfish Pokémon",
     "description":"The way it swims along fluttering its dress-like fins has earned it the name “princess of the water.”",
     "evolution":{
@@ -6983,7 +7100,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/118.png"
     },
     "height":0.6,
-    "weight":15
+    "weight":15,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/118.wav"
   },
   {
     "id":119,
@@ -7004,7 +7122,7 @@
       "spDefense":80,
       "speed":68
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Goldfish Pokémon",
     "description":"To attract females, males dance on the river’s floor. The females gather around the male that dances most gracefully.",
     "evolution":{
@@ -7041,7 +7159,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/119.png"
     },
     "height":1.3,
-    "weight":39
+    "weight":39,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/119.wav"
   },
   {
     "id":120,
@@ -7062,7 +7181,7 @@
       "spDefense":55,
       "speed":85
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Star Shape Pokémon",
     "description":"No number of injuries can bother Staryu. Its amazing regenerative powers return it to its previous state in half a day!",
     "evolution":{
@@ -7101,7 +7220,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/120.png"
     },
     "height":0.8,
-    "weight":34.5
+    "weight":34.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/120.wav"
   },
   {
     "id":121,
@@ -7123,7 +7243,7 @@
       "spDefense":85,
       "speed":115
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Mysterious Pokémon",
     "description":"It rotates its geometrically shaped body to swim through the water. It always seems to be sending out mysterious radio waves.",
     "evolution":{
@@ -7160,7 +7280,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/121.png"
     },
     "height":1.1,
-    "weight":80
+    "weight":80,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/121.wav"
   },
   {
     "id":122,
@@ -7182,7 +7303,7 @@
       "spDefense":120,
       "speed":90
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Barrier Pokémon",
     "description":"It creates invisible walls with its pantomiming. If you don’t act impressed, it will attack you with a double slap!",
     "evolution":{
@@ -7219,7 +7340,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/122.png"
     },
     "height":1.3,
-    "weight":54.5
+    "weight":54.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/122.wav"
   },
   {
     "id":123,
@@ -7241,7 +7363,7 @@
       "spDefense":80,
       "speed":105
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Mantis Pokémon",
     "description":"Some call it a ninja. Its movements— imperceptibly quick—are sufficient to cleave the air in two. It’s very popular in Alola.",
     "evolution":{
@@ -7280,7 +7402,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/123.png"
     },
     "height":1.5,
-    "weight":56
+    "weight":56,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/123.wav"
   },
   {
     "id":124,
@@ -7302,7 +7425,7 @@
       "spDefense":95,
       "speed":95
     },
-    "tier":" ",
+    "tier":"D",
     "species":"Human Shape Pokémon",
     "description":"Its strange cries sound like human language. There are some musicians who compose songs for Jynx to sing.",
     "evolution":{
@@ -7339,7 +7462,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/124.png"
     },
     "height":1.4,
-    "weight":40.6
+    "weight":40.6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/124.wav"
   },
   {
     "id":125,
@@ -7360,7 +7484,7 @@
       "spDefense":85,
       "speed":105
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Electric Pokémon",
     "description":"While it’s often blamed for power outages, the truth is the cause of outages is more often an error on the part of the electric company.",
     "evolution":{
@@ -7399,7 +7523,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/125.png"
     },
     "height":1.1,
-    "weight":30
+    "weight":30,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/125.wav"
   },
   {
     "id":126,
@@ -7420,7 +7545,7 @@
       "spDefense":85,
       "speed":93
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Spitfire Pokémon",
     "description":"The hotter the place, the better they feel. Magmar in Alola are said to be hardier than those in other areas.",
     "evolution":{
@@ -7459,7 +7584,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/126.png"
     },
     "height":1.3,
-    "weight":44.5
+    "weight":44.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/126.wav"
   },
   {
     "id":127,
@@ -7480,7 +7606,7 @@
       "spDefense":70,
       "speed":85
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Stag Beetle Pokémon",
     "description":"Although it’s tough, it can’t handle cold well. When night falls, it buries itself in leafage and sleeps.",
     "evolution":{
@@ -7514,7 +7640,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/127.png"
     },
     "height":1.5,
-    "weight":55
+    "weight":55,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/127.wav"
   },
   {
     "id":128,
@@ -7535,7 +7662,7 @@
       "spDefense":70,
       "speed":110
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Wild Bull Pokémon",
     "description":"The climate seems to be related to the reason Tauros in Alola are a little calmer than those in other regions.",
     "evolution":{
@@ -7569,7 +7696,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/128.png"
     },
     "height":1.4,
-    "weight":88.4
+    "weight":88.4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/128.wav"
   },
   {
     "id":129,
@@ -7590,7 +7718,7 @@
       "spDefense":20,
       "speed":80
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Fish Pokémon",
     "description":"Thanks to their strong hold on life, dirty water doesn’t bother them at all. They live in waters all over the world!",
     "evolution":{
@@ -7626,7 +7754,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/129.png"
     },
     "height":0.9,
-    "weight":10
+    "weight":10,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/129.wav"
   },
   {
     "id":130,
@@ -7648,7 +7777,7 @@
       "spDefense":100,
       "speed":81
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Atrocious Pokémon",
     "description":"The energy from evolution stimulated its brain cells strongly, causing it to become very ferocious.",
     "evolution":{
@@ -7682,7 +7811,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/130.png"
     },
     "height":6.5,
-    "weight":235
+    "weight":235,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/130.wav"
   },
   {
     "id":131,
@@ -7704,7 +7834,7 @@
       "spDefense":95,
       "speed":60
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Transport Pokémon",
     "description":"They’ve been so cherished that there’s now an overabundance. The fish Pokémon population has declined in waters with too many Lapras.",
     "evolution":{
@@ -7739,7 +7869,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/131.png"
     },
     "height":2.5,
-    "weight":220
+    "weight":220,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/131.wav"
   },
   {
     "id":132,
@@ -7760,7 +7891,7 @@
       "spDefense":48,
       "speed":48
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Transform Pokémon",
     "description":"It transforms into whatever it sees. If the thing it’s transforming into isn’t right in front of it, Ditto relies on its memory—so sometimes it fails.",
     "evolution":{
@@ -7790,7 +7921,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/132.png"
     },
     "height":0.3,
-    "weight":4
+    "weight":4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/132.wav"
   },
   {
     "id":133,
@@ -7811,7 +7943,7 @@
       "spDefense":65,
       "speed":55
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Evolution Pokémon",
     "description":"Its genes are easily influenced by its surroundings. Even its face starts to look like that of its Trainer.",
     "evolution":{
@@ -7878,7 +8010,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/133.png"
     },
     "height":0.3,
-    "weight":6.5
+    "weight":6.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/133.wav"
   },
   {
     "id":134,
@@ -7899,7 +8032,7 @@
       "spDefense":95,
       "speed":65
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Bubble Jet Pokémon",
     "description":"It detects nearby moisture with its fin. When its fin begins trembling rapidly, that means rain will fall in a few hours.",
     "evolution":{
@@ -7932,7 +8065,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/134.png"
     },
     "height":1,
-    "weight":29
+    "weight":29,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/134.wav"
   },
   {
     "id":135,
@@ -7953,7 +8087,7 @@
       "spDefense":95,
       "speed":130
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Lightning Pokémon",
     "description":"Its fur stands on end, becoming like needles it fires at enemies. Once they’re weakened, it finishes them off with a 10,000 volt shock.",
     "evolution":{
@@ -7986,7 +8120,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/135.png"
     },
     "height":0.8,
-    "weight":24.5
+    "weight":24.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/135.wav"
   },
   {
     "id":136,
@@ -8007,7 +8142,7 @@
       "spDefense":110,
       "speed":65
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Flame Pokémon",
     "description":"The flame chamber inside its body ignites when Flareon gets agitated, reaching temperatures of up to 1,650 degrees Fahrenheit.",
     "evolution":{
@@ -8040,7 +8175,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/136.png"
     },
     "height":0.9,
-    "weight":25
+    "weight":25,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/136.wav"
   },
   {
     "id":137,
@@ -8061,7 +8197,7 @@
       "spDefense":75,
       "speed":40
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Virtual Pokémon",
     "description":"It was built 20 years ago by scientists who dreamed of exploring space. Their dreams have yet to come true.",
     "evolution":{
@@ -8100,7 +8236,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/137.png"
     },
     "height":0.8,
-    "weight":36.5
+    "weight":36.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/137.wav"
   },
   {
     "id":138,
@@ -8122,7 +8259,7 @@
       "spDefense":55,
       "speed":35
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Spiral Pokémon",
     "description":"It was restored from an ancient fossil. Those Helix Fossils are excavated from areas that were once oceans long, long ago.",
     "evolution":{
@@ -8162,7 +8299,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/138.png"
     },
     "height":0.4,
-    "weight":7.5
+    "weight":7.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/138.wav"
   },
   {
     "id":139,
@@ -8184,7 +8322,7 @@
       "spDefense":70,
       "speed":55
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Spiral Pokémon",
     "description":"It wraps its prey in its tentacles to immobilize them and then finishes them off with its sharp fangs.",
     "evolution":{
@@ -8222,7 +8360,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/139.png"
     },
     "height":1,
-    "weight":35
+    "weight":35,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/139.wav"
   },
   {
     "id":140,
@@ -8244,7 +8383,7 @@
       "spDefense":45,
       "speed":55
     },
-    "tier":" ",
+    "tier":"C",
     "species":"Shellfish Pokémon",
     "description":"This Pokémon became extinct everywhere, except in a few areas. It protects itself with its hard shell.",
     "evolution":{
@@ -8284,7 +8423,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/140.png"
     },
     "height":0.5,
-    "weight":11.5
+    "weight":11.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/140.wav"
   },
   {
     "id":141,
@@ -8306,7 +8446,7 @@
       "spDefense":70,
       "speed":80
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Shellfish Pokémon",
     "description":"It swims at speeds of roughly 29 knots, quickly closing in on its prey and slashing into them with its scythes to finish them off.",
     "evolution":{
@@ -8344,7 +8484,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/141.png"
     },
     "height":1.3,
-    "weight":40.5
+    "weight":40.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/141.wav"
   },
   {
     "id":142,
@@ -8366,7 +8507,7 @@
       "spDefense":75,
       "speed":130
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Fossil Pokémon",
     "description":"It flew through the open skies over the ancient continent as if they were its own. When it touched ground, its walk was weak and slow.",
     "evolution":{
@@ -8400,7 +8541,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/142.png"
     },
     "height":1.8,
-    "weight":59
+    "weight":59,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/142.wav"
   },
   {
     "id":143,
@@ -8421,7 +8563,7 @@
       "spDefense":110,
       "speed":30
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Sleeping Pokémon",
     "description":"It has no interest in anything other than eating. Even if you climb up on its stomach while it’s napping, it doesn’t seem to mind at all!",
     "evolution":{
@@ -8458,7 +8600,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/143.png"
     },
     "height":2.1,
-    "weight":460
+    "weight":460,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/143.wav"
   },
   {
     "id":144,
@@ -8480,7 +8623,7 @@
       "spDefense":125,
       "speed":85
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Freeze Pokémon",
     "description":"Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall.",
     "evolution":{
@@ -8510,7 +8653,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/144.png"
     },
     "height":1.7,
-    "weight":55.4
+    "weight":55.4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/144.wav"
   },
   {
     "id":145,
@@ -8532,7 +8676,7 @@
       "spDefense":90,
       "speed":100
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Electric Pokémon",
     "description":"Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts.",
     "evolution":{
@@ -8562,7 +8706,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/145.png"
     },
     "height":1.6,
-    "weight":52.6
+    "weight":52.6,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/145.wav"
   },
   {
     "id":146,
@@ -8584,7 +8729,7 @@
       "spDefense":85,
       "speed":90
     },
-    "tier":" ",
+    "tier":"A",
     "species":"Flame Pokémon",
     "description":"Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself.",
     "evolution":{
@@ -8614,7 +8759,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/146.png"
     },
     "height":2,
-    "weight":60
+    "weight":60,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/146.wav"
   },
   {
     "id":147,
@@ -8635,7 +8781,7 @@
       "spDefense":50,
       "speed":50
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Dragon Pokémon",
     "description":"It sheds its skin—almost on a daily basis—and grows larger. Its skin is soft just after it’s been shed.",
     "evolution":{
@@ -8671,7 +8817,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/147.png"
     },
     "height":1.8,
-    "weight":3.3
+    "weight":3.3,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/147.wav"
   },
   {
     "id":148,
@@ -8692,7 +8839,7 @@
       "spDefense":70,
       "speed":70
     },
-    "tier":" ",
+    "tier":"B",
     "species":"Dragon Pokémon",
     "description":"Some say that if you see it at the start of the year, flying through the sky and twisting its body, you’ll be healthy all year long.",
     "evolution":{
@@ -8732,7 +8879,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/148.png"
     },
     "height":4,
-    "weight":16.5
+    "weight":16.5,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/148.wav"
   },
   {
     "id":149,
@@ -8754,7 +8902,7 @@
       "spDefense":100,
       "speed":80
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Dragon Pokémon",
     "description":"You’ll often hear tales of this kindhearted Pokémon rescuing people or Pokémon that are drowning.",
     "evolution":{
@@ -8788,7 +8936,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/149.png"
     },
     "height":2.2,
-    "weight":210
+    "weight":210,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/149.wav"
   },
   {
     "id":150,
@@ -8809,7 +8958,7 @@
       "spDefense":90,
       "speed":130
     },
-    "tier":" ",
+    "tier":"S",
     "species":"Genetic Pokémon",
     "description":"Mewtwo is a Pokémon that was created by genetic manipulation. However, even though the scientific power of humans created this Pokémon’s body, they failed to endow Mewtwo with a compassionate heart.",
     "evolution":{
@@ -8839,7 +8988,8 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/150.png"
     },
     "height":2,
-    "weight":122
+    "weight":122,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/150.wav"
   },
   {
     "id":151,
@@ -8860,7 +9010,7 @@
       "spDefense":100,
       "speed":100
     },
-    "tier":" ",
+    "tier":"S",
     "species":"New Species Pokémon",
     "description":"Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.",
     "evolution":{
@@ -8886,6 +9036,7 @@
       "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/151.png"
     },
     "height":0.4,
-    "weight":4
+    "weight":4,
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/151.wav"
   }
 ]

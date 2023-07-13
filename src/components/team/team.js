@@ -47,7 +47,7 @@ export const Team = () => {
             {pokeballs.length < COMPLETED && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
             {pokeballs.length === COMPLETED && (
                 <>
-                    {(!pokemon && !completed) && <PokeButton onClick={getPokemon}/>}
+                    {(!pokemon && !completed) && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon}/>}
                     {(pokemon && !completed) && <Reveal clean={clean} type={TYPE.MOBILE} pokemon={pokemon}/>}
                     {completed && <Presentation team={pokemonTeam}/>}
                 </>
