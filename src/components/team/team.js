@@ -7,6 +7,7 @@ import pokemons from "../../resources/pokemons.json";
 import './team.styles.scss';
 import {getRandom} from "../../utils/utils";
 import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
+import Graph from "./reveal/mobile/stats/graph/graph";
 
 const COMPLETED = 6;
 
@@ -43,6 +44,7 @@ export const Team = () => {
 
     return (
         <div className='team'>
+            <Graph />
             <Pokeballs pokeballs={pokeballs} team={pokemonTeam}/>
             {pokeballs.length < COMPLETED && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
             {pokeballs.length === COMPLETED && (

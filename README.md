@@ -11,13 +11,7 @@
 - - Al final que griten todos
 
 ## Bugs
-- Parasec #47 muestra error
-
-## Imagenes con errores
-- 46
-- 52
-- 71
-- 105
+- Pokeball de fondo gris queda fija, lo demas no
 
 ## Fuentes
 - https://nintendo.fandom.com/wiki/Category:First_generation_Pok%C3%A9mon_images
