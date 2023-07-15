@@ -1,18 +1,12 @@
 import React from "react";
 import './stats.styles.scss';
+import Radar from "./radar/radar";
 
-export const Stats = ({hp, attack, defense, spAttack, spDefense, speed}) => {
+
+export const Stats = ({stats}) => {
     return (
         <div className='stats'>
-            <p>
-                <strong>HP:</strong> {hp} - <strong>Speed:</strong> {speed}
-            </p>
-            <p>
-                <strong>Attack:</strong> {attack} - <strong>Sp.Attack:</strong> {spAttack}
-            </p>
-            <p>
-                <strong>Defense:</strong> {defense} - <strong>Sp.Defense:</strong> {spDefense}
-            </p>
+            <Radar stats={stats} />
         </div>
     )
 };

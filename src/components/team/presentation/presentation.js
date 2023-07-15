@@ -1,30 +1,16 @@
 import React, {useCallback, useEffect, useState} from "react";
 import './presentation.styles.scss';
 import {delay} from "../../../utils/utils";
+import TeamInfo from "./teamInfo/teamInfo";
 
-
+// isFlying top: 5%
+// isJumping top: 25%
 export const Presentation = ({team}) => {
     const [members, setMembers] = useState([]);
     const [maxHeight, setMaxHeight] = useState();
     const byHeight = (a,b) => a.height - b.height;
+    const adjustHeight = pokemons => pokemons.map((pokemon) => ({...pokemon, height: pokemon.height / pokemon.rolls}));
 
-    const adjustHeight = pokemons => {
-        const ekans = {id: 23, rolls: 3};
-        const arbok = {id: 24, rolls: 3};
-        const onix = {id: 95, rolls: 2};
-        const gyarados = {id: 130, rolls: 2};
-        const dratini = {id: 147, rolls: 2};
-        const dragonair = {id: 148, rolls: 2};
-        const dewgong = {id: 87, rolls: 1.5};
-        const exceptions = [ekans, arbok, onix, gyarados, dratini, dragonair, dewgong];
-        return pokemons.map((pokemon) => {
-            const exception = exceptions.find((exception) => exception.id === pokemon.id);
-            if (exception) {
-                return {...pokemon, height: pokemon.height / exception.rolls}
-            }
-            return pokemon
-        });
-    }
     const prepareMembers = useCallback(() => {
         const _members = [];
         const ordered = team.sort(byHeight);
@@ -60,13 +46,19 @@ export const Presentation = ({team}) => {
             {
                 members.map((pokemon, index) => {
                     const zIndex = Math.round(maxHeight - pokemon.height) * 10;
+                    let top = 'initial';
+                    if (pokemon.isFlying) {
+                        top = '5%';
+                    } else if (pokemon.isJumping) {
+                        top = '25%';
+                    }
                     return (
                         <div key={pokemon.id}>
                             <img
                                 src={pokemon.image.hires}
                                 width={getScaleHeight(pokemon)}
                                 className={`member${index}`}
-                                style={{zIndex}}
+                                style={{zIndex, top}}
                                 alt={pokemon.name.english}
                             />
                             <audio src={pokemon.cry} autoPlay/>
@@ -74,6 +66,7 @@ export const Presentation = ({team}) => {
                     );
                 })
             }
+            <TeamInfo team={team} />
         </div>
     );
 };

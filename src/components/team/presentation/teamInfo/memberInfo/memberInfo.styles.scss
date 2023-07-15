@@ -1,0 +1,24 @@
+.memberInfo {
+  display: flex;
+  align-items: center;
+  background-color: #82C2DB;
+  margin: 1px 0;
+
+  span {
+    color: white;
+  }
+
+  img {
+    position: initial;
+  }
+
+  .memberStats {
+    display: none;
+
+    .row {
+      span {
+        display: block;
+      }
+    }
+  }
+}

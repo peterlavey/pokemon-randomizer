@@ -52,11 +52,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/001.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/001.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/001.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/1.png"
     },
     "height":0.7,
     "weight":6.9,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/1.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/1.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":2,
@@ -115,11 +118,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/002.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/002.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/002.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/2.png"
     },
     "height":1,
     "weight":13,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/2.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/2.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":3,
@@ -172,11 +178,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/003.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/003.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/003.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/3.png"
     },
     "height":2,
     "weight":100,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/3.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/3.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":4,
@@ -230,11 +239,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/004.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/004.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/004.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/4.png"
     },
     "height":0.6,
     "weight":8.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/4.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/4.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":5,
@@ -292,11 +304,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/005.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/005.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/005.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/5.png"
     },
     "height":1.1,
     "weight":19,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/5.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/5.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":6,
@@ -349,11 +364,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/006.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/006.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/006.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/6.png"
     },
     "height":1.7,
     "weight":90.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/6.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/6.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":7,
@@ -407,11 +425,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/007.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/007.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/007.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/7.png"
     },
     "height":0.5,
     "weight":9,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/7.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/7.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":8,
@@ -469,11 +490,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/008.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/008.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/008.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/8.png"
     },
     "height":1,
     "weight":22.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/8.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/8.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":9,
@@ -525,11 +549,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/009.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/009.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/009.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/9.png"
     },
     "height":1.6,
     "weight":85.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/9.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/9.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":10,
@@ -582,11 +609,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/010.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/010.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/010.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/10.png"
     },
     "height":0.3,
     "weight":2.9,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/10.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/10.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":11,
@@ -639,11 +669,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/011.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/011.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/011.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/11.png"
     },
     "height":0.7,
     "weight":9.9,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/11.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/11.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":12,
@@ -695,11 +728,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/012.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/012.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/012.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/12.png"
     },
     "height":1.1,
     "weight":32,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/12.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/12.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":13,
@@ -753,11 +789,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/013.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/013.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/013.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/13.png"
     },
     "height":0.3,
     "weight":3.2,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/13.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/13.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":14,
@@ -811,11 +850,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/014.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/014.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/014.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/14.png"
     },
     "height":0.6,
     "weight":10,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/14.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/14.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":15,
@@ -867,11 +909,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/015.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/015.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/015.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/15.png"
     },
     "height":1,
     "weight":29.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/15.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/15.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":16,
@@ -929,11 +974,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/016.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/016.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/016.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/16.png"
     },
     "height":0.3,
     "weight":1.8,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/16.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/16.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":17,
@@ -995,11 +1043,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/017.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/017.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/017.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/17.png"
     },
     "height":1.1,
     "weight":30,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/17.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/17.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":18,
@@ -1055,11 +1106,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/018.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/018.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/018.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/18.png"
     },
     "height":1.5,
     "weight":39.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/18.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/18.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":19,
@@ -1116,11 +1170,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/019.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/019.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/019.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/19.png"
     },
     "height":0.3,
     "weight":3.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/19.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/19.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":20,
@@ -1175,11 +1232,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/020.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/020.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/020.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/20.png"
     },
     "height":0.7,
     "weight":18.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/20.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/20.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":21,
@@ -1233,11 +1293,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/021.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/021.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/021.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/21.png"
     },
     "height":0.3,
     "weight":2,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/21.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/21.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":22,
@@ -1289,11 +1352,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/022.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/022.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/022.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/22.png"
     },
     "height":1.2,
     "weight":38,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/22.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/22.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":23,
@@ -1351,11 +1417,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/023.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/023.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/023.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/23.png"
     },
     "height":2,
     "weight":6.9,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/23.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/23.wav",
+    "rolls":3,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":24,
@@ -1411,11 +1480,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/024.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/024.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/024.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/24.png"
     },
     "height":3.5,
     "weight":65,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/24.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/24.wav",
+    "rolls":3,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":25,
@@ -1473,11 +1545,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/025.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/025.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/025.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/25.png"
     },
     "height":0.4,
     "weight":6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/25.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/25.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":26,
@@ -1529,11 +1604,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/026.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/026.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/026.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/26.png"
     },
     "height":0.8,
     "weight":30,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/26.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/26.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":27,
@@ -1586,11 +1664,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/027.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/027.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/027.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/27.png"
     },
     "height":0.6,
     "weight":12,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/27.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/27.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":28,
@@ -1641,11 +1722,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/028.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/028.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/028.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/28.png"
     },
     "height":1,
     "weight":29.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/28.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/28.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":29,
@@ -1703,11 +1787,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/029.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/029.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/029.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/29.png"
     },
     "height":0.4,
     "weight":7,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/29.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/29.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":30,
@@ -1768,11 +1855,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/030.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/030.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/030.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/30.png"
     },
     "height":0.8,
     "weight":20,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/30.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/30.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":31,
@@ -1828,11 +1918,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/031.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/031.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/031.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/31.png"
     },
     "height":1.3,
     "weight":60,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/31.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/31.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":32,
@@ -1890,11 +1983,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/032.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/032.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/032.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/32.png"
     },
     "height":0.5,
     "weight":9,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/32.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/32.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":33,
@@ -1956,11 +2052,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/033.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/033.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/033.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/33.png"
     },
     "height":0.9,
     "weight":19.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/33.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/33.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":34,
@@ -2017,11 +2116,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/034.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/034.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/034.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/34.png"
     },
     "height":1.4,
     "weight":62,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/34.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/34.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":35,
@@ -2082,11 +2184,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/035.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/035.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/035.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/35.png"
     },
     "height":0.6,
     "weight":7.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/35.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/35.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":36,
@@ -2141,11 +2246,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/036.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/036.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/036.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/36.png"
     },
     "height":1.3,
     "weight":40,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/36.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/36.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":37,
@@ -2198,11 +2306,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/037.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/037.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/037.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/37.png"
     },
     "height":0.6,
     "weight":9.9,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/37.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/37.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":38,
@@ -2253,11 +2364,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/038.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/038.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/038.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/38.png"
     },
     "height":1.1,
     "weight":19.9,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/38.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/38.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":39,
@@ -2319,11 +2433,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/039.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/039.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/039.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/39.png"
     },
     "height":0.5,
     "weight":5.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/39.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/39.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":40,
@@ -2379,11 +2496,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/040.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/040.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/040.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/40.png"
     },
     "height":1,
     "weight":12,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/40.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/40.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":41,
@@ -2437,11 +2557,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/041.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/041.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/041.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/41.png"
     },
     "height":0.8,
     "weight":7.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/41.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/41.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":42,
@@ -2499,11 +2622,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/042.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/042.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/042.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/42.png"
     },
     "height":1.6,
     "weight":55,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/42.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/42.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":43,
@@ -2557,11 +2683,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/043.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/043.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/043.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/43.png"
     },
     "height":0.5,
     "weight":5.4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/43.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/43.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":44,
@@ -2623,11 +2752,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/044.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/044.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/044.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/44.png"
     },
     "height":0.8,
     "weight":8.6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/44.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/44.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":45,
@@ -2679,11 +2811,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/045.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/045.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/045.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/45.png"
     },
     "height":1.2,
     "weight":18.6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/45.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/45.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":46,
@@ -2742,11 +2877,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/046.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/046.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/046.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/46.png"
     },
     "height":0.3,
     "weight":5.4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/46.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/46.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":47,
@@ -2803,11 +2941,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/047.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/047.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/047.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/47.png"
     },
     "height":1,
     "weight":29.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/47.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/47.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":48,
@@ -2865,11 +3006,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/048.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/048.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/048.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/48.png"
     },
     "height":1,
     "weight":30,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/48.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/48.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":49,
@@ -2925,11 +3069,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/049.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/049.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/049.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/49.png"
     },
     "height":1.5,
     "weight":12.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/49.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/49.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":50,
@@ -2986,11 +3133,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/050.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/050.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/050.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/50.png"
     },
     "height":0.2,
     "weight":0.8,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/50.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/50.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":51,
@@ -3045,11 +3195,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/051.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/051.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/051.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/51.png"
     },
     "height":0.7,
     "weight":33.3,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/51.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/51.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":52,
@@ -3106,11 +3259,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/052.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/052.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/052.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/52.png"
     },
     "height":0.4,
     "weight":4.2,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/52.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/52.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":53,
@@ -3165,11 +3321,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/053.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/053.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/053.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/53.png"
     },
     "height":1,
     "weight":32,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/53.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/53.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":54,
@@ -3227,11 +3386,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/054.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/054.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/054.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/54.png"
     },
     "height":0.8,
     "weight":19.6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/54.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/54.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":55,
@@ -3287,11 +3449,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/055.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/055.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/055.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/55.png"
     },
     "height":1.7,
     "weight":76.6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/55.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/55.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":56,
@@ -3348,11 +3513,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/056.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/056.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/056.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/56.png"
     },
     "height":0.5,
     "weight":28,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/56.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/56.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":57,
@@ -3407,11 +3575,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/057.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/057.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/057.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/57.png"
     },
     "height":1,
     "weight":32,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/57.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/57.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":58,
@@ -3468,11 +3639,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/058.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/058.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/058.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/58.png"
     },
     "height":0.7,
     "weight":19,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/58.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/58.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":59,
@@ -3527,11 +3701,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/059.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/059.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/059.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/59.png"
     },
     "height":1.9,
     "weight":155,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/59.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/59.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":60,
@@ -3588,11 +3765,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/060.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/060.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/060.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/60.png"
     },
     "height":0.6,
     "weight":12.4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/60.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/60.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":61,
@@ -3657,11 +3837,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/061.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/061.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/061.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/61.png"
     },
     "height":1,
     "weight":20,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/61.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/61.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":62,
@@ -3717,11 +3900,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/062.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/062.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/062.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/62.png"
     },
     "height":1.3,
     "weight":54,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/62.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/62.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":63,
@@ -3778,11 +3964,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/063.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/063.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/063.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/63.png"
     },
     "height":0.9,
     "weight":19.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/63.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/63.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":64,
@@ -3843,11 +4032,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/064.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/064.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/064.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/64.png"
     },
     "height":1.3,
     "weight":56.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/64.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/64.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":65,
@@ -3902,11 +4094,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/065.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/065.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/065.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/65.png"
     },
     "height":1.5,
     "weight":48,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/65.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/65.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":66,
@@ -3963,11 +4158,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/066.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/066.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/066.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/66.png"
     },
     "height":0.8,
     "weight":19.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/66.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/66.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":67,
@@ -4028,11 +4226,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/067.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/067.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/067.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/67.png"
     },
     "height":1.5,
     "weight":70.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/67.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/67.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":68,
@@ -4087,11 +4288,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/068.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/068.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/068.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/68.png"
     },
     "height":1.6,
     "weight":130,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/68.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/68.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":69,
@@ -4145,11 +4349,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/069.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/069.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/069.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/69.png"
     },
     "height":0.7,
     "weight":4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/69.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/69.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":70,
@@ -4207,11 +4414,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/070.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/070.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/070.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/70.png"
     },
     "height":1,
     "weight":6.4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/70.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/70.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":71,
@@ -4263,11 +4473,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/071.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/071.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/071.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/71.png"
     },
     "height":1.7,
     "weight":15.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/71.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/71.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":72,
@@ -4325,11 +4538,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/072.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/072.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/072.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/72.png"
     },
     "height":0.9,
     "weight":45.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/72.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/72.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":73,
@@ -4385,11 +4601,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/073.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/073.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/073.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/73.png"
     },
     "height":1.6,
     "weight":55,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/73.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/73.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":74,
@@ -4447,11 +4666,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/074.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/074.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/074.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/74.png"
     },
     "height":0.4,
     "weight":20,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/74.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/74.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":75,
@@ -4513,11 +4735,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/075.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/075.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/075.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/75.png"
     },
     "height":1,
     "weight":105,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/75.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/75.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":76,
@@ -4573,11 +4798,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/076.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/076.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/076.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/76.png"
     },
     "height":1.4,
     "weight":300,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/76.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/76.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":77,
@@ -4634,11 +4862,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/077.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/077.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/077.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/77.png"
     },
     "height":1,
     "weight":30,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/77.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/77.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":78,
@@ -4693,11 +4924,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/078.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/078.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/078.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/78.png"
     },
     "height":1.7,
     "weight":95,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/78.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/78.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":79,
@@ -4760,11 +4994,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/079.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/079.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/079.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/79.png"
     },
     "height":1.2,
     "weight":36,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/79.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/79.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":80,
@@ -4821,11 +5058,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/080.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/080.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/080.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/80.png"
     },
     "height":1.6,
     "weight":78.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/80.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/80.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":81,
@@ -4883,11 +5123,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/081.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/081.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/081.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/81.png"
     },
     "height":0.3,
     "weight":6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/81.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/81.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":82,
@@ -4949,11 +5192,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/082.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/082.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/082.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/82.png"
     },
     "height":1,
     "weight":60,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/82.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/82.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":83,
@@ -5007,11 +5253,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/083.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/083.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/083.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/83.png"
     },
     "height":0.8,
     "weight":15,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/83.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/83.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":84,
@@ -5069,11 +5318,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/084.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/084.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/084.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/84.png"
     },
     "height":1.4,
     "weight":39.2,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/84.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/84.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":85,
@@ -5129,11 +5381,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/085.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/085.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/085.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/85.png"
     },
     "height":1.8,
     "weight":85.2,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/85.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/85.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":86,
@@ -5191,11 +5446,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/086.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/086.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/086.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/86.png"
     },
     "height":1.1,
     "weight":90,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/86.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/86.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":87,
@@ -5252,11 +5510,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/087.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/087.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/087.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/87.png"
     },
     "height":1.7,
     "weight":120,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/87.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/87.wav",
+    "rolls":1.5,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":88,
@@ -5313,11 +5574,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/088.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/088.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/088.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/88.png"
     },
     "height":0.9,
     "weight":30,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/88.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/88.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":89,
@@ -5372,11 +5636,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/089.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/089.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/089.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/89.png"
     },
     "height":1.2,
     "weight":30,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/89.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/89.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":90,
@@ -5433,11 +5700,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/090.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/090.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/090.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/90.png"
     },
     "height":0.3,
     "weight":4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/90.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/90.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":91,
@@ -5493,11 +5763,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/091.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/091.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/091.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/91.png"
     },
     "height":1.5,
     "weight":132.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/91.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/91.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":92,
@@ -5547,11 +5820,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/092.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/092.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/092.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/92.png"
     },
     "height":1.3,
     "weight":0.1,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/92.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/92.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":93,
@@ -5605,11 +5881,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/093.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/093.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/093.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/93.png"
     },
     "height":1.6,
     "weight":0.1,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/93.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/93.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":94,
@@ -5657,11 +5936,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/094.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/094.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/094.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/94.png"
     },
     "height":1.5,
     "weight":40.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/94.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/94.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":95,
@@ -5719,11 +6001,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/095.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/095.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/095.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/95.png"
     },
     "height":8.8,
     "weight":210,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/95.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/95.wav",
+    "rolls":2,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":96,
@@ -5780,11 +6065,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/096.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/096.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/096.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/96.png"
     },
     "height":1,
     "weight":32.4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/96.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/96.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":97,
@@ -5839,11 +6127,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/097.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/097.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/097.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/97.png"
     },
     "height":1.6,
     "weight":75.6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/97.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/97.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":98,
@@ -5900,11 +6191,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/098.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/098.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/098.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/98.png"
     },
     "height":0.4,
     "weight":6.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/98.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/98.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":99,
@@ -5959,11 +6253,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/099.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/099.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/099.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/99.png"
     },
     "height":1.3,
     "weight":60,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/99.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/99.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":100,
@@ -6020,11 +6317,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/100.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/100.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/100.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/100.png"
     },
     "height":0.5,
     "weight":10.4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/100.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/100.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":101,
@@ -6079,11 +6379,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/101.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/101.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/101.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/101.png"
     },
     "height":1.2,
     "weight":66.6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/101.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/101.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":102,
@@ -6137,11 +6440,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/102.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/102.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/102.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/102.png"
     },
     "height":0.4,
     "weight":2.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/102.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/102.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":103,
@@ -6193,11 +6499,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/103.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/103.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/103.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/103.png"
     },
     "height":2,
     "weight":120,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/103.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/103.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":104,
@@ -6254,11 +6563,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/104.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/104.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/104.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/104.png"
     },
     "height":0.4,
     "weight":6.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/104.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/104.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":105,
@@ -6313,11 +6625,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/105.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/105.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/105.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/105.png"
     },
     "height":1,
     "weight":45,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/105.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/105.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":106,
@@ -6372,11 +6687,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/106.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/106.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/106.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/106.png"
     },
     "height":1.5,
     "weight":49.8,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/106.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/106.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":107,
@@ -6431,11 +6749,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/107.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/107.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/107.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/107.png"
     },
     "height":1.4,
     "weight":50.2,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/107.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/107.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":108,
@@ -6492,11 +6813,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/108.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/108.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/108.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/108.png"
     },
     "height":1.2,
     "weight":65.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/108.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/108.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":109,
@@ -6545,11 +6869,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/109.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/109.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/109.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/109.png"
     },
     "height":0.6,
     "weight":1,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/109.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/109.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":110,
@@ -6596,11 +6923,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/110.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/110.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/110.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/110.png"
     },
     "height":1.2,
     "weight":9.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/110.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/110.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":111,
@@ -6659,11 +6989,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/111.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/111.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/111.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/111.png"
     },
     "height":1,
     "weight":115,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/111.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/111.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":112,
@@ -6726,11 +7059,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/112.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/112.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/112.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/112.png"
     },
     "height":1.9,
     "weight":120,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/112.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/112.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":113,
@@ -6791,11 +7127,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/113.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/113.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/113.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/113.png"
     },
     "height":1.1,
     "weight":34.6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/113.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/113.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":114,
@@ -6852,11 +7191,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/114.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/114.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/114.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/114.png"
     },
     "height":1,
     "weight":35,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/114.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/114.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":115,
@@ -6908,11 +7250,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/115.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/115.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/115.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/115.png"
     },
     "height":2.2,
     "weight":80,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/115.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/115.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":116,
@@ -6970,11 +7315,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/116.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/116.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/116.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/116.png"
     },
     "height":0.4,
     "weight":8,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/116.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/116.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":117,
@@ -7036,11 +7384,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/117.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/117.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/117.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/117.png"
     },
     "height":1.2,
     "weight":25,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/117.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/117.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":118,
@@ -7097,11 +7448,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/118.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/118.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/118.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/118.png"
     },
     "height":0.6,
     "weight":15,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/118.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/118.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":119,
@@ -7156,11 +7510,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/119.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/119.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/119.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/119.png"
     },
     "height":1.3,
     "weight":39,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/119.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/119.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":120,
@@ -7217,11 +7574,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/120.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/120.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/120.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/120.png"
     },
     "height":0.8,
     "weight":34.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/120.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/120.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":121,
@@ -7277,11 +7637,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/121.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/121.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/121.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/121.png"
     },
     "height":1.1,
     "weight":80,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/121.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/121.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":122,
@@ -7337,11 +7700,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/122.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/122.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/122.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/122.png"
     },
     "height":1.3,
     "weight":54.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/122.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/122.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":123,
@@ -7399,11 +7765,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/123.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/123.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/123.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/123.png"
     },
     "height":1.5,
     "weight":56,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/123.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/123.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":124,
@@ -7459,11 +7828,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/124.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/124.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/124.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/124.png"
     },
     "height":1.4,
     "weight":40.6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/124.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/124.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":125,
@@ -7520,11 +7892,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/125.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/125.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/125.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/125.png"
     },
     "height":1.1,
     "weight":30,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/125.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/125.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":126,
@@ -7581,11 +7956,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/126.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/126.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/126.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/126.png"
     },
     "height":1.3,
     "weight":44.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/126.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/126.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":127,
@@ -7637,11 +8015,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/127.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/127.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/127.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/127.png"
     },
     "height":1.5,
     "weight":55,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/127.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/127.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":128,
@@ -7693,11 +8074,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/128.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/128.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/128.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/128.png"
     },
     "height":1.4,
     "weight":88.4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/128.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/128.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":129,
@@ -7751,11 +8135,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/129.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/129.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/129.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/129.png"
     },
     "height":0.9,
     "weight":10,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/129.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/129.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":true
   },
   {
     "id":130,
@@ -7808,11 +8195,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/130.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/130.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/130.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/130.png"
     },
     "height":6.5,
     "weight":235,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/130.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/130.wav",
+    "rolls":2,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":131,
@@ -7866,11 +8256,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/131.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/131.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/131.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/131.png"
     },
     "height":2.5,
     "weight":220,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/131.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/131.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":132,
@@ -7918,11 +8311,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/132.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/132.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/132.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/132.png"
     },
     "height":0.3,
     "weight":4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/132.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/132.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":133,
@@ -8007,11 +8403,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/133.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/133.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/133.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/133.png"
     },
     "height":0.3,
     "weight":6.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/133.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/133.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":134,
@@ -8062,11 +8461,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/134.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/134.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/134.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/134.png"
     },
     "height":1,
     "weight":29,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/134.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/134.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":135,
@@ -8117,11 +8519,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/135.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/135.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/135.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/135.png"
     },
     "height":0.8,
     "weight":24.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/135.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/135.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":136,
@@ -8172,11 +8577,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/136.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/136.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/136.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/136.png"
     },
     "height":0.9,
     "weight":25,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/136.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/136.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":137,
@@ -8233,11 +8641,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/137.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/137.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/137.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/137.png"
     },
     "height":0.8,
     "weight":36.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/137.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/137.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":138,
@@ -8296,11 +8707,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/138.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/138.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/138.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/138.png"
     },
     "height":0.4,
     "weight":7.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/138.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/138.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":139,
@@ -8357,11 +8771,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/139.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/139.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/139.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/139.png"
     },
     "height":1,
     "weight":35,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/139.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/139.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":140,
@@ -8420,11 +8837,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/140.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/140.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/140.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/140.png"
     },
     "height":0.5,
     "weight":11.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/140.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/140.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":141,
@@ -8481,11 +8901,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/141.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/141.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/141.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/141.png"
     },
     "height":1.3,
     "weight":40.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/141.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/141.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":142,
@@ -8538,11 +8961,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/142.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/142.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/142.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/142.png"
     },
     "height":1.8,
     "weight":59,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/142.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/142.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":143,
@@ -8597,11 +9023,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/143.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/143.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/143.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/143.png"
     },
     "height":2.1,
     "weight":460,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/143.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/143.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":144,
@@ -8650,11 +9079,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/144.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/144.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/144.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/144.png"
     },
     "height":1.7,
     "weight":55.4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/144.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/144.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":145,
@@ -8703,11 +9135,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/145.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/145.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/145.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/145.png"
     },
     "height":1.6,
     "weight":52.6,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/145.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/145.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":146,
@@ -8756,11 +9191,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/146.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/146.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/146.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/146.png"
     },
     "height":2,
     "weight":60,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/146.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/146.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   },
   {
     "id":147,
@@ -8814,11 +9252,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/147.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/147.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/147.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/147.png"
     },
     "height":1.8,
     "weight":3.3,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/147.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/147.wav",
+    "rolls":2,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":148,
@@ -8876,11 +9317,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/148.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/148.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/148.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/148.png"
     },
     "height":4,
     "weight":16.5,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/148.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/148.wav",
+    "rolls":2,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":149,
@@ -8933,11 +9377,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/149.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/149.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/149.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/149.png"
     },
     "height":2.2,
     "weight":210,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/149.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/149.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":150,
@@ -8985,11 +9432,14 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/150.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/150.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/150.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/150.png"
     },
     "height":2,
     "weight":122,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/150.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/150.wav",
+    "rolls":1,
+    "isFlying":false,
+    "isJumping":false
   },
   {
     "id":151,
@@ -9033,10 +9483,13 @@
     "image":{
       "sprite":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/151.png",
       "thumbnail":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/151.png",
-      "hires":"https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/151.png"
+      "hires":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokemons/151.png"
     },
     "height":0.4,
     "weight":4,
-    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/151.wav"
+    "cry":"https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/151.wav",
+    "rolls":1,
+    "isFlying":true,
+    "isJumping":false
   }
 ]
