@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pokemon-randomizer/static/css/main.dd7d9d44.css",
+    "main.js": "/pokemon-randomizer/static/js/main.9f3de380.js",
+    "static/js/787.3decd5f0.chunk.js": "/pokemon-randomizer/static/js/787.3decd5f0.chunk.js",
+    "index.html": "/pokemon-randomizer/index.html",
+    "main.dd7d9d44.css.map": "/pokemon-randomizer/static/css/main.dd7d9d44.css.map",
+    "main.9f3de380.js.map": "/pokemon-randomizer/static/js/main.9f3de380.js.map",
+    "787.3decd5f0.chunk.js.map": "/pokemon-randomizer/static/js/787.3decd5f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd7d9d44.css",
+    "static/js/main.9f3de380.js"
+  ]
+}
