@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import { Radar as RadarComponent } from 'react-chartjs-2';
 import {
     Chart as ChartJS,
@@ -46,7 +46,7 @@ const Radar = ({stats: {hp, attack, defense, speed, spDefense, spAttack}}) => {
         }
     });
     const getMaxStat = key => pokemons.reduce((max, {base}) => base[key] > max ? base[key] : max, 0);
-    const getPercentage = (key, val) => val / getMaxStat(key) * 100;
+    const getPercentage = useCallback((key, val) => val / getMaxStat(key) * 100, []);
 
     useEffect(() => {
         const pokemonData = [
@@ -128,10 +128,10 @@ const Radar = ({stats: {hp, attack, defense, speed, spDefense, spAttack}}) => {
                 }
             ],
         })
-    }, []);
+    }, [attack, defense, hp, spAttack, spDefense, speed, getPercentage]);
     return (
         <div>
-            { data && <RadarComponent data={data} options={options} /> }
+            { data && <RadarComponent data={data} options={options} type='radar'/> }
         </div>
     );
 };
