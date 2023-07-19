@@ -1,7 +1,0 @@
----
-- name: Deploy React to GitHub Pages
-  uses: peterlavey/pokemon-randomizer@86306ce81b98422bf4b2ab0f39150c448b5b6fb9
-  with:
-    checkout: null
-    path: null
-    build_command: null
