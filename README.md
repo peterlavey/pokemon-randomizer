@@ -6,9 +6,6 @@
 - **Modos de juego**
 - - Dar la opción de combate igualado usando el tier de los pokemon
 - - Dar opción de probabilidad según pokeball
-- **mostrar pantalla de versus**
-- - Cuando se complete el equipo mostrarlos a todos en escala (añadir scale al json de 0 a 1)
-- - Al final que griten todos
 
 ## Bugs
 - Pokeball de fondo gris queda fija, lo demas no
