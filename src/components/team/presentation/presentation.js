@@ -2,6 +2,7 @@ import React, {useCallback, useEffect, useState} from "react";
 import './presentation.styles.scss';
 import {delay} from "../../../utils/utils";
 import TeamInfo from "./teamInfo/teamInfo";
+import {SFX_POKEMON_TEAM} from "../../../utils/constants";
 
 // isFlying top: 5%
 // isJumping top: 25%
@@ -66,6 +67,7 @@ export const Presentation = ({team}) => {
                     );
                 })
             }
+            <audio src={SFX_POKEMON_TEAM} autoPlay/>
             <TeamInfo team={team} />
         </div>
     );
