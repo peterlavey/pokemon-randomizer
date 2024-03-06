@@ -7,7 +7,7 @@ const TeamInfo = ({team}) => {
     return (
         <div className="teamInfo">
             {
-                team.sort(byId).map(member => <MemberInfo {...member} />)
+                team.sort(byId).map(member => <MemberInfo {...member} key={member.id}/>)
             }
         </div>
     );

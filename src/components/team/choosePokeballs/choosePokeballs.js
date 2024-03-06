@@ -1,10 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {POKEBALL} from "../pokeballs/pokeball/pokeball";
 import "./choosePokeballs.styles.scss";
+import {SFX_POKEBALL_TICK} from "../../../utils/constants";
 
 
 export const ChoosePokeballs = ({pokeballs, setPokeballs}) => {
-    const [sfxSelect] = useState(new Audio('https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/sfx/pokeball_tick.mp3'));
+    const sfxSelect = new Audio(SFX_POKEBALL_TICK);
     const select = (pokeball) => {
         setPokeballs([...pokeballs, pokeball]);
         sfxSelect.play();
