@@ -3,10 +3,11 @@ import MemberInfo from "./memberInfo/memberInfo";
 import "./teamInfo.styles.scss"
 
 const TeamInfo = ({team}) => {
+    const byId = (a, b) => a.id - b.id;
     return (
         <div className="teamInfo">
             {
-                team.map(member => <MemberInfo {...member} />)
+                team.sort(byId).map(member => <MemberInfo {...member} />)
             }
         </div>
     );
