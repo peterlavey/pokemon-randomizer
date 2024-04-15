@@ -1,14 +1,16 @@
 # Ideas
-- Mostrar un fondo distinto segun el tipo, mostrarlo junto con el grito
-- Mostrar los Stats y Tier
-- Reemplazar pokeball css con imagenes para mostrar los otros tipos
-- Actualizar lista con datos del stadium 1
-- **Modos de juego**
-- - Dar la opción de combate igualado usando el tier de los pokemon
-- - Dar opción de probabilidad según pokeball
+**Mejoras**
+- [ ] Mostrar un fondo distinto segun el tipo, mostrarlo junto con el grito https://commons.wikimedia.org/wiki/Category:Pok%C3%A9mon_types_icons
+- [ ] Actualizar lista con datos del stadium 1
+- [x] Mostrar los Stats y Tier
+- [x] Reemplazar pokeball css con imagenes para mostrar los otros tipos
+
+**Modos de juego**
+- [x] Dar la opción de combate igualado usando el tier de los pokemon
+- [ ] Dar opción de probabilidad según pokeball
 
 ## Bugs
-- Pokeball de fondo gris queda fija, lo demas no
+- [x] Pokeball de fondo gris queda fija, lo demas no
 
 ## Fuentes
 - https://nintendo.fandom.com/wiki/Category:First_generation_Pok%C3%A9mon_images
