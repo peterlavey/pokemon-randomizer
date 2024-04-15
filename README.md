@@ -4,6 +4,8 @@
 - [ ] Actualizar lista con datos del stadium 1
 - [x] Mostrar los Stats y Tier
 - [x] Reemplazar pokeball css con imagenes para mostrar los otros tipos
+- [ ] Calcular tier por stats, ataques y tipo
+- [ ] Mejorar fondo e instrucciones al seleccionar pokebolas
 
 **Modos de juego**
 - [x] Dar la opción de combate igualado usando el tier de los pokemon
