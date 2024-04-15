@@ -1,0 +1,87 @@
+:root {
+  --grass: #28C925;
+  --poison: #A64592;
+  --fire: #FF3B04;
+  --flying: #91A6F7;
+  --water: #0196F2;
+  --bug: #A2BC05;
+  --normal: #C5C1B6;
+  --electric: #FEBD01;
+  --ground: #DDAC4D;
+  --fairy: #FDB3F2;
+  --fighting: #972B07;
+  --psychic: #FF4284;
+  --rock: #C3A656;
+  --steel: #B7B5C2;
+  --ice: #87EAFF;
+  --ghost: #5D5DB7;
+  --dragon: #8061E2;
+}
+
+.bg-grass {
+  background: var(--grass);
+}
+
+.bg-poison {
+  background: var(--poison);
+}
+
+.bg-fire {
+  background: var(--fire);
+}
+
+.bg-flying {
+  background: var(--flying);
+}
+
+.bg-water {
+  background: var(--water);
+}
+
+.bg-bug {
+  background: var(--bug);
+}
+
+.bg-normal {
+  background: var(--normal);
+}
+
+.bg-electric {
+  background: var(--electric);
+}
+
+.bg-ground {
+  background: var(--ground);
+}
+
+.bg-fairy {
+  background: var(--fairy);
+}
+
+.bg-fighting {
+  background: var(--fighting);
+}
+
+.bg-psychic {
+  background: var(--psychic);
+}
+
+.bg-rock {
+  background: var(--rock);
+}
+
+.bg-steel {
+  background: var(--steel);
+}
+
+.bg-ice {
+  background: var(--ice);
+}
+
+.bg-ghost {
+  background: var(--ghost);
+}
+
+.bg-dragon {
+  background: var(--dragon);
+}
