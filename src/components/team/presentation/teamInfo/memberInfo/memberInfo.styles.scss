@@ -3,6 +3,7 @@
   align-items: center;
   background-color: #82C2DB;
   margin: 1px 0;
+  padding-left: 5px;
 
   span {
     color: white;
@@ -12,6 +13,26 @@
     position: initial;
   }
 
+  .tier-D {
+    color: royalblue;
+  }
+
+  .tier-C {
+    color: royalblue;
+  }
+
+  .tier-B {
+    color: greenyellow;
+  }
+
+  .tier-A {
+    color: gold;
+  }
+
+  .tier-S {
+    color: orangered;
+  }
+
   .memberStats {
     display: none;
 
@@ -19,6 +40,21 @@
       span {
         display: block;
       }
+    }
+  }
+
+  .memberColumn {
+    display: flex;
+
+    span {
+      width: 1.5em;
+      height: 0.4em;
+      background-color: lightgrey;
+      border: solid 1px darkgrey;
+    }
+
+    span.active {
+      background-color: greenyellow;
     }
   }
 }
