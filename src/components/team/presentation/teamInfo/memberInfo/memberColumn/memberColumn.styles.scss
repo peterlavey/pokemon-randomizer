@@ -1,0 +1,14 @@
+.memberColumn {
+  display: flex;
+
+  div {
+    width: 1.5em;
+    height: 0.4em;
+    background-color: lightgrey;
+    border: solid 1px darkgrey;
+  }
+
+  div.active {
+    background-color: greenyellow;
+  }
+}
