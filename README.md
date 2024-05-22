@@ -6,6 +6,7 @@
 - [x] Reemplazar pokeball css con imagenes para mostrar los otros tipos
 - [ ] Calcular tier por stats, ataques y tipo
 - [ ] Mejorar fondo e instrucciones al seleccionar pokebolas
+- [ ] Añadir un hud para mostrar en que columna se encuentra el pokemon (3 lineas horizontales, una encendida verde)
 
 **Modos de juego**
 - [x] Dar la opción de combate igualado usando el tier de los pokemon
