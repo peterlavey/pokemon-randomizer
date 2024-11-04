@@ -3,10 +3,10 @@ import Pokeballs from "./pokeballs/pokeballs";
 import PokeButton from "./pokeButton/pokeButton";
 import Reveal, {TYPE} from "./reveal/reveal";
 import Presentation from "./presentation/presentation";
-import pokemons from "../../resources/pokemons.json";
 import './team.styles.scss';
-import {getRandom} from "../../utils/utils";
+import {getByTier, getRandom} from "../../utils/utils";
 import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
+import {SFX_POKEMON_INTRO} from "../../utils/constants";
 
 const COMPLETED = 6;
 
@@ -15,8 +15,6 @@ export const Team = () => {
     const [pokemonTeam, setPokemonTeam] = useState([]);
     const [pokeballs, setPokeballs] = useState([]);
     const [completed, setCompleted] = useState(false);
-
-    const getByTier = tiers => pokemons.filter((pokemon) => ~tiers.indexOf(pokemon.tier));
 
     const getCurrentPokeball = () => pokeballs[pokemonTeam.length];
 
@@ -52,6 +50,7 @@ export const Team = () => {
                     {completed && <Presentation team={pokemonTeam}/>}
                 </>
             )}
+            {!completed && <audio src={SFX_POKEMON_INTRO} autoPlay/>}
         </div>
     );
 };
