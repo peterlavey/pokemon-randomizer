@@ -3,12 +3,12 @@ import Pokeballs from "./pokeballs/pokeballs";
 import PokeButton from "./pokeButton/pokeButton";
 import Reveal, {TYPE} from "./reveal/reveal";
 import Presentation from "./presentation/presentation";
-import './team.styles.scss';
 import {getByTier, getRandom} from "../../utils/utils";
 import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
 import {SFX_POKEMON_INTRO} from "../../utils/constants";
+import './team.styles.scss';
 
-const COMPLETED = 6;
+const TEAM_QUANTITY = 6;
 
 export const Team = () => {
     const [pokemon, setPokemon] = useState(undefined);
@@ -32,7 +32,7 @@ export const Team = () => {
     };
 
     const clean = () => {
-        if (pokemonTeam.length === COMPLETED) {
+        if (pokemonTeam.length === TEAM_QUANTITY) {
             setCompleted(true);
         } else {
             setPokemon(undefined);
@@ -42,8 +42,8 @@ export const Team = () => {
     return (
         <div className='team'>
             <Pokeballs pokeballs={pokeballs} team={pokemonTeam}/>
-            {pokeballs.length < COMPLETED && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
-            {pokeballs.length === COMPLETED && (
+            {pokeballs.length < TEAM_QUANTITY && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
+            {pokeballs.length === TEAM_QUANTITY && (
                 <>
                     {(!pokemon && !completed) && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon}/>}
                     {(pokemon && !completed) && <Reveal clean={clean} type={TYPE.MOBILE} pokemon={pokemon}/>}

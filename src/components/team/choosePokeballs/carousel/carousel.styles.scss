@@ -1,0 +1,77 @@
+.pokeballItem {
+  display: flex;
+  align-items: center;
+  border-style: ridge;
+  border-radius: 1em;
+  outline: white solid 2em;
+  height: 5em;
+  margin: 0 3% 3em 3%;
+
+  img {
+    width: 12%;
+    position: relative;
+    bottom: 50%;
+    left: 44%;
+  }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-5em * 56))}
+}
+
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,10%,0) scale3d(.93,1.07,1);}
+  100% {transform: translate3d(0,25%,0) scale3d(1.07,.93,1);}
+}
+
+@keyframes pokeball-selected {
+  0% {background-color: #FF1C1C66}
+  100% {background-color: #FF1C1C00}
+}
+
+@keyframes superball-selected {
+  0% {background-color: #80B9EF66}
+  100% {background-color: #80B9EF00}
+}
+
+@keyframes ultraball-selected {
+  0% {background-color: #FFBE0866}
+  100% {background-color: #FFBE0800}
+}
+
+@keyframes masterball-selected {
+  0% {background-color: #8E5EF066}
+  100% {background-color: #8E5EF000}
+}
+
+.PokeballSelected {
+  animation: pokeball-selected 0.5s linear;
+}
+
+.SuperballSelected {
+  animation: superball-selected 0.5s linear;
+}
+
+.UltraballSelected {
+  animation: ultraball-selected 0.5s linear;
+}
+
+.MasterballSelected {
+  animation: masterball-selected 0.5s linear;
+}
+
+.roulette {
+  z-index: -5;
+  display: flex;
+  position: absolute;
+  animation: scroll 50s linear infinite;
+  height: inherit;
+  margin-top: 18%;
+
+  img {
+    animation: jump .5s linear alternate infinite;
+  }
+
+}
