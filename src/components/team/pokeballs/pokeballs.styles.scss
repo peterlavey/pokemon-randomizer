@@ -1,3 +1,7 @@
-.pokeballs > .pokeballContainer:last-child {
-  visibility: hidden;
+.pokeballs {
+  background-color: #01abbd21;
+
+  > .pokeballContainer:last-child {
+    visibility: hidden;
+  }
 }
