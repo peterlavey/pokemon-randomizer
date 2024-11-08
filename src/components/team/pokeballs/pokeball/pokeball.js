@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import './pokeball.styles.scss';
 import {delay} from "../../../../utils/utils";
+import {IMG_MASTERBALL, IMG_POKEBALL, IMG_SUPERBALL, IMG_ULTRABALL} from "../../../../utils/constants";
 
 const TIER = {
     S: 'S',
@@ -13,22 +14,22 @@ const TIER = {
 export const POKEBALL = {
     NORMAL: {
         name: 'Pokeball',
-        img: 'https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokeballs/normal.png',
+        img: IMG_POKEBALL,
         tiers: [TIER.D, TIER.C]
     },
     SUPER: {
         name: 'Superball',
-        img: 'https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokeballs/super.png',
+        img: IMG_SUPERBALL,
         tiers: [TIER.B]
     },
     ULTRA: {
         name: 'Ultraball',
-        img: 'https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokeballs/ultra.png',
+        img: IMG_ULTRABALL,
         tiers: [TIER.A]
     },
     MASTER: {
         name: 'Masterball',
-        img: 'https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/pokeballs/master.png',
+        img: IMG_MASTERBALL,
         tiers: [TIER.S]
     }
 };

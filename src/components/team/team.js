@@ -1,12 +1,13 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Pokeballs from "./pokeballs/pokeballs";
 import PokeButton from "./pokeButton/pokeButton";
 import Reveal, {TYPE} from "./reveal/reveal";
 import Presentation from "./presentation/presentation";
-import {getByTier, getRandom} from "../../utils/utils";
+import {getByTier, getRandom, isIOS} from "../../utils/utils";
 import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
 import {SFX_POKEMON_INTRO} from "../../utils/constants";
 import './team.styles.scss';
+import Sound from "./sound/sound";
 
 const TEAM_QUANTITY = 6;
 
@@ -51,6 +52,7 @@ export const Team = () => {
                 </>
             )}
             {!completed && <audio src={SFX_POKEMON_INTRO} autoPlay/>}
+            <Sound autoplay={!isIOS()} />
         </div>
     );
 };
