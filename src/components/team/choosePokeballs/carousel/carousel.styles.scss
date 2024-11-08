@@ -1,16 +1,16 @@
 .pokeballItem {
   display: flex;
   align-items: center;
-  border-style: ridge;
-  border-radius: 1em;
-  outline: white solid 2em;
+  border-style: inset;
+  border-radius: 45px;
+  outline: #81D4FA inset 1em;
   height: 5em;
   margin: 0 3% 3em 3%;
 
-  img {
+  > img {
     width: 12%;
     position: relative;
-    bottom: 50%;
+    bottom: 60%;
     left: 44%;
   }
 }
@@ -67,10 +67,11 @@
   display: flex;
   position: absolute;
   animation: scroll 50s linear infinite;
-  height: inherit;
-  margin-top: 18%;
+  height: 7%;
+  margin-bottom: 3%;
 
-  img {
+  > img {
+    width: auto;
     animation: jump .5s linear alternate infinite;
   }
 
