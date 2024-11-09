@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import Pokeballs from "./pokeballs/pokeballs";
 import PokeButton from "./pokeButton/pokeButton";
 import Reveal, {TYPE} from "./reveal/reveal";

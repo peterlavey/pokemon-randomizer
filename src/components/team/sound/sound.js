@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {IMG_SOUND_OFF, IMG_SOUND_ON} from "../../../utils/constants";
 import './sound.styles.scss';
 import {useSoundContext} from "../../../contexts/soundContext";
