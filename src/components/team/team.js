@@ -8,6 +8,7 @@ import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
 import Sound from "./sound/sound";
 import './team.styles.scss';
 
+
 const TEAM_QUANTITY = 6;
 const STATE = {
     CHOOSE: 'CHOOSE',

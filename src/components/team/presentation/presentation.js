@@ -7,7 +7,7 @@ import {useSoundContext} from "../../../contexts/soundContext";
 // isFlying top: 5%
 // isJumping top: 25%
 export const Presentation = ({team}) => {
-    const {teamCompleteSong} = useSoundContext();
+    const {introSong, teamCompleteSong} = useSoundContext();
     const [members, setMembers] = useState([]);
     const [maxHeight, setMaxHeight] = useState();
     const byHeight = (a,b) => a.height - b.height;
@@ -24,15 +24,18 @@ export const Presentation = ({team}) => {
         _members.push(ordered[0]);
         setMembers(adjustHeight(_members));
     }, [team]);
+    
     const getScaleHeight = (pokemon) => {
         const scale = 200;
         return (pokemon.height / maxHeight) * scale;
-    }
+    };
+    
     const teamCry = useCallback(async () => {
         await delay(1000);
+        introSong.pause();
         document.querySelectorAll('audio').forEach((audio) => audio.play());
         teamCompleteSong.play();
-    }, [teamCompleteSong]);
+    }, [introSong, teamCompleteSong]);
 
     useEffect(() => {
         setMaxHeight(Math.max(...members.map(({height}) => height)));
