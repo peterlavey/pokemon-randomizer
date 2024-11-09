@@ -1,14 +1,15 @@
 import React, {useRef} from "react";
-import './pokeButton.styles.scss';
 import {delay} from "../../../utils/utils";
-import {SFX_POKEBALL_OPEN} from "../../../utils/constants";
+import {useSoundContext} from "../../../contexts/soundContext";
+import './pokeButton.styles.scss';
+
 
 export const PokeButton = ({pokeball, onClick}) => {
     const pokeballRef = useRef();
     const pokeballButton = useRef();
-    const sfxOpen = new Audio(SFX_POKEBALL_OPEN);
+    const {openSfx} = useSoundContext();
     const blink = async () => {
-        sfxOpen.play();
+        openSfx.play();
         pokeballRef.current.classList.remove('shaking');
         window.requestAnimationFrame(() => pokeballButton.current.classList.add('blink'));
         await delay(500);

@@ -2,11 +2,12 @@ import React, {useCallback, useEffect, useState} from "react";
 import './presentation.styles.scss';
 import {delay} from "../../../utils/utils";
 import TeamInfo from "./teamInfo/teamInfo";
-import {SFX_POKEMON_TEAM} from "../../../utils/constants";
+import {useSoundContext} from "../../../contexts/soundContext";
 
 // isFlying top: 5%
 // isJumping top: 25%
 export const Presentation = ({team}) => {
+    const {teamCompleteSong} = useSoundContext();
     const [members, setMembers] = useState([]);
     const [maxHeight, setMaxHeight] = useState();
     const byHeight = (a,b) => a.height - b.height;
@@ -27,10 +28,12 @@ export const Presentation = ({team}) => {
         const scale = 200;
         return (pokemon.height / maxHeight) * scale;
     }
-    const teamCry = async () => {
+    const teamCry = useCallback(async () => {
         await delay(1000);
         document.querySelectorAll('audio').forEach((audio) => audio.play());
-    }
+        teamCompleteSong.play();
+    }, [teamCompleteSong]);
+
     useEffect(() => {
         setMaxHeight(Math.max(...members.map(({height}) => height)));
     }, [members]);
@@ -40,7 +43,7 @@ export const Presentation = ({team}) => {
             prepareMembers();
             teamCry();
         }
-    }, [team.length, prepareMembers]);
+    }, [team.length, prepareMembers, teamCry]);
 
     return (
         <div className='presentation'>
@@ -67,7 +70,6 @@ export const Presentation = ({team}) => {
                     );
                 })
             }
-            <audio src={SFX_POKEMON_TEAM} autoPlay/>
             <TeamInfo team={team} />
         </div>
     );

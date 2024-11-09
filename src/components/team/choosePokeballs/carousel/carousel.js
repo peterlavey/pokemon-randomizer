@@ -1,18 +1,19 @@
 import React from "react";
 import './carousel.styles.scss';
-import {SFX_POKEBALL_TICK} from "../../../../utils/constants";
 import {delay, getByTier} from "../../../../utils/utils";
+import {useSoundContext} from "../../../../contexts/soundContext";
 
 
 export const Carousel = ({pokeball, onSelect}) => {
-    const sfxSelect = new Audio(SFX_POKEBALL_TICK);
+    const {tickSfx} = useSoundContext();
 
     const handleSelect = async () => {
-        sfxSelect.play();
+        tickSfx.currentTime = 0;
+        tickSfx.play();
+        onSelect(pokeball);
         document.getElementById(pokeball.name).className = `pokeballItem ${pokeball.name}Selected`;
         await delay(450);
         if(document.getElementById(pokeball.name)) document.getElementById(pokeball.name).className = 'pokeballItem';
-        onSelect(pokeball);
     }
 
     return (
