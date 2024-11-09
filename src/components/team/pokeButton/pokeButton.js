@@ -9,11 +9,11 @@ export const PokeButton = ({pokeball, onClick}) => {
     const pokeballButton = useRef();
     const {openSfx} = useSoundContext();
     const blink = async () => {
-        openSfx.play();
-        pokeballRef.current.classList.remove('shaking');
-        window.requestAnimationFrame(() => pokeballButton.current.classList.add('blink'));
+        openSfx?.play();
+        pokeballRef?.current?.classList?.remove('shaking');
+        window.requestAnimationFrame(() => pokeballButton?.current?.classList?.add('blink'));
         await delay(500);
-        window.requestAnimationFrame(() => pokeballRef.current.classList.add('zoom'));
+        window.requestAnimationFrame(() => pokeballRef?.current?.classList?.add('zoom'));
         await delay(800);
         onClick();
     }
@@ -22,7 +22,7 @@ export const PokeButton = ({pokeball, onClick}) => {
         <div className="pokeButton" onClick={blink}>
             <div className="center-on-page">
                 <div className="shaking" ref={pokeballRef}>
-                    <img src={pokeball.img} alt={pokeball.name}/>
+                    <img src={pokeball?.img} alt={pokeball?.name}/>
                     <div className="pokeball__button" ref={pokeballButton}/>
                 </div>
             </div>

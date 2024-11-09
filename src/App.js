@@ -1,6 +1,6 @@
 import Team from "./components/team/team";
-import './index.css';
 import {SoundContextProvider} from "./contexts/soundContext";
+import './index.css';
 
 function App() {
   return (
