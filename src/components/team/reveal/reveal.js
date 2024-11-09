@@ -6,9 +6,13 @@ export const TYPE = {
     MOBILE: 'MOBILE'
 };
 
-export const Reveal = ({onClick, type, pokemon}) => {
+export const Reveal = ({type, pokemon, setPokemon}) => {
     const imageRef = useRef(null);
     const infoRef = useRef(null);
+
+    const clean = () => {
+        setPokemon(undefined);
+    }
 
     const reveal = () => {
         imageRef?.current?.classList?.remove('revealImage');
@@ -17,11 +21,13 @@ export const Reveal = ({onClick, type, pokemon}) => {
         infoRef?.current?.classList?.remove('revealInfo');
         window.requestAnimationFrame(() => infoRef?.current?.classList?.add('revealInfo'));
     }
+
     useEffect(() => {
         if(pokemon) reveal();
     }, [pokemon]);
+
     return (
-        <div className='reveal' onClick={onClick}>
+        <div className='reveal' onClick={clean}>
             {
                 {
                     [TYPE.MOBILE]: pokemon && <Mobile infoRef={infoRef} imageRef={imageRef} {...pokemon}/>

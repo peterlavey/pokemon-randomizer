@@ -27,12 +27,14 @@ export const Team = () => {
         if (pokeballs.length < TEAM_QUANTITY) {
             setState(STATE.CHOOSE);
         } else if (pokeballs.length === TEAM_QUANTITY) {
-            if (!pokemon && !completed) {
-                setState(STATE.OPEN);
-            } else if (pokemon && !completed) {
+            if (pokemon) {
                 setState(STATE.REVEAL);
-            } else if (completed) {
-                setState(STATE.COMPLETED);
+            } else {
+                if (completed) {
+                    setState(STATE.COMPLETED);
+                } else {
+                   setState(STATE.OPEN);
+                }
             }
         }
     }, [pokeballs, pokemon, pokemonTeam.length]);
@@ -53,18 +55,12 @@ export const Team = () => {
         setPokemonTeam([...pokemonTeam, pokemonChoosen]);
     };
 
-    const clean = () => {
-        if (pokemonTeam.length !== TEAM_QUANTITY) {
-            setPokemon(undefined);
-        }
-    };
-
     return (
         <div className='team'>
             <Pokeballs pokeballs={pokeballs} team={pokemonTeam} />
             {state === STATE.CHOOSE && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
             {state === STATE.OPEN && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon} />}
-            {state === STATE.REVEAL && <Reveal type={TYPE.MOBILE} pokemon={pokemon} onClick={clean} />}
+            {state === STATE.REVEAL && <Reveal type={TYPE.MOBILE} pokemon={pokemon} setPokemon={setPokemon} />}
             {state === STATE.COMPLETED && <Presentation team={pokemonTeam} />}
             {state !== STATE.COMPLETED && <Sound autoplay={!isIOS()} />}
         </div>
