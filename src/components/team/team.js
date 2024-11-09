@@ -5,9 +5,8 @@ import Reveal, {TYPE} from "./reveal/reveal";
 import Presentation from "./presentation/presentation";
 import {getByTier, getRandom, isIOS} from "../../utils/utils";
 import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
-import {SFX_POKEMON_INTRO} from "../../utils/constants";
-import './team.styles.scss';
 import Sound from "./sound/sound";
+import './team.styles.scss';
 
 const TEAM_QUANTITY = 6;
 
@@ -51,8 +50,7 @@ export const Team = () => {
                     {completed && <Presentation team={pokemonTeam}/>}
                 </>
             )}
-            {!completed && <audio src={SFX_POKEMON_INTRO} autoPlay/>}
-            <Sound autoplay={!isIOS()} />
+            {!completed && <Sound autoplay={!isIOS()} />}
         </div>
     );
 };
