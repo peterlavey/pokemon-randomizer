@@ -15,4 +15,23 @@ export const isIOS = () => [
         'iPod'
     ].includes(navigator.platform)
     // iPad on iOS 13 detection
-    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+    || (navigator.userAgent.includes("Mac") && "ontouchend" in document);
+
+export const preloadAudio = arr => new Promise(resolve => {
+    let count = 0;
+    let audios = [];
+
+    const audioLoaded = () => {
+        count++;
+        if(count === arr.length) {
+            resolve(audios);
+        }
+    };
+
+    audios = arr.map(src => {
+        const audio = new Audio();
+        audio.addEventListener('canplaythrough', audioLoaded, false);
+        audio.src = src;
+        return audio;
+    });
+});

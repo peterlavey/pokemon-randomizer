@@ -26,10 +26,10 @@ export const Mobile = ({
                     <h1>{`#${id}-${name.english}`}</h1>
 
                     <div className='stats'>
-                        {
-                            type.map((_type) => <Type type={_type} key={_type}/>)
-                        }
-                        <p><strong>{species}</strong> - {description}</p>
+                        {type.map((_type) => <Type type={_type} key={_type}/>)}
+                        <p>
+                            <strong>{species}</strong> - {description}
+                        </p>
                         <p>
                             <strong>Height:</strong> {height}m - <strong>Weight:</strong> {weight}kg
                         </p>

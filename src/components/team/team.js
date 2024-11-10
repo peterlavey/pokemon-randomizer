@@ -3,10 +3,11 @@ import Pokeballs from "./pokeballs/pokeballs";
 import PokeButton from "./pokeButton/pokeButton";
 import Reveal, {TYPE} from "./reveal/reveal";
 import Presentation from "./presentation/presentation";
-import {getByTier, getRandom, isIOS} from "../../utils/utils";
+import {getByTier, getRandom} from "../../utils/utils";
 import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
 import Sound from "./sound/sound";
 import './team.styles.scss';
+import {useSoundContext} from "../../contexts/soundContext";
 
 
 const TEAM_QUANTITY = 6;
@@ -18,6 +19,7 @@ const STATE = {
 };
 
 export const Team = () => {
+    const {ready} = useSoundContext();
     const [state, setState] = useState(STATE.CHOOSE);
     const [pokemon, setPokemon] = useState(undefined);
     const [pokemonTeam, setPokemonTeam] = useState([]);
@@ -58,12 +60,16 @@ export const Team = () => {
 
     return (
         <div className='team'>
-            <Pokeballs pokeballs={pokeballs} team={pokemonTeam} />
-            {state === STATE.CHOOSE && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
-            {state === STATE.OPEN && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon} />}
-            {state === STATE.REVEAL && <Reveal type={TYPE.MOBILE} pokemon={pokemon} setPokemon={setPokemon} />}
-            {state === STATE.COMPLETED && <Presentation team={pokemonTeam} />}
-            {state !== STATE.COMPLETED && <Sound autoplay={!isIOS()} />}
+            {ready && (
+                <>
+                    <Pokeballs pokeballs={pokeballs} team={pokemonTeam} />
+                    {state === STATE.CHOOSE && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
+                    {state === STATE.OPEN && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon} />}
+                    {state === STATE.REVEAL && <Reveal type={TYPE.MOBILE} pokemon={pokemon} setPokemon={setPokemon} />}
+                    {state === STATE.COMPLETED && <Presentation team={pokemonTeam} />}
+                    {state !== STATE.COMPLETED && <Sound />}
+                </>
+            )}
         </div>
     );
 };

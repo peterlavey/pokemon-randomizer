@@ -4,14 +4,9 @@ import './sound.styles.scss';
 import {useSoundContext} from "../../../contexts/soundContext";
 
 
-export const Sound = ({autoplay}) => {
+export const Sound = () => {
     const { introSong } = useSoundContext();
     const [state, setState] = useState(false)
-
-    //todo: precargar para que funcione el autoplay
-    /*useEffect(() => {
-        if (autoplay) onSwitch();
-    }, [autoplay]);*/
 
     const onSwitch = () => {
         if(state) {

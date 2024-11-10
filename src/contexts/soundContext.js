@@ -1,7 +1,9 @@
 import {createContext, useContext, useEffect, useState} from "react";
 import {SFX_POKEBALL_OPEN, SFX_POKEBALL_TICK, SFX_POKEMON_INTRO, SFX_POKEMON_TEAM} from "../utils/constants";
+import {preloadAudio} from "../utils/utils";
 
 const initialState = {
+    ready: false,
     introSong: undefined,
     teamCompleteSong: undefined,
     tickSfx: undefined,
@@ -12,25 +14,36 @@ const SoundContext = createContext(initialState);
 const useSoundContext = () => useContext(SoundContext);
 
 const SoundContextProvider = ({ children }) => {
+    const [ready, setReady] = useState(false);
     const [introSong, setIntroSong] = useState(initialState.introSong);
     const [teamCompleteSong, setTeamCompleteSong] = useState(initialState.teamCompleteSong);
     const [tickSfx, setTickSfx] = useState(initialState.tickSfx);
     const [openSfx, setOpenSfx] = useState(initialState.openSfx);
 
-    const preload = () => {
-        setIntroSong(new Audio(SFX_POKEMON_INTRO));
-        setTeamCompleteSong(new Audio(SFX_POKEMON_TEAM));
-        setTickSfx(new Audio(SFX_POKEBALL_TICK));
-        setOpenSfx(new Audio(SFX_POKEBALL_OPEN));
+    const init = async () => {
+        const audios= await preloadAudio([
+            SFX_POKEMON_INTRO,
+            SFX_POKEMON_TEAM,
+            SFX_POKEBALL_TICK,
+            SFX_POKEBALL_OPEN,
+        ]);
+
+        setIntroSong(audios[0]);
+        setTeamCompleteSong(audios[1]);
+        setTickSfx(audios[2]);
+        setOpenSfx(audios[3]);
+
+        setReady(true);
     }
 
     useEffect(() => {
-        preload();
+        init();
     }, [])
 
     return (
         <SoundContext.Provider
             value={{
+                ready,
                 introSong,
                 teamCompleteSong,
                 tickSfx,
