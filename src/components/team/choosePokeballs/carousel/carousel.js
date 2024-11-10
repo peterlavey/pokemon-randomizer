@@ -10,6 +10,7 @@ export const Carousel = ({pokeball, onSelect}) => {
 
     useEffect(() => {
         const images = pokeball.tiers.flatMap(getByTier);
+        // todo: get the length of tier with more quantity of pokemons and try to replicate the length in the others to can calculate an infinity loop in the css
         if (pokeball.name === 'Masterball') {
             setPokemonImg([...images, ...images, ...images, ...images, ...images, ...images, ...images]);
         } else {
