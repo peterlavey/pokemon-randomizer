@@ -6,8 +6,8 @@ import Presentation from "./presentation/presentation";
 import {getByTier, getRandom} from "../../utils/utils";
 import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
 import Sound from "./sound/sound";
-import './team.styles.scss';
 import {useSoundContext} from "../../contexts/soundContext";
+import './team.styles.scss';
 
 
 const TEAM_QUANTITY = 6;
