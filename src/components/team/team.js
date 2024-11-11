@@ -62,7 +62,7 @@ export const Team = () => {
         <div className='team'>
             {ready && (
                 <>
-                    <Pokeballs pokeballs={pokeballs} team={pokemonTeam} />
+                    {pokeballs.length > 0 && <Pokeballs pokeballs={pokeballs} team={pokemonTeam} />}
                     {state === STATE.CHOOSE && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
                     {state === STATE.OPEN && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon} />}
                     {state === STATE.REVEAL && <Reveal type={TYPE.MOBILE} pokemon={pokemon} setPokemon={setPokemon} />}
