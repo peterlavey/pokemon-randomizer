@@ -7,19 +7,18 @@ import {getPokeballByTier} from "../../../../../utils/utils";
 const MemberInfo = ({id, image: {sprite}, name: {english}, type, tier}) => {
     return (
         <div className="memberInfo">
-            <strong className={'tier-'+tier}>{tier}</strong>
-            <img src={sprite} alt={english}/>
-            <div>
-                <div>
-                    <span>{id}</span>
-                    <span> - </span>
-                    <span>{english}</span>
-                    <MemberColumn id={id}/>
-                </div>
-                {
+            <div className="firstColumn">
+                {<img src={getPokeballByTier(tier).img} alt={getPokeballByTier(tier).name} className="pokeball"/>}
+                <MemberColumn id={id}/>
+            </div>
+            <div className="secondColumn">
+                <img src={sprite} alt={english}/>
+                <span>{english}</span>
+            </div>
+            <div className="thirdColumn">
+            {
                     type.map((_type) => <Type type={_type} key={_type}/>)
                 }
-                {<img src={getPokeballByTier(tier).img} alt={getPokeballByTier(tier).name} className="pokeball" />}
             </div>
         </div>
     );

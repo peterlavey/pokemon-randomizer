@@ -1,5 +1,12 @@
 .teamInfo {
+    padding: 3% 2%;
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     bottom: 0;
-    width: 100%;
+}
+
+.background {
+    background-image: url(https://cdn.jsdelivr.net/gh/peterlavey/pokemon-content/images/utils/background.png);
+    background-size: 15%;
 }

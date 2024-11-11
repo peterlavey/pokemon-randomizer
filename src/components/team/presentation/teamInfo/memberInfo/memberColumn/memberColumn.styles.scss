@@ -1,14 +1,37 @@
 .memberColumn {
   display: flex;
+  align-items: center;
 
-  div {
+  > .badge {
+    display: flex;
+    padding: 3px;
+    font-size: x-small;
+    width: 15%;
+    height: 50%;
+    color: slategray;
+    border-radius: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 1px;
+  }
+
+  > .active {
+    width: 1.5em;
+    height: 0.4em;
+    background-color: greenyellow;
+    border: solid 1px darkgrey;
+  }
+
+  > .inactive {
     width: 1.5em;
     height: 0.4em;
     background-color: lightgrey;
     border: solid 1px darkgrey;
   }
 
-  div.active {
-    background-color: greenyellow;
+  :last-child {
+    border-radius: 0 15px 15px 0;
   }
 }

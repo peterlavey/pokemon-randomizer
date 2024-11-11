@@ -5,7 +5,7 @@ import "./teamInfo.styles.scss"
 const TeamInfo = ({team}) => {
     const byId = (a, b) => a.id - b.id;
     return (
-        <div className="teamInfo">
+        <div className="teamInfo background">
             {
                 team.sort(byId).map(member => <MemberInfo {...member} key={member.id}/>)
             }

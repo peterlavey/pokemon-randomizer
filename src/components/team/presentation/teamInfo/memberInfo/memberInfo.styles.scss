@@ -1,25 +1,45 @@
 .memberInfo {
-  display: flex;
-  align-items: center;
-  background-color: #82C2DB;
-  margin: 1px 0;
-  padding-left: 5px;
+  width: 43%;
+  background: linear-gradient(0deg, #04C0CE 0%, #0BEAFA 100%);;
+  margin: 1%;
+  padding: 5px;
+  border-radius: 5%;
+  border-style: ridge;
+  box-shadow: 0 2px 3px 0;
 
-  > div {
+  > .firstColumn {
+    display: flex;
+    justify-content: space-between;
+
+    > .pokeball {
+      width: 10%;
+      position: initial;
+    }
+  }
+
+  > .secondColumn {
     display: flex;
     align-items: center;
+
+    > img {
+      width: 3em;
+      position: initial;
+    }
+
+    > span {
+      color: ghostwhite;
+      text-shadow: -2px 0 darkslategray, 0 2px darkslategray, 2px 0 darkslategray, 0 -2px darkslategray;
+    }
   }
 
-  span {
-    color: white;
-  }
+  > .thirdColumn {
+    display: flex;
+    justify-content: center;
 
-  img {
-    position: initial;
-  }
-
-  .pokeball {
-    width: 10%;
+    > .type {
+      font-size: xx-small;
+      padding: 0 6px;
+    }
   }
 
   .tier-D {
@@ -40,30 +60,5 @@
 
   .tier-S {
     color: orangered;
-  }
-
-  .memberStats {
-    display: none;
-
-    .row {
-      span {
-        display: block;
-      }
-    }
-  }
-
-  .memberColumn {
-    display: flex;
-
-    span {
-      width: 1.5em;
-      height: 0.4em;
-      background-color: lightgrey;
-      border: solid 1px darkgrey;
-    }
-
-    span.active {
-      background-color: greenyellow;
-    }
   }
 }
