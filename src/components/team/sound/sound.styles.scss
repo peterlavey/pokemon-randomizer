@@ -1,10 +1,9 @@
 .sound {
-  position: absolute;
-  bottom: 0;
-  left: 88%;
-  width: 100%;
 
   > img {
-    width: 10%;
+    position: fixed;
+    top: 95vh;
+    left: 90vw;
+    width: 2em;
   }
 }

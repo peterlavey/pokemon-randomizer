@@ -18,9 +18,9 @@ export const Sound = () => {
     }
 
     return (
-        <div onClick={onSwitch} className='sound'>
-            {state && <img src={IMG_SOUND_ON} alt="" />}
-            {!state && <img src={IMG_SOUND_OFF} alt="" />}
+        <div className='sound'>
+            {state && <img src={IMG_SOUND_ON} onClick={onSwitch} alt="" />}
+            {!state && <img src={IMG_SOUND_OFF} onClick={onSwitch} alt="" />}
         </div>
     )
 };
