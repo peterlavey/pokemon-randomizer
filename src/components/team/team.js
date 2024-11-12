@@ -56,27 +56,14 @@ export const Team = () => {
         setPokemonTeam([...pokemonTeam, pokemonChoosen]);
     };
 
-    const testSound = () => {
-        const sound = new Audio('test-sound.mp3');
-        sound.play();
-    }
-
     return (
         <div className='team'>
-            <button onClick={testSound}>Test</button>
-            {
-                1===3 && (
-                    <>
-                        {pokeballs.length > 0 && <Pokeballs pokeballs={pokeballs} team={pokemonTeam} />}
-                        {state === STATE.CHOOSE && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
-                        {state === STATE.OPEN && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon} />}
-                        {state === STATE.REVEAL && <Reveal type={TYPE.MOBILE} pokemon={pokemon} setPokemon={setPokemon} />}
-                        {state === STATE.COMPLETED && <Presentation team={pokemonTeam} />}
-                        {state !== STATE.COMPLETED && <Sound />}
-                    </>
-                )
-            }
-
+            {pokeballs.length > 0 && <Pokeballs pokeballs={pokeballs} team={pokemonTeam} />}
+            {state === STATE.CHOOSE && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
+            {state === STATE.OPEN && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon} />}
+            {state === STATE.REVEAL && <Reveal type={TYPE.MOBILE} pokemon={pokemon} setPokemon={setPokemon} />}
+            {state === STATE.COMPLETED && <Presentation team={pokemonTeam} />}
+            {state !== STATE.COMPLETED && <Sound />}
         </div>
     );
 };

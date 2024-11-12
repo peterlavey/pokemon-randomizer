@@ -5,8 +5,8 @@
 - [x] Mostrar los Stats y Tier
 - [x] Reemplazar pokeball css con imagenes para mostrar los otros tipos
 - [ ] Calcular tier por stats, ataques y tipo
-- [ ] Mejorar fondo e instrucciones al seleccionar pokebolas
-- [ ] Añadir un hud para mostrar en que columna se encuentra el pokemon (3 lineas horizontales, una encendida verde)
+- [x] Mejorar fondo e instrucciones al seleccionar pokebolas
+- [x] Añadir un hud para mostrar en que columna se encuentra el pokemon (3 lineas horizontales, una encendida verde)
 
 **Modos de juego**
 - [x] Dar la opción de combate igualado usando el tier de los pokemon
@@ -20,6 +20,7 @@
 - https://www.sounds-resource.com/nintendo_64/pokemonstadium/sound/34243/
 - https://github.com/Purukitto/pokemon-data.json/tree/master
 - https://tiermaker.com/categories/pokemon/pokemon-first-generation-62534
+- https://pokemon.fandom.com/es/wiki/Lista_de_Pok%C3%A9mon_de_la_primera_generaci%C3%B3n
 
 # Getting Started with Create React App
 
