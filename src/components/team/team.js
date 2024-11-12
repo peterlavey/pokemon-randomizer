@@ -6,7 +6,6 @@ import Presentation from "./presentation/presentation";
 import {getByTier, getRandom} from "../../utils/utils";
 import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
 import Sound from "./sound/sound";
-import {useSoundContext} from "../../contexts/soundContext";
 import './team.styles.scss';
 
 
@@ -19,7 +18,6 @@ const STATE = {
 };
 
 export const Team = () => {
-    const {ready} = useSoundContext();
     const [state, setState] = useState(STATE.CHOOSE);
     const [pokemon, setPokemon] = useState(undefined);
     const [pokemonTeam, setPokemonTeam] = useState([]);
@@ -60,16 +58,12 @@ export const Team = () => {
 
     return (
         <div className='team'>
-            {ready && (
-                <>
-                    {pokeballs.length > 0 && <Pokeballs pokeballs={pokeballs} team={pokemonTeam} />}
-                    {state === STATE.CHOOSE && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
-                    {state === STATE.OPEN && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon} />}
-                    {state === STATE.REVEAL && <Reveal type={TYPE.MOBILE} pokemon={pokemon} setPokemon={setPokemon} />}
-                    {state === STATE.COMPLETED && <Presentation team={pokemonTeam} />}
-                    {state !== STATE.COMPLETED && <Sound />}
-                </>
-            )}
+            {pokeballs.length > 0 && <Pokeballs pokeballs={pokeballs} team={pokemonTeam} />}
+            {state === STATE.CHOOSE && <ChoosePokeballs pokeballs={pokeballs} setPokeballs={setPokeballs} />}
+            {state === STATE.OPEN && <PokeButton pokeball={getCurrentPokeball()} onClick={getPokemon} />}
+            {state === STATE.REVEAL && <Reveal type={TYPE.MOBILE} pokemon={pokemon} setPokemon={setPokemon} />}
+            {state === STATE.COMPLETED && <Presentation team={pokemonTeam} />}
+            {state !== STATE.COMPLETED && <Sound />}
         </div>
     );
 };
