@@ -7,6 +7,12 @@
   border-style: ridge;
   box-shadow: 0 2px 3px 0;
 
+  &:active {
+    width: 42%;
+    box-shadow: none;
+    background: linear-gradient(0deg, #04a8b4 0%, #05d7e6 100%);
+  }
+
   > .firstColumn {
     display: flex;
     justify-content: space-between;
