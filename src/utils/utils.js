@@ -1,5 +1,6 @@
 import pokemons from "../resources/pokemons.json";
 import {POKEBALL} from "../components/team/pokeballs/pokeball/pokeball";
+import {Howl} from "howler";
 
 export const delay = ms => new Promise(res => setTimeout(res, ms));
 
@@ -38,3 +39,8 @@ export const preloadAudio = arr => new Promise(resolve => {
         return audio;
     });
 });
+
+export const preloadAudioIos = arr => arr.map(src => new Howl({
+    src: [src],
+    html5: true
+}));

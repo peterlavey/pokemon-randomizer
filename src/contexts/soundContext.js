@@ -1,6 +1,6 @@
 import {createContext, useContext, useEffect, useState} from "react";
 import {SFX_POKEBALL_OPEN, SFX_POKEBALL_TICK, SFX_POKEMON_INTRO, SFX_POKEMON_TEAM} from "../utils/constants";
-import {preloadAudio} from "../utils/utils";
+import {preloadAudioIos} from "../utils/utils";
 
 const initialState = {
     ready: false,
@@ -21,7 +21,7 @@ const SoundContextProvider = ({ children }) => {
     const [openSfx, setOpenSfx] = useState(initialState.openSfx);
 
     const init = async () => {
-        const audios= await preloadAudio([
+        const audios = preloadAudioIos([
             SFX_POKEMON_INTRO,
             SFX_POKEMON_TEAM,
             SFX_POKEBALL_TICK,
