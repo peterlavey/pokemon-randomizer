@@ -13,7 +13,7 @@ const MemberInfo = ({id, image: {sprite}, name: {english}, type, tier, cry}) => 
     };
     
     useEffect(() => {
-        setCrySfx(preloadAudioIos([cry])[0]);
+        setCrySfx(preloadAudioIos(cry));
     }, [cry]);
     
     return (

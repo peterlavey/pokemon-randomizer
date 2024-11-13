@@ -40,7 +40,16 @@ export const preloadAudio = arr => new Promise(resolve => {
     });
 });
 
-export const preloadAudioIos = arr => arr.map(src => new Howl({
-    src: [src],
-    html5: true
-}));
+export const preloadAudioIos = arr => {
+    if (typeof arr === "string") {
+        return new Howl({
+            src: [arr],
+            html5: true
+        });
+    }
+
+    return arr.map(src => new Howl({
+        src: [src],
+        html5: true
+    }));
+}
