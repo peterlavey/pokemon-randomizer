@@ -97,8 +97,9 @@ To prevent visual crowding and produce an authentic stadium team photo:
    - `isFlying === true`: positioned at `top: 5%`
    - `isJumping === true`: positioned at `top: 25%`
 
-### 4.3 Victory Fanfare & Team Cry
+### 4.3 Victory Fanfare & Interactive Team Cries
 1. Pauses intro theme.
-2. Plays all 6 Pokémon cries simultaneously in celebration.
+2. Plays all 6 Pokémon cries simultaneously in celebration along with synchronized roar/leap animations.
 3. Plays the Stadium victory fanfare (`SFX_POKEMON_TEAM`).
 4. Displays the `TeamInfo` summary grid with base stats for each Pokémon sorted by Pokédex ID.
+5. **Interactive Cry Animation**: Clicking on a Pokémon card in `TeamInfo` or on the Pokémon in the stage lineup plays its authentic N64 cry audio and triggers a dynamic roar/leap bounce animation (`pokemonCry` / `spriteCry`) for the corresponding Pokémon.

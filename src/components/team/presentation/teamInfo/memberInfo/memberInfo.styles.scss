@@ -1,11 +1,12 @@
 .memberInfo {
   width: 43%;
-  background: linear-gradient(0deg, #04C0CE 0%, #0BEAFA 100%);;
+  background: linear-gradient(0deg, #04C0CE 0%, #0BEAFA 100%);
   margin: 1%;
   padding: 5px;
   border-radius: 5%;
   border-style: ridge;
   box-shadow: 0 2px 3px 0;
+  cursor: pointer;
 
   &:active {
     width: 42%;
@@ -30,6 +31,11 @@
     > img {
       width: 3em;
       position: initial;
+      transform-origin: bottom center;
+
+      &.crying {
+        animation: spriteCry 0.8s ease-in-out;
+      }
     }
 
     > span {
@@ -69,5 +75,26 @@
 
   .tier-S {
     color: orangered;
+  }
+}
+
+@keyframes spriteCry {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  20% {
+    transform: scale(1.15, 0.88) translateY(-6px);
+  }
+  40% {
+    transform: scale(0.92, 1.1) translateY(2px);
+  }
+  60% {
+    transform: scale(1.08, 0.95) translateY(-3px);
+  }
+  80% {
+    transform: scale(0.96, 1.04) translateY(1px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
   }
 }

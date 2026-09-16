@@ -1,10 +1,21 @@
 import React from 'react';
-import { render, screen, act } from '@testing-library/react';
+import { render, screen, act, fireEvent } from '@testing-library/react';
 import Presentation from './presentation';
 import * as soundContextModule from '../../../contexts/soundContext';
 
-jest.mock('./teamInfo/teamInfo', () => ({ team }) => (
-    <div data-testid="mock-team-info">Team members: {team?.length}</div>
+jest.mock('./teamInfo/teamInfo', () => ({ team, onPlayCry, activeCryMap }) => (
+    <div data-testid="mock-team-info">
+        Team members: {team?.length}
+        {team?.map((m) => (
+            <button
+                key={m.id}
+                data-testid={`trigger-cry-${m.id}`}
+                onClick={() => onPlayCry?.(m.id)}
+            >
+                Cry {m.id} {activeCryMap?.[m.id] ? '(crying)' : ''}
+            </button>
+        ))}
+    </div>
 ));
 
 describe('Presentation Component Unit Tests', () => {
@@ -83,6 +94,30 @@ describe('Presentation Component Unit Tests', () => {
 
         expect(mockSoundContext.introSong.pause).toHaveBeenCalled();
         expect(mockSoundContext.teamCompleteSong.play).toHaveBeenCalled();
+    });
+
+    test('triggers cry animation on pokemon click and keydown', () => {
+        const { container } = render(<Presentation team={mockTeam} />);
+        const bulbasaurImg = screen.getByAltText('Bulbasaur');
+
+        expect(bulbasaurImg.className).not.toContain('crying');
+
+        // Click stage pokemon
+        fireEvent.click(bulbasaurImg);
+        expect(screen.getByAltText('Bulbasaur').className).toContain('crying');
+
+        // Keydown Enter on stage pokemon
+        const pikachuImg = screen.getByAltText('Pikachu');
+        fireEvent.keyDown(pikachuImg, { key: 'Enter' });
+        expect(screen.getByAltText('Pikachu').className).toContain('crying');
+    });
+
+    test('triggers cry animation on stage pokemon when onPlayCry is triggered from TeamInfo', () => {
+        render(<Presentation team={mockTeam} />);
+        const charizardTrigger = screen.getByTestId('trigger-cry-6');
+
+        fireEvent.click(charizardTrigger);
+        expect(screen.getByAltText('Charizard').className).toContain('crying');
     });
 
     test('handles empty team without crashing', () => {

@@ -49,26 +49,39 @@ describe('MemberInfo Component Unit Tests', () => {
         expect(memberColumn).toBeInTheDocument();
     });
 
-    test('plays cry on click and on keydown (Enter and Space)', () => {
-        const { container } = render(<MemberInfo {...mockMember} />);
+    test('plays cry on click and on keydown (Enter and Space) and triggers onPlayCry', () => {
+        const onPlayCryMock = jest.fn();
+        const { container } = render(<MemberInfo {...mockMember} onPlayCry={onPlayCryMock} />);
         const memberDiv = container.querySelector('.memberInfo');
+        const spriteImg = container.querySelector('.secondColumn img');
 
         // Click
         fireEvent.click(memberDiv);
         expect(mockHowl.seek).toHaveBeenCalledWith(0);
         expect(mockHowl.play).toHaveBeenCalledTimes(1);
+        expect(onPlayCryMock).toHaveBeenCalledWith(6);
+        expect(container.querySelector('.secondColumn img').className).toContain('crying');
 
         // Enter key
         fireEvent.keyDown(memberDiv, { key: 'Enter' });
         expect(mockHowl.play).toHaveBeenCalledTimes(2);
+        expect(onPlayCryMock).toHaveBeenCalledTimes(2);
 
         // Space key
         fireEvent.keyDown(memberDiv, { key: ' ' });
         expect(mockHowl.play).toHaveBeenCalledTimes(3);
+        expect(onPlayCryMock).toHaveBeenCalledTimes(3);
 
         // Other key
         fireEvent.keyDown(memberDiv, { key: 'Tab' });
         expect(mockHowl.play).toHaveBeenCalledTimes(3);
+        expect(onPlayCryMock).toHaveBeenCalledTimes(3);
+    });
+
+    test('renders crying class on sprite when isCrying is true', () => {
+        const { container } = render(<MemberInfo {...mockMember} isCrying={true} />);
+        const spriteImg = container.querySelector('.secondColumn img');
+        expect(spriteImg.className).toContain('crying');
     });
 
     test('handles standard HTML audio with currentTime and play', () => {

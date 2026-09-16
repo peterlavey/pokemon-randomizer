@@ -4,6 +4,13 @@
   img {
     position: absolute;
     bottom: 50%;
+    transform-origin: bottom center;
+    cursor: pointer;
+    will-change: transform;
+
+    &.crying {
+      animation: pokemonCry 0.8s ease-in-out;
+    }
   }
   .member0 {
     left: 0;
@@ -22,5 +29,32 @@
   }
   .member5 {
     left: 70%;
+  }
+}
+
+@keyframes pokemonCry {
+  0% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  15% {
+    transform: scale(1.15, 0.88) translateY(-22px) rotate(-6deg);
+  }
+  30% {
+    transform: scale(0.9, 1.12) translateY(6px) rotate(6deg);
+  }
+  45% {
+    transform: scale(1.08, 0.94) translateY(-12px) rotate(-3deg);
+  }
+  60% {
+    transform: scale(0.96, 1.04) translateY(3px) rotate(2deg);
+  }
+  75% {
+    transform: scale(1.03, 0.98) translateY(-4px) rotate(-1deg);
+  }
+  90% {
+    transform: scale(0.99, 1.01) translateY(1px) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) translateY(0) rotate(0deg);
   }
 }

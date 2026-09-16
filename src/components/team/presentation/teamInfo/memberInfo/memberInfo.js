@@ -5,13 +5,18 @@ import MemberColumn from "./memberColumn/memberColumn";
 import { getPokeballByTier } from "../../../../../services/pokemonService";
 import { preloadAudioIos } from "../../../../../utils/utils";
 
-export const MemberInfo = ({ id, image, name, type = [], tier, cry }) => {
+export const MemberInfo = ({ id, image, name, type = [], tier, cry, onPlayCry, cryKey = 0, isCrying = false }) => {
     const [crySfx, setCrySfx] = useState(null);
+    const [localCryCount, setLocalCryCount] = useState(0);
     const sprite = image?.sprite || '';
     const englishName = name?.english || '';
     const pokeball = getPokeballByTier(tier);
 
     const makeCry = useCallback(() => {
+        setLocalCryCount((prev) => prev + 1);
+        if (onPlayCry) {
+            onPlayCry(id);
+        }
         if (!crySfx) return;
         try {
             if (typeof crySfx.seek === 'function') {
@@ -22,13 +27,16 @@ export const MemberInfo = ({ id, image, name, type = [], tier, cry }) => {
                 crySfx.play();
             }
         } catch (e) {}
-    }, [crySfx]);
+    }, [crySfx, id, onPlayCry]);
 
     useEffect(() => {
         if (cry) {
             setCrySfx(preloadAudioIos(cry));
         }
     }, [cry]);
+
+    const activeAnimationKey = cryKey || localCryCount;
+    const shouldAnimate = isCrying || localCryCount > 0;
 
     return (
         <div
@@ -47,7 +55,12 @@ export const MemberInfo = ({ id, image, name, type = [], tier, cry }) => {
                 <MemberColumn id={id} />
             </div>
             <div className="secondColumn">
-                <img src={sprite} alt={englishName} />
+                <img
+                    key={`${id}-${activeAnimationKey}`}
+                    src={sprite}
+                    alt={englishName}
+                    className={shouldAnimate ? 'crying' : ''}
+                />
                 <span>{englishName}</span>
             </div>
             <div className="thirdColumn">
