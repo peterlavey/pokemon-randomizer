@@ -2,6 +2,7 @@ import React from "react";
 import './mobile.styles.scss';
 import Type from "./type/type";
 import Stats from "./stats/stats";
+import Particles from "../particles/particles";
 
 export const Mobile = ({
     id,
@@ -13,7 +14,8 @@ export const Mobile = ({
     description,
     height,
     weight,
-    base
+    base,
+    isAnimationFinished = false,
 }) => {
     const hires = image?.hires || '';
     const englishName = name?.english || '';
@@ -22,6 +24,7 @@ export const Mobile = ({
     return (
         <div className='mobile'>
             <div className={`container ${primaryType}`}>
+                <Particles types={type} isAnimationFinished={isAnimationFinished} />
                 <img src={hires} alt={englishName} className='revealImage' />
 
                 <div align='center' className='info revealInfo'>

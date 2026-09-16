@@ -7,6 +7,23 @@ window.HTMLMediaElement.prototype.play = () => Promise.resolve();
 window.HTMLMediaElement.prototype.pause = () => {};
 window.HTMLMediaElement.prototype.addTextTrack = () => {};
 
+// Mock HTMLCanvasElement getContext for Jest/JSDOM
+window.HTMLCanvasElement.prototype.getContext = () => ({
+    clearRect: () => {},
+    save: () => {},
+    restore: () => {},
+    beginPath: () => {},
+    closePath: () => {},
+    moveTo: () => {},
+    lineTo: () => {},
+    quadraticCurveTo: () => {},
+    arc: () => {},
+    fill: () => {},
+    stroke: () => {},
+    translate: () => {},
+    rotate: () => {},
+});
+
 // Mock react-chartjs-2 for test environments without HTML5 Canvas engine
 jest.mock('react-chartjs-2', () => ({
     Radar: ({ data, options }) => <div data-testid="mock-radar" data-chart-data={JSON.stringify(data)} />,

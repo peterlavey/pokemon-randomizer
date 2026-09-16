@@ -50,6 +50,9 @@ describe('Mobile Component Unit Tests', () => {
         // Cry audio
         const audio = container.querySelector('audio');
         expect(audio).toHaveAttribute('src', 'pikachu_cry.mp3');
+
+        // Type particles canvas
+        expect(screen.getByTestId('type-particles')).toBeInTheDocument();
     });
 
     test('handles missing optional properties gracefully', () => {

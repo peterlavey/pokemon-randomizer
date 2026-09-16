@@ -1,17 +1,23 @@
 .reveal {
   margin-top: 8%;
+  position: relative;
 
   img {
     width: 100%;
     margin-bottom: 2em;
+    position: relative;
+    z-index: 2;
   }
 
   .revealImage {
     animation: revealImage 3.5s ease-in-out;
+    will-change: transform, filter, opacity;
   }
 
   .info {
     opacity: 0;
+    position: relative;
+    z-index: 2;
   }
 
   .revealInfo {
@@ -21,6 +27,7 @@
     margin-top: -10%;
     opacity: 1;
     transition: opacity;
+    will-change: transform, opacity;
   }
 
   &.revealed {
@@ -28,15 +35,23 @@
       animation: none;
       opacity: 1;
       filter: brightness(1);
+      transform: translateY(0);
+    }
+
+    .type-particles-canvas {
+      animation: none;
+      opacity: 0;
     }
 
     .info {
       opacity: 1;
+      transform: translateY(0);
     }
 
     .revealInfo {
       animation: none;
       opacity: 1;
+      transform: translateY(0);
     }
   }
 }
@@ -45,44 +60,59 @@
   0% {
     opacity: 0;
     filter: brightness(0);
+    transform: translateY(35%);
   }
 
-  35% {
+  30% {
     opacity: 0;
     filter: brightness(0);
+    transform: translateY(35%);
   }
 
-  45% {
+  40% {
     opacity: 1;
     filter: brightness(0);
+    transform: translateY(35%);
   }
 
-  65% {
+  60% {
     opacity: 1;
     filter: brightness(0);
+    transform: translateY(35%);
   }
 
-  85% {
+  75% {
     opacity: 1;
     filter: brightness(1);
+    transform: translateY(35%);
+  }
+
+  90% {
+    opacity: 1;
+    filter: brightness(1);
+    transform: translateY(0);
   }
 
   100% {
     opacity: 1;
     filter: brightness(1);
+    transform: translateY(0);
   }
 }
 
 @keyframes revealInfo {
   0% {
     opacity: 0;
+    transform: translateY(20px);
   }
 
-  75% {
+  80% {
     opacity: 0;
+    transform: translateY(20px);
   }
 
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }

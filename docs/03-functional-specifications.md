@@ -46,10 +46,11 @@ Disclose the generated Pokémon's stats, type affinities, and authentic N64 audi
 
 ### 3.2 Visual & Audio Specifications
 1. **Animated Guessing & Reveal Sequence**:
-   - **Sound-Only Guessing Phase** (`revealImage` 0%-35% / ~1.2s): The authentic Pokémon cry (`pokemon.cry`) plays via HTML5 Audio while the image remains completely hidden (`opacity: 0`), allowing players to identify the Pokémon purely by audio.
-   - **Silhouette Phase** (`revealImage` 35%-65% / ~1.0s): Pokémon sprite smoothly fades in from transparent to fully visible as an unrevealed black silhouette (`brightness(0)`), remaining as a silhouette for approximately 1 second to provide visual shape clues to guess.
-   - **Full Color Transition** (`revealImage` 65%-85% / ~0.7s): Sprite smoothly transitions its brightness from `brightness(0)` to full color (`brightness(1)`).
-   - **Stat Sheet Entry** (`revealInfo` 75%-100%): Pokémon stats, badges, and information smoothly fade in once the Pokémon reaches full color presentation.
+   - **Sound-Only Guessing & Origin Phase** (`revealImage` 0%-30% / ~1.0s): The authentic Pokémon cry (`pokemon.cry`) plays via HTML5 Audio while the image remains completely hidden (`opacity: 0; transform: translateY(35%)`), centered alongside dynamic elemental particles emulating the Pokémon's type (e.g., flames for Fire, bubbles/droplets for Water, wind streaks for Flying, electricity zaps for Electric, leaves for Grass, etc.), allowing players to identify the Pokémon by audio and elemental particle cues.
+   - **Silhouette Phase in Center** (`revealImage` 30%-60% / ~1.0s): Pokémon sprite smoothly fades in from transparent to fully visible as an unrevealed black silhouette (`brightness(0); transform: translateY(35%)`), positioned directly in the center of the display surrounded by type particles to provide visual shape clues.
+   - **Full Color Transition & Particle Fade** (`revealImage` 60%-75% / ~0.5s): Sprite smoothly transitions its brightness from `brightness(0)` to full color (`brightness(1); transform: translateY(35%)`) at the center point, while particle generation halts and existing particles fade out completely (`opacity: 0` by 75%) to ensure a clean, unobstructed display.
+   - **Ascension to Top Position** (`revealImage` 75%-90% / ~0.5s): The fully revealed Pokémon smoothly glides up from the center (`translateY(35%)`) to its standard header position (`translateY(0)`) with the background clear of particles.
+   - **Stat Sheet Entry** (`revealInfo` 80%-100%): Pokémon stats, badges, radar chart, and information smoothly fade in and slide up into view once the Pokémon reaches its top presentation position, completely free of any overlapping visual particle clutter.
 2. **Radar Stat Visualization**:
    - Powered by Chart.js Radar (`src/components/team/reveal/mobile/stats/radar/radar.js`).
    - Renders 6 stat axes: HP, Attack, Defense, Sp. Atk, Sp. Def, Speed.
