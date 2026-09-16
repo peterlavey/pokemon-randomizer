@@ -1,17 +1,25 @@
 .pokeballItem {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-style: inset;
   border-radius: 45px;
   outline: #81D4FA inset 1em;
   height: 5em;
-  margin: 0 3% 3em 3%;
+  margin: 0 8% 3em 8%;
+  cursor: pointer;
+  box-sizing: border-box;
 
   > img {
-    width: 12%;
-    position: relative;
-    bottom: 60%;
-    left: 44%;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    pointer-events: none;
   }
 }
 
@@ -63,16 +71,39 @@
 }
 
 .roulette {
-  z-index: -5;
-  display: flex;
   position: absolute;
-  animation: scroll 50s linear infinite;
-  height: 7%;
-  margin-bottom: 3%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
 
-  > img {
-    width: auto;
-    animation: jump .5s linear alternate infinite;
+  .rouletteTrack {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: scroll 50s linear infinite;
+    white-space: nowrap;
+    will-change: transform;
+
+    > img {
+      height: 70%;
+      width: auto;
+      animation: jump .5s linear alternate infinite;
+      margin: 0 4px;
+      user-select: none;
+    }
   }
 
+  > img {
+    height: 70%;
+    width: auto;
+    animation: jump .5s linear alternate infinite;
+    margin: 0 4px;
+    user-select: none;
+  }
 }

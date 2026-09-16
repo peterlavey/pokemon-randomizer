@@ -63,13 +63,15 @@ export const Carousel = ({ pokeball, onSelect }) => {
                 alt={pokeball.name}
             />
             <div className='roulette'>
-                {pokemonImg.map((pokemon, index) => (
-                    <img
-                        src={pokemon.image?.sprite}
-                        alt={pokemon.name?.english || ''}
-                        key={`${pokemon.id}-${pokemon.name?.english}-${index}`}
-                    />
-                ))}
+                <div className='rouletteTrack'>
+                    {pokemonImg.map((pokemon, index) => (
+                        <img
+                            src={pokemon.image?.sprite}
+                            alt={pokemon.name?.english || ''}
+                            key={`${pokemon.id}-${pokemon.name?.english}-${index}`}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );
