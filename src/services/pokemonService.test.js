@@ -21,19 +21,25 @@ describe('pokemonService', () => {
         expect(pokemons.length).toBe(151);
     });
 
-    test('getPokemonById returns the correct pokemon', () => {
+    test('getPokemonById returns the correct pokemon and undefined if not found', () => {
         const bulbasaur = getPokemonById(1);
         expect(bulbasaur).toBeDefined();
         expect(bulbasaur.name.english).toBe('Bulbasaur');
+
+        const notFound = getPokemonById(999);
+        expect(notFound).toBeUndefined();
     });
 
-    test('getPokemonsByTiers filters correctly', () => {
+    test('getPokemonsByTiers filters correctly and returns empty array when no matches', () => {
         const sTier = getPokemonsByTiers(TIER.S);
         expect(sTier.length).toBeGreaterThan(0);
         expect(sTier.every((p) => p.tier === TIER.S)).toBe(true);
 
         const multiTier = getPokemonsByTiers([TIER.C, TIER.D]);
         expect(multiTier.every((p) => p.tier === TIER.C || p.tier === TIER.D)).toBe(true);
+
+        const unknownTier = getPokemonsByTiers('UNKNOWN_TIER');
+        expect(unknownTier).toEqual([]);
     });
 
     test('getPokemonsByPokeball returns pool matching pokeball tiers', () => {
@@ -51,7 +57,7 @@ describe('pokemonService', () => {
         expect([1, 2, 3]).toContain(item);
     });
 
-    test('selectUniquePokemonForPokeball excludes already chosen team members', () => {
+    test('selectUniquePokemonForPokeball excludes already chosen team members and falls back when all are chosen', () => {
         const pool = getPokemonsByPokeball(POKEBALL.MASTER);
         const first = pool[0];
         const second = selectUniquePokemonForPokeball(POKEBALL.MASTER, [first]);
@@ -59,6 +65,16 @@ describe('pokemonService', () => {
         if (pool.length > 1) {
             expect(second.id).not.toBe(first.id);
         }
+
+        // When all pool items are chosen, falls back to full pool
+        const fullPoolChosen = selectUniquePokemonForPokeball(POKEBALL.MASTER, pool);
+        expect(fullPoolChosen).toBeDefined();
+        expect(pool.map((p) => p.id)).toContain(fullPoolChosen.id);
+    });
+
+    test('selectUniquePokemonForPokeball returns null for invalid pokeball', () => {
+        const result = selectUniquePokemonForPokeball({ tiers: [] });
+        expect(result).toBeNull();
     });
 
     test('getMaxBaseStats returns positive max values for all stats', () => {
@@ -77,26 +93,40 @@ describe('pokemonService', () => {
         expect(percent).toBeCloseTo(50, 1);
     });
 
-    test('getPokeballByTier returns correct Pokeball for tier', () => {
+    test('getPokeballByTier returns correct Pokeball for tier and fallback for unknown', () => {
         expect(getPokeballByTier(TIER.S)).toEqual(POKEBALL.MASTER);
         expect(getPokeballByTier(TIER.A)).toEqual(POKEBALL.ULTRA);
         expect(getPokeballByTier(TIER.B)).toEqual(POKEBALL.SUPER);
         expect(getPokeballByTier(TIER.C)).toEqual(POKEBALL.NORMAL);
         expect(getPokeballByTier(TIER.D)).toEqual(POKEBALL.NORMAL);
+        expect(getPokeballByTier('UNKNOWN')).toEqual(POKEBALL.NORMAL);
     });
 
-    test('getMemberColumnIndex calculates (id - 1) % 3 correctly', () => {
+    test('getMemberColumnIndex calculates (id - 1) % 3 correctly and handles invalid id', () => {
         expect(getMemberColumnIndex(1)).toBe(0);
         expect(getMemberColumnIndex(2)).toBe(1);
         expect(getMemberColumnIndex(3)).toBe(2);
         expect(getMemberColumnIndex(4)).toBe(0);
         expect(getMemberColumnIndex(150)).toBe(2);
         expect(getMemberColumnIndex(151)).toBe(0);
+        expect(getMemberColumnIndex(null)).toBe(0);
+        expect(getMemberColumnIndex(undefined)).toBe(0);
     });
 
-    test('calculateScaledHeight calculates scale proportionally', () => {
+    test('calculateScaledHeight calculates scale proportionally and handles defaults', () => {
         const height = calculateScaledHeight(1.5, 3.0, 200);
         expect(height).toBe(100);
+
+        // default baseScale = 200
+        expect(calculateScaledHeight(1.5, 3.0)).toBe(100);
+
+        // 0 maxHeight fallback
+        expect(calculateScaledHeight(1.5, 0)).toBe(300);
+    });
+
+    test('arrangeStageLineup handles empty array or null input', () => {
+        expect(arrangeStageLineup([])).toEqual([]);
+        expect(arrangeStageLineup(null)).toEqual([]);
     });
 
     test('arrangeStageLineup arranges 6 pokemons into presentation order without mutating input', () => {

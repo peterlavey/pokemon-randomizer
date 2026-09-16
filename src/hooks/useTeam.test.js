@@ -61,6 +61,28 @@ describe('useTeam and teamReducer', () => {
         expect(state.pokemonTeam.length).toBe(6);
     });
 
+    test('teamReducer returns current state on unknown action or invalid OPEN_POKEBALL', () => {
+        const state = initialTeamState;
+        const unchanged = teamReducer(state, { type: 'UNKNOWN_ACTION' });
+        expect(unchanged).toBe(state);
+
+        // OPEN_POKEBALL when no pokeball has been selected
+        const afterInvalidOpen = teamReducer(state, { type: ACTION_TYPES.OPEN_POKEBALL });
+        expect(afterInvalidOpen).toBe(state);
+    });
+
+    test('teamReducer handles RESET_TEAM', () => {
+        let state = {
+            state: TEAM_STATE.COMPLETED,
+            pokeballs: [POKEBALL.NORMAL],
+            pokemonTeam: [{ id: 1 }],
+            currentPokemon: null,
+        };
+
+        const reset = teamReducer(state, { type: ACTION_TYPES.RESET_TEAM });
+        expect(reset).toEqual(initialTeamState);
+    });
+
     test('useTeam hook provides state and action helpers', () => {
         const { result } = renderHook(() => useTeam());
 
