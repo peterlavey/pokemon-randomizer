@@ -1,14 +1,38 @@
 .pokeButton {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
     *, *:before, *:after {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+
+    .dark-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #121212;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 0;
+        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
     img {
         position: relative;
         width: 110%;
         bottom: 5%;
         right: 5%;
+        z-index: 2;
     }
     body {
         background: #ecf0f1;
@@ -18,6 +42,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        z-index: 1;
     }
     /* Poké Styles */
     .pokeball {
@@ -30,6 +55,26 @@
         overflow: hidden;
         box-shadow: inset -10px 10px 0 10px #ccc;
     }
+
+    .pokeball-silhouette {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #121212;
+        box-shadow: 0 0 40px 20px #121212;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+
+        &.active {
+            opacity: 1;
+            animation: silhouette-expand 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+    }
+
     .shaking {
         animation: fall .25s ease-in-out,
         shake 1.25s cubic-bezier(.36,.07,.19,.97) infinite;
@@ -50,7 +95,15 @@
         animation: blink .5s alternate 1;
     }
     .zoom {
-        animation: zoom-in 1s 1;
+        animation: zoom-in 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+
+        img {
+            animation: pokeball-darken 0.8s ease-in forwards;
+        }
+
+        .pokeball__button {
+            animation: button-fade 0.5s ease-in forwards;
+        }
     }
     /* Animation */
     @keyframes blink {
@@ -80,8 +133,49 @@
             transform: scale(1, 1);
             opacity: 1;
         }
+        50% {
+            opacity: 1;
+        }
         100% {
-            transform: scale(30, 30);
+            transform: scale(45, 45);
+            opacity: 1;
+        }
+    }
+
+    @keyframes silhouette-expand {
+        0% {
+            transform: scale(1);
+            opacity: 0.8;
+        }
+        30% {
+            opacity: 1;
+        }
+        100% {
+            transform: scale(50);
+            opacity: 1;
+        }
+    }
+
+    @keyframes pokeball-darken {
+        0% {
+            filter: brightness(1);
+        }
+        40% {
+            filter: brightness(0);
+        }
+        100% {
+            filter: brightness(0);
+        }
+    }
+
+    @keyframes button-fade {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
             opacity: 0;
         }
     }

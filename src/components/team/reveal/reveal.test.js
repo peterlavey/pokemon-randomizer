@@ -83,7 +83,7 @@ describe('Reveal Component Unit Tests', () => {
         expect(onDismissMock).toHaveBeenCalledTimes(1);
     });
 
-    test('triggers onDismiss on first click if animation completed naturally', () => {
+    test('triggers onDismiss on first click if animation completed naturally via revealImage or revealBackground', () => {
         const onDismissMock = jest.fn();
         const { container } = render(
             <Reveal pokemon={mockPokemon} onDismiss={onDismissMock} />
@@ -91,8 +91,8 @@ describe('Reveal Component Unit Tests', () => {
 
         const revealDiv = container.querySelector('.reveal');
 
-        // Simulate animationEnd event
-        fireEvent.animationEnd(revealDiv, { animationName: 'revealImage' });
+        // Simulate animationEnd event for revealBackground
+        fireEvent.animationEnd(revealDiv, { animationName: 'revealBackground' });
         expect(revealDiv).toHaveClass('revealed');
 
         // First click after animation completed immediately dismisses

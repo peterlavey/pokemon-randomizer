@@ -1,6 +1,11 @@
 .reveal {
-  margin-top: 8%;
+  margin-top: 0;
+  padding-top: 8%;
+  min-height: 100vh;
+  box-sizing: border-box;
   position: relative;
+  animation: revealBackground 3.5s ease-in-out;
+  will-change: background-color;
 
   img {
     width: 100%;
@@ -31,10 +36,13 @@
   }
 
   &.revealed {
+    animation: none;
+    background-color: transparent;
+
     .revealImage {
       animation: none;
       opacity: 1;
-      filter: brightness(1);
+      filter: brightness(1) invert(0);
       transform: translateY(0);
     }
 
@@ -56,46 +64,70 @@
   }
 }
 
+@keyframes revealBackground {
+  0% {
+    background-color: #121212;
+  }
+
+  35% {
+    background-color: #121212;
+  }
+
+  62% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
 @keyframes revealImage {
   0% {
     opacity: 0;
-    filter: brightness(0);
+    filter: brightness(0) invert(1);
     transform: translateY(35%);
   }
 
-  30% {
+  12% {
     opacity: 0;
-    filter: brightness(0);
+    filter: brightness(0) invert(1);
     transform: translateY(35%);
   }
 
-  40% {
+  28% {
     opacity: 1;
-    filter: brightness(0);
+    filter: brightness(0) invert(1);
     transform: translateY(35%);
   }
 
-  60% {
+  35% {
     opacity: 1;
-    filter: brightness(0);
+    filter: brightness(0) invert(1);
     transform: translateY(35%);
   }
 
-  75% {
+  62% {
     opacity: 1;
-    filter: brightness(1);
+    filter: brightness(0) invert(0);
+    transform: translateY(35%);
+  }
+
+  76% {
+    opacity: 1;
+    filter: brightness(1) invert(0);
     transform: translateY(35%);
   }
 
   90% {
     opacity: 1;
-    filter: brightness(1);
+    filter: brightness(1) invert(0);
     transform: translateY(0);
   }
 
   100% {
     opacity: 1;
-    filter: brightness(1);
+    filter: brightness(1) invert(0);
     transform: translateY(0);
   }
 }

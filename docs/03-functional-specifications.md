@@ -29,13 +29,16 @@ Provide suspense and tactile feedback as each member of the roster is randomly g
 
 ### 2.2 User Flow & Mechanics
 1. **Interactive Trigger**: The user is presented with a central interactive button (`PokeButton`) styled as the Pokeball corresponding to the current slot index (`pokemonTeam.length`).
-2. **Generation Trigger**: When clicked, the application triggers `getPokemon()`:
+2. **Pokeball Opening Animation**: Clicking the Pokéball initiates the opening sequence:
+   - **Blinking Button** (`phase === 'BLINKING'` / ~500ms): The central button indicator blinks red.
+   - **Pokéball & Black Silhouette Expansion** (`phase === 'ZOOMING'` / ~800ms): The Pokéball expands outwards while a matching black Pokéball silhouette and dark overlay expand from the center, darkening the viewport until the entire screen is covered in deep dark `#121212`.
+3. **Generation Trigger**: When the unsealing animation completes, the application triggers `getPokemon()`:
    - Identifies the allowed tiers for the current Pokeball (`getCurrentPokeball().tiers`).
    - Filters the Pokémon database by those tiers via `getByTier(tiers)`.
    - Randomly samples a candidate via `getRandom(pokemonsFiltered)`.
    - **Uniqueness Guard**: Checks whether candidate exists in `pokemonTeam`. If duplicated, it recursively re-samples until a novel Pokémon is chosen.
    - Appends the unique candidate to `pokemonTeam` and sets `pokemon` as the active target.
-3. **Transition**: Setting `pokemon` transitions the state machine to `REVEAL`.
+4. **Transition**: Setting `pokemon` transitions the state machine to `REVEAL`.
 
 ---
 
@@ -46,10 +49,10 @@ Disclose the generated Pokémon's stats, type affinities, and authentic N64 audi
 
 ### 3.2 Visual & Audio Specifications
 1. **Animated Guessing & Reveal Sequence**:
-   - **Sound-Only Guessing & Origin Phase** (`revealImage` 0%-30% / ~1.0s): The authentic Pokémon cry (`pokemon.cry`) plays via HTML5 Audio while the image remains completely hidden (`opacity: 0; transform: translateY(35%)`), centered alongside dynamic elemental particles emulating the Pokémon's type (e.g., flames for Fire, bubbles/droplets for Water, wind streaks for Flying, electricity zaps for Electric, leaves for Grass, etc.), allowing players to identify the Pokémon by audio and elemental particle cues.
-   - **Silhouette Phase in Center** (`revealImage` 30%-60% / ~1.0s): Pokémon sprite smoothly fades in from transparent to fully visible as an unrevealed black silhouette (`brightness(0); transform: translateY(35%)`), positioned directly in the center of the display surrounded by type particles to provide visual shape clues.
-   - **Full Color Transition & Particle Fade** (`revealImage` 60%-75% / ~0.5s): Sprite smoothly transitions its brightness from `brightness(0)` to full color (`brightness(1); transform: translateY(35%)`) at the center point, while particle generation halts and existing particles fade out completely (`opacity: 0` by 75%) to ensure a clean, unobstructed display.
-   - **Ascension to Top Position** (`revealImage` 75%-90% / ~0.5s): The fully revealed Pokémon smoothly glides up from the center (`translateY(35%)`) to its standard header position (`translateY(0)`) with the background clear of particles.
+   - **Dark Phase & Contrasting Silhouette** (`revealBackground` / `revealImage` 0%-35% / ~1.2s): Seamlessly continuing from the dark background established during the Pokéball expansion, the screen remains dark (`#121212`) while the authentic Pokémon cry (`pokemon.cry`) plays via HTML5 Audio and dynamic elemental particles emulate the Pokémon's type. Between 12% and 28%, the Pokémon sprite smoothly fades in centered (`transform: translateY(35%)`) as a bright, contrasting white silhouette (`filter: brightness(0) invert(1)`), creating high-contrast visual guessing cues.
+   - **Smooth Background & Silhouette Contrast Inversion** (`revealBackground` / `revealImage` 35%-62% / ~1.0s): The background smoothly and gradually transitions from dark to light (`transparent`), while simultaneously the Pokémon silhouette transitions fluidly from contrasting white (`brightness(0) invert(1)`) to dark black (`brightness(0) invert(0)`).
+   - **Full Color Transition & Particle Fade** (`revealImage` / `revealParticles` 62%-76% / ~0.5s): The black silhouette transitions smoothly to full natural color (`brightness(1)`), while type particle spawning stops and remaining particles completely fade out (`opacity: 0` by 76%).
+   - **Ascension to Top Position** (`revealImage` 76%-90% / ~0.5s): The fully revealed Pokémon smoothly glides up from the center (`translateY(35%)`) to its standard header position (`translateY(0)`).
    - **Stat Sheet Entry** (`revealInfo` 80%-100%): Pokémon stats, badges, radar chart, and information smoothly fade in and slide up into view once the Pokémon reaches its top presentation position, completely free of any overlapping visual particle clutter.
 2. **Radar Stat Visualization**:
    - Powered by Chart.js Radar (`src/components/team/reveal/mobile/stats/radar/radar.js`).

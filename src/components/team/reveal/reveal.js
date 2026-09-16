@@ -42,7 +42,12 @@ export const Reveal = ({
     }, [isAnimationFinished, onDismiss, setPokemon, onAccelerate]);
 
     const handleAnimationEnd = (e) => {
-        if (!e.animationName || e.animationName === 'revealImage' || e.animationName === 'revealInfo') {
+        if (
+            !e.animationName ||
+            e.animationName === 'revealImage' ||
+            e.animationName === 'revealInfo' ||
+            e.animationName === 'revealBackground'
+        ) {
             setInternalFinished(true);
             if (onAccelerate) {
                 onAccelerate();

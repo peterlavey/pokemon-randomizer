@@ -473,8 +473,8 @@ export const Particles = ({ types = [], isAnimationFinished = false }) => {
     }
 
     const startTime = typeof performance !== "undefined" ? performance.now() : Date.now();
-    const SPAWN_DURATION = 2100; // ms: 60% of 3.5s sequence (stops spawning when pokemon transitions to full color)
-    const FADE_END = 2625; // ms: 75% of 3.5s sequence (completely clears before ascent and stats display)
+    const SPAWN_DURATION = 2030; // ms: ~58% of 3.5s sequence (stops spawning as color reveal begins)
+    const FADE_END = 2660; // ms: ~76% of 3.5s sequence (completely clears before ascent and stats display)
 
     // Animation Loop
     const render = () => {

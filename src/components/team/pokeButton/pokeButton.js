@@ -57,8 +57,10 @@ export const PokeButton = ({ pokeball, onClick }) => {
                 }
             }}
         >
+            <div className={`dark-overlay ${phase === 'ZOOMING' ? 'active' : ''}`} />
             <div className="center-on-page">
                 <div className={containerClasses}>
+                    <div className={`pokeball-silhouette ${phase === 'ZOOMING' ? 'active' : ''}`} />
                     <img src={pokeball?.img} alt={pokeball?.name || 'Pokeball'} />
                     <div className={buttonClasses} />
                 </div>
