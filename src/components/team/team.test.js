@@ -3,12 +3,31 @@ import Team from './team';
 import { SoundContextProvider } from '../../contexts/soundContext';
 
 describe('Team Component Integration', () => {
+    test('renders start screen initially and transitions to CHOOSE upon pressing start', () => {
+        const { container } = render(
+            <SoundContextProvider>
+                <Team />
+            </SoundContextProvider>
+        );
+
+        expect(container.querySelector('.startScreen')).toBeInTheDocument();
+        const startButton = screen.getByRole('button', { name: /press start/i });
+        fireEvent.click(startButton);
+
+        expect(container.querySelector('.choosePokeballs')).toBeInTheDocument();
+    });
+
     test('full user flow from selecting pokeballs to presentation', async () => {
         const { container } = render(
             <SoundContextProvider>
                 <Team />
             </SoundContextProvider>
         );
+
+        // 0. Start screen -> Press start
+        expect(container.querySelector('.startScreen')).toBeInTheDocument();
+        const startButton = screen.getByRole('button', { name: /press start/i });
+        fireEvent.click(startButton);
 
         // 1. Initial State: CHOOSE
         expect(container.querySelector('.choosePokeballs')).toBeInTheDocument();

@@ -94,6 +94,7 @@ export const SoundContextProvider = ({ children }) => {
     }, [audioInstances.openSfx, playSoundInstance]);
 
     const playIntro = useCallback(() => {
+        setSoundOn(true);
         playSoundInstance(audioInstances.introSong);
     }, [audioInstances.introSong, playSoundInstance]);
 

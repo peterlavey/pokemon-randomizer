@@ -1,0 +1,182 @@
+.startScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #1b2838 0%, #0a0e17 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+    user-select: none;
+    overflow: hidden;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
+        max-width: 600px;
+        width: 100%;
+        animation: startScreenFadeIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    &__badge {
+        font-family: 'Arial Black', Impact, sans-serif;
+        font-size: 14px;
+        letter-spacing: 4px;
+        color: #ffcb05;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 4px 16px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 203, 5, 0.4);
+        margin-bottom: 12px;
+        text-shadow: 0 0 10px rgba(255, 203, 5, 0.5);
+    }
+
+    &__title {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        line-height: 0.95;
+
+        .title-pokemon {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: clamp(42px, 9vw, 68px);
+            font-weight: 900;
+            letter-spacing: 3px;
+            color: #ffcb05;
+            -webkit-text-stroke: 3px #2a75bb;
+            text-shadow: 0 4px 0 #1b4b79, 0 8px 15px rgba(0, 0, 0, 0.8);
+        }
+
+        .title-stadium {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: clamp(40px, 8.5vw, 64px);
+            font-weight: 900;
+            letter-spacing: 5px;
+            color: #e53935;
+            -webkit-text-stroke: 2px #fff;
+            text-shadow: 0 4px 0 #8e1512, 0 8px 18px rgba(0, 0, 0, 0.8);
+            transform: skew(-4deg);
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Arial Black', sans-serif;
+        font-size: clamp(14px, 3.5vw, 18px);
+        letter-spacing: 6px;
+        color: #e0e0e0;
+        margin-top: 14px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        border-top: 2px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        padding: 6px 20px;
+    }
+
+    &__emblem {
+        position: relative;
+        margin: 32px 0 28px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .emblem-glow {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            background: radial-gradient(circle, rgba(128, 97, 226, 0.45) 0%, rgba(128, 97, 226, 0) 70%);
+            border-radius: 50%;
+            animation: emblemPulse 2.5s infinite ease-in-out;
+        }
+
+        .emblem-ball {
+            width: 110px;
+            height: 110px;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.7));
+            animation: emblemFloat 3s infinite ease-in-out;
+            z-index: 1;
+        }
+    }
+
+    &__action {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__button {
+        background: linear-gradient(135deg, #ff3b04 0%, #d82b00 100%);
+        border: 3px solid #ffffff;
+        border-radius: 30px;
+        padding: 14px 44px;
+        cursor: pointer;
+        box-shadow: 0 0 20px rgba(255, 59, 4, 0.6), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        animation: pressStartBlink 1.6s infinite ease-in-out;
+
+        &:hover, &:focus-visible {
+            transform: scale(1.06);
+            box-shadow: 0 0 30px rgba(255, 59, 4, 0.9), inset 0 2px 6px #fff;
+            outline: none;
+        }
+
+        &:active {
+            transform: scale(0.96);
+        }
+
+        .button-text {
+            font-family: 'Arial Black', Impact, sans-serif;
+            font-size: clamp(18px, 4vw, 24px);
+            letter-spacing: 3px;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+}
+
+@keyframes startScreenFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes emblemFloat {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(4deg);
+    }
+}
+
+@keyframes emblemPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.25);
+        opacity: 0.9;
+    }
+}
+
+@keyframes pressStartBlink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.75;
+    }
+}

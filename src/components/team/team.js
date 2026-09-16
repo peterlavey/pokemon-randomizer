@@ -5,11 +5,13 @@ import Reveal, { TYPE } from "./reveal/reveal";
 import Presentation from "./presentation/presentation";
 import ChoosePokeballs from "./choosePokeballs/choosePokeballs";
 import Sound from "./sound/sound";
+import StartScreen from "./startScreen/startScreen";
 import { useTeam } from "../../hooks/useTeam";
+import { useSoundContext } from "../../contexts/soundContext";
 import { TEAM_STATE } from "../../constants/gameConstants";
 import './team.styles.scss';
 
-export const Team = () => {
+export const Team = ({ initialStarted = false }) => {
     const {
         state,
         pokeballs,
@@ -21,7 +23,16 @@ export const Team = () => {
         dismissReveal,
     } = useTeam();
 
+    const { playIntro } = useSoundContext();
+    const [hasStarted, setHasStarted] = useState(initialStarted);
     const [isAnimationFinished, setIsAnimationFinished] = useState(false);
+
+    const handleStart = useCallback(() => {
+        if (playIntro) {
+            playIntro();
+        }
+        setHasStarted(true);
+    }, [playIntro]);
 
     const handleOpen = useCallback((optionalPokemon) => {
         setIsAnimationFinished(false);
@@ -32,6 +43,10 @@ export const Team = () => {
         setIsAnimationFinished(false);
         dismissReveal();
     }, [dismissReveal]);
+
+    if (!hasStarted) {
+        return <StartScreen onStart={handleStart} />;
+    }
 
     return (
         <div className='team'>
