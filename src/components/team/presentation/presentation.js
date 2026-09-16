@@ -78,7 +78,6 @@ export const Presentation = ({ team = [] }) => {
                         <audio
                             ref={(el) => (audioRefs.current[index] = el)}
                             src={pokemon.cry}
-                            autoPlay
                         />
                     </div>
                 );

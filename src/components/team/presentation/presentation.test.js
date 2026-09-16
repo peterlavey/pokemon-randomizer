@@ -32,7 +32,7 @@ describe('Presentation Component Unit Tests', () => {
         { id: 25, name: { english: 'Pikachu' }, height: 0.4, isJumping: true, image: { hires: 'pikachu.png' }, cry: 'cry25.mp3' },
     ];
 
-    test('renders lineup images with correct heights, classes, and positions', () => {
+    test('renders lineup images with correct heights, classes, and positions, and renders audio elements without autoPlay', () => {
         const { container } = render(<Presentation team={mockTeam} />);
 
         // TeamInfo rendered
@@ -50,6 +50,13 @@ describe('Presentation Component Unit Tests', () => {
 
         const bulbasaurImg = screen.getByAltText('Bulbasaur');
         expect(bulbasaurImg.style.top === '' || bulbasaurImg.style.top === 'initial').toBe(true);
+
+        // Audio elements should not have autoplay enabled
+        const audioElements = container.querySelectorAll('.presentation audio');
+        expect(audioElements.length).toBe(3);
+        audioElements.forEach((audio) => {
+            expect(audio.autoplay).toBe(false);
+        });
     });
 
     test('plays audio and stadium transition after delay', async () => {
