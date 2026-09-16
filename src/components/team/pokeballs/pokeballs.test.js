@@ -8,8 +8,14 @@ jest.mock('./pokeball/pokeball', () => {
     return {
         __esModule: true,
         POKEBALL,
-        default: ({ type, pokemonImg }) => (
-            <div data-testid="mock-pokeball-slot" data-type={type?.name} data-img={pokemonImg}>
+        default: ({ type, pokemonImg, isRevealed, isCurrent }) => (
+            <div
+                data-testid="mock-pokeball-slot"
+                data-type={type?.name}
+                data-img={pokemonImg}
+                data-revealed={isRevealed ? 'true' : 'false'}
+                data-current={isCurrent ? 'true' : 'false'}
+            >
                 {type?.name || 'Default'} - {pokemonImg || 'Empty'}
             </div>
         ),
@@ -29,11 +35,42 @@ describe('Pokeballs Component Unit Tests', () => {
 
         expect(slots[0]).toHaveAttribute('data-type', POKEBALL.NORMAL.name);
         expect(slots[0]).toHaveAttribute('data-img', 'bulbasaur.png');
+        expect(slots[0]).toHaveAttribute('data-revealed', 'false');
+        expect(slots[0]).toHaveAttribute('data-current', 'true');
 
         expect(slots[1]).toHaveAttribute('data-type', POKEBALL.SUPER.name);
         expect(slots[1]).toHaveAttribute('data-img', '');
 
         expect(slots[2]).toHaveAttribute('data-type', POKEBALL.NORMAL.name);
+    });
+
+    test('marks previous slots as revealed and current slot according to isAnimationFinished', () => {
+        const pokeballs = [POKEBALL.NORMAL, POKEBALL.SUPER, POKEBALL.ULTRA];
+        const team = [
+            { id: 1, image: { sprite: 'poke1.png' } },
+            { id: 2, image: { sprite: 'poke2.png' } },
+        ];
+
+        const { rerender } = render(
+            <Pokeballs pokeballs={pokeballs} team={team} isAnimationFinished={false} />
+        );
+
+        let slots = screen.getAllByTestId('mock-pokeball-slot');
+        // Slot 0 (previous) is already revealed
+        expect(slots[0]).toHaveAttribute('data-revealed', 'true');
+        expect(slots[0]).toHaveAttribute('data-current', 'false');
+
+        // Slot 1 (current) is not yet finished animation
+        expect(slots[1]).toHaveAttribute('data-revealed', 'false');
+        expect(slots[1]).toHaveAttribute('data-current', 'true');
+
+        // Fast-forward or finish animation
+        rerender(
+            <Pokeballs pokeballs={pokeballs} team={team} isAnimationFinished={true} />
+        );
+        slots = screen.getAllByTestId('mock-pokeball-slot');
+        expect(slots[0]).toHaveAttribute('data-revealed', 'true');
+        expect(slots[1]).toHaveAttribute('data-revealed', 'true');
     });
 
     test('renders 7 slots (6 chosen + 1 extra) when 6 pokeballs are provided', () => {

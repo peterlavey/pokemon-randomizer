@@ -53,3 +53,40 @@ export const preloadAudioIos = (arr) => {
         html5: true
     }));
 };
+
+export const preloadImage = (src) => {
+    if (!src || typeof Image === "undefined") return null;
+    try {
+        const img = new Image();
+        img.src = src;
+        return img;
+    } catch {
+        return null;
+    }
+};
+
+export const preloadPokemonAssets = (pokemon) => {
+    if (!pokemon) return;
+    if (pokemon.image?.hires) {
+        preloadImage(pokemon.image.hires);
+    }
+    if (pokemon.image?.sprite) {
+        preloadImage(pokemon.image.sprite);
+    }
+    if (pokemon.cry) {
+        try {
+            if (typeof Audio !== "undefined") {
+                const audio = new Audio();
+                audio.preload = "auto";
+                audio.src = pokemon.cry;
+                if (typeof audio.load === "function") {
+                    audio.load();
+                }
+            } else {
+                preloadAudioIos(pokemon.cry);
+            }
+        } catch {
+            // Safely ignore audio preloading errors in restricted environments
+        }
+    }
+};

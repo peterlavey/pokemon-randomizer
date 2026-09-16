@@ -6,6 +6,8 @@ import {
     isIOS,
     preloadAudio,
     preloadAudioIos,
+    preloadImage,
+    preloadPokemonAssets,
 } from './utils';
 import * as pokemonService from '../services/pokemonService';
 import { POKEBALL, TIER } from '../constants/gameConstants';
@@ -22,20 +24,24 @@ jest.mock('howler', () => ({
 
 describe('utils.js Unit Tests', () => {
     describe('delay', () => {
-        test('resolves after specified milliseconds', async () => {
+        beforeEach(() => {
             jest.useFakeTimers();
-            const promise = delay(100);
-            jest.advanceTimersByTime(100);
-            await expect(promise).resolves.toBeUndefined();
+        });
+
+        afterEach(() => {
             jest.useRealTimers();
         });
 
+        test('resolves after specified milliseconds', async () => {
+            const promise = delay(100);
+            jest.advanceTimersByTime(100);
+            await expect(promise).resolves.toBeUndefined();
+        });
+
         test('resolves with default 0ms when no argument provided', async () => {
-            jest.useFakeTimers();
             const promise = delay();
             jest.advanceTimersByTime(0);
             await expect(promise).resolves.toBeUndefined();
-            jest.useRealTimers();
         });
     });
 
@@ -180,6 +186,53 @@ describe('utils.js Unit Tests', () => {
             const howls = preloadAudioIos(['cry1.mp3', 'cry2.mp3']);
             expect(Array.isArray(howls)).toBe(true);
             expect(howls.length).toBe(2);
+        });
+    });
+
+    describe('preloadImage', () => {
+        test('returns null when src is falsy', () => {
+            expect(preloadImage(null)).toBeNull();
+            expect(preloadImage('')).toBeNull();
+        });
+
+        test('creates an Image object with assigned src', () => {
+            const img = preloadImage('http://example.com/pokemon.png');
+            expect(img).toBeDefined();
+            expect(img.src).toBe('http://example.com/pokemon.png');
+        });
+    });
+
+    describe('preloadPokemonAssets', () => {
+        const originalAudio = window.Audio;
+
+        beforeEach(() => {
+            window.Audio = jest.fn().mockImplementation(() => ({
+                preload: '',
+                src: '',
+                load: jest.fn(),
+            }));
+        });
+
+        afterEach(() => {
+            window.Audio = originalAudio;
+        });
+
+        test('does nothing when pokemon is null/undefined', () => {
+            expect(() => preloadPokemonAssets(null)).not.toThrow();
+        });
+
+        test('preloads hires, sprite and cry when provided', () => {
+            const mockPokemon = {
+                id: 1,
+                image: {
+                    hires: 'hires.png',
+                    sprite: 'sprite.png',
+                },
+                cry: 'cry.wav',
+            };
+
+            preloadPokemonAssets(mockPokemon);
+            expect(window.Audio).toHaveBeenCalled();
         });
     });
 });

@@ -5,43 +5,61 @@ import { POKEBALL, TIER } from "../../../../constants/gameConstants";
 
 export { POKEBALL, TIER };
 
-export const Pokeball = ({ type = POKEBALL.NORMAL, pokemonImg }) => {
+export const Pokeball = ({
+    type = POKEBALL.NORMAL,
+    pokemonImg,
+    isRevealed = false,
+    isCurrent = true,
+}) => {
     const [isCatching, setIsCatching] = useState(false);
     const [pokemonCatched, setPokemonCatched] = useState(false);
     const isMounted = useRef(true);
 
     useEffect(() => {
         isMounted.current = true;
+
+        if (!pokemonImg) {
+            setIsCatching(false);
+            setPokemonCatched(false);
+            return;
+        }
+
+        if (isRevealed || !isCurrent) {
+            setIsCatching(true);
+            setPokemonCatched(true);
+            return;
+        }
+
         let isCancelled = false;
 
         const reveal = async () => {
-            await delay(4000);
+            await delay(2300);
             if (isCancelled || !isMounted.current) return;
             setIsCatching(true);
 
-            await delay(500);
+            await delay(400);
             if (isCancelled || !isMounted.current) return;
             setPokemonCatched(true);
         };
 
-        if (pokemonImg) {
-            reveal();
-        }
+        reveal();
 
         return () => {
             isCancelled = true;
             isMounted.current = false;
         };
-    }, [pokemonImg]);
+    }, [pokemonImg, isRevealed, isCurrent]);
+
+    const isDone = Boolean(pokemonImg) && (isRevealed || (isCatching && pokemonCatched));
 
     return (
-        <div className='pokeballContainer'>
+        <div className={`pokeballContainer ${isDone ? 'revealed' : ''}`.trim()}>
             <img
                 src={type?.img}
                 alt={type?.name || 'Pokeball'}
-                className={isCatching ? 'catch' : ''}
+                className={isCatching && Boolean(pokemonImg) ? 'catch' : ''}
             />
-            {pokemonCatched && (
+            {pokemonCatched && Boolean(pokemonImg) && (
                 <img
                     src={pokemonImg}
                     alt={type?.name || 'Caught Pokemon'}

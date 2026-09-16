@@ -7,7 +7,7 @@
   }
 
   .revealImage {
-    animation: revealImage 6s linear;
+    animation: revealImage 3.5s ease-in-out;
   }
 
   .info {
@@ -15,12 +15,29 @@
   }
 
   .revealInfo {
-    animation: revealInfo 5s linear;
+    animation: revealInfo 3.5s ease-in-out;
     color: black;
     font-size: small;
     margin-top: -10%;
     opacity: 1;
     transition: opacity;
+  }
+
+  &.revealed {
+    .revealImage {
+      animation: none;
+      opacity: 1;
+      filter: brightness(1);
+    }
+
+    .info {
+      opacity: 1;
+    }
+
+    .revealInfo {
+      animation: none;
+      opacity: 1;
+    }
   }
 }
 
@@ -30,17 +47,27 @@
     filter: brightness(0);
   }
 
-  40% {
-    opacity: 0.01;
+  35% {
+    opacity: 0;
     filter: brightness(0);
   }
 
-  50% {
+  45% {
     opacity: 1;
     filter: brightness(0);
   }
 
-  80% {
+  65% {
+    opacity: 1;
+    filter: brightness(0);
+  }
+
+  85% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+
+  100% {
     opacity: 1;
     filter: brightness(1);
   }
@@ -51,7 +78,7 @@
     opacity: 0;
   }
 
-  80% {
+  75% {
     opacity: 0;
   }
 

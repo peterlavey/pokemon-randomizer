@@ -3,24 +3,43 @@ import { useTeam, teamReducer, ACTION_TYPES, initialTeamState } from './useTeam'
 import { POKEBALL, TEAM_STATE, TEAM_SIZE } from '../constants/gameConstants';
 
 describe('useTeam and teamReducer', () => {
-    test('teamReducer handles SELECT_POKEBALL up to TEAM_SIZE', () => {
+    test('teamReducer handles SELECT_POKEBALL up to TEAM_SIZE and preselects unique pokemon', () => {
         let state = initialTeamState;
         expect(state.state).toBe(TEAM_STATE.CHOOSE);
+        expect(state.preselectedTeam).toEqual([]);
 
         for (let i = 0; i < 5; i++) {
             state = teamReducer(state, { type: ACTION_TYPES.SELECT_POKEBALL, payload: POKEBALL.NORMAL });
             expect(state.state).toBe(TEAM_STATE.CHOOSE);
             expect(state.pokeballs.length).toBe(i + 1);
+            expect(state.preselectedTeam.length).toBe(i + 1);
+            expect(state.preselectedTeam[i]).toBeDefined();
         }
 
         // 6th pokeball transitions to OPEN
         state = teamReducer(state, { type: ACTION_TYPES.SELECT_POKEBALL, payload: POKEBALL.MASTER });
         expect(state.state).toBe(TEAM_STATE.OPEN);
         expect(state.pokeballs.length).toBe(TEAM_SIZE);
+        expect(state.preselectedTeam.length).toBe(TEAM_SIZE);
 
         // 7th should be ignored
         const state7 = teamReducer(state, { type: ACTION_TYPES.SELECT_POKEBALL, payload: POKEBALL.SUPER });
         expect(state7.pokeballs.length).toBe(TEAM_SIZE);
+        expect(state7.preselectedTeam.length).toBe(TEAM_SIZE);
+    });
+
+    test('teamReducer automatically uses preselected pokemon when OPEN_POKEBALL has no payload', () => {
+        let state = initialTeamState;
+        for (let i = 0; i < TEAM_SIZE; i++) {
+            state = teamReducer(state, { type: ACTION_TYPES.SELECT_POKEBALL, payload: POKEBALL.MASTER });
+        }
+
+        const preselectedFirst = state.preselectedTeam[0];
+        state = teamReducer(state, { type: ACTION_TYPES.OPEN_POKEBALL });
+
+        expect(state.state).toBe(TEAM_STATE.REVEAL);
+        expect(state.currentPokemon).toEqual(preselectedFirst);
+        expect(state.pokemonTeam[0]).toEqual(preselectedFirst);
     });
 
     test('teamReducer handles OPEN_POKEBALL and DISMISS_REVEAL lifecycle', () => {
@@ -97,6 +116,7 @@ describe('useTeam and teamReducer', () => {
 
         expect(result.current.isOpen).toBe(true);
         expect(result.current.currentPokeball).toEqual(POKEBALL.ULTRA);
+        expect(result.current.preselectedTeam.length).toBe(6);
 
         act(() => {
             result.current.openCurrentPokeball({ id: 1, name: { english: 'Bulbasaur' }, height: 0.7 });

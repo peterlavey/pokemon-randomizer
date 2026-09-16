@@ -33,8 +33,16 @@ describe('Team Component Integration', () => {
             expect(container.querySelector('.reveal')).toBeInTheDocument();
         }, { timeout: 3000 });
 
-        // Dismiss reveal
+        // Fast-forward animation, then dismiss reveal
         const reveal = container.querySelector('.reveal');
+        const headerPokeballContainers = container.querySelectorAll('.pokeballContainer');
+        expect(headerPokeballContainers[0]).not.toHaveClass('revealed');
+
+        fireEvent.click(reveal);
+        await waitFor(() => {
+            expect(reveal).toHaveClass('revealed');
+            expect(headerPokeballContainers[0]).toHaveClass('revealed');
+        });
         fireEvent.click(reveal);
 
         // 4. Back to OPEN for slot 2

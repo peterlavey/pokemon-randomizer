@@ -38,20 +38,69 @@ describe('Pokeball Component Unit Tests', () => {
         expect(pokeballImg).not.toHaveClass('catch');
         expect(container.querySelectorAll('img').length).toBe(1);
 
-        // Advance 4000ms for isCatching
+        // Advance 2300ms for isCatching
         await act(async () => {
-            jest.advanceTimersByTime(4000);
+            jest.advanceTimersByTime(2300);
         });
         expect(pokeballImg).toHaveClass('catch');
         expect(container.querySelectorAll('img').length).toBe(1);
 
-        // Advance another 500ms for pokemonCatched
+        // Advance another 400ms for pokemonCatched
         await act(async () => {
-            jest.advanceTimersByTime(500);
+            jest.advanceTimersByTime(400);
         });
         const images = container.querySelectorAll('img');
         expect(images.length).toBe(2);
         expect(images[1]).toHaveAttribute('src', 'pikachu_sprite.png');
+        expect(images[1]).toHaveClass('pokemon');
+    });
+
+    test('renders immediately as caught when isRevealed is true or isCurrent is false', () => {
+        const { container } = render(
+            <Pokeball
+                type={POKEBALL.MASTER}
+                pokemonImg="mewtwo_sprite.png"
+                isRevealed={true}
+                isCurrent={false}
+            />
+        );
+
+        expect(container.firstChild).toHaveClass('revealed');
+        const images = container.querySelectorAll('img');
+        expect(images.length).toBe(2);
+        expect(images[0]).toHaveClass('catch');
+        expect(images[1]).toHaveClass('pokemon');
+        expect(images[1]).toHaveAttribute('src', 'mewtwo_sprite.png');
+    });
+
+    test('fast-forwards to caught state when isRevealed changes from false to true', async () => {
+        const { container, rerender } = render(
+            <Pokeball
+                type={POKEBALL.ULTRA}
+                pokemonImg="charizard_sprite.png"
+                isRevealed={false}
+                isCurrent={true}
+            />
+        );
+
+        const pokeballImg = container.querySelector('img');
+        expect(pokeballImg).not.toHaveClass('catch');
+        expect(container.querySelectorAll('img').length).toBe(1);
+
+        // Rerender with isRevealed=true (e.g. user fast-forward click)
+        rerender(
+            <Pokeball
+                type={POKEBALL.ULTRA}
+                pokemonImg="charizard_sprite.png"
+                isRevealed={true}
+                isCurrent={true}
+            />
+        );
+
+        expect(container.firstChild).toHaveClass('revealed');
+        const images = container.querySelectorAll('img');
+        expect(images.length).toBe(2);
+        expect(images[0]).toHaveClass('catch');
         expect(images[1]).toHaveClass('pokemon');
     });
 

@@ -1,6 +1,7 @@
 import { useReducer, useCallback } from 'react';
 import { TEAM_SIZE, TEAM_STATE } from '../constants/gameConstants';
 import { selectUniquePokemonForPokeball } from '../services/pokemonService';
+import { preloadPokemonAssets } from '../utils/utils';
 
 export const ACTION_TYPES = Object.freeze({
     SELECT_POKEBALL: 'SELECT_POKEBALL',
@@ -13,6 +14,7 @@ export const initialTeamState = Object.freeze({
     state: TEAM_STATE.CHOOSE,
     pokeballs: [],
     pokemonTeam: [],
+    preselectedTeam: [],
     currentPokemon: null,
 });
 
@@ -22,11 +24,21 @@ export const teamReducer = (state, action) => {
             if (state.pokeballs.length >= TEAM_SIZE) {
                 return state;
             }
-            const updatedPokeballs = [...state.pokeballs, action.payload];
+            const pokeball = action.payload;
+            const updatedPokeballs = [...state.pokeballs, pokeball];
             const isFull = updatedPokeballs.length === TEAM_SIZE;
+            const currentPreselected = state.preselectedTeam || [];
+            const newPokemon = selectUniquePokemonForPokeball(pokeball, currentPreselected);
+            const updatedPreselected = newPokemon ? [...currentPreselected, newPokemon] : currentPreselected;
+
+            if (newPokemon) {
+                preloadPokemonAssets(newPokemon);
+            }
+
             return {
                 ...state,
                 pokeballs: updatedPokeballs,
+                preselectedTeam: updatedPreselected,
                 state: isFull ? TEAM_STATE.OPEN : TEAM_STATE.CHOOSE,
             };
         }
@@ -38,7 +50,11 @@ export const teamReducer = (state, action) => {
                 return state;
             }
 
-            const chosenPokemon = action.payload || selectUniquePokemonForPokeball(currentPokeball, state.pokemonTeam);
+            const chosenPokemon =
+                action.payload ||
+                (state.preselectedTeam && state.preselectedTeam[currentSlot]) ||
+                selectUniquePokemonForPokeball(currentPokeball, state.pokemonTeam);
+
             if (!chosenPokemon) {
                 return state;
             }
@@ -96,6 +112,7 @@ export const useTeam = (initialState = initialTeamState) => {
         state: teamState.state,
         pokeballs: teamState.pokeballs,
         pokemonTeam: teamState.pokemonTeam,
+        preselectedTeam: teamState.preselectedTeam || [],
         currentPokemon: teamState.currentPokemon,
         currentPokeball,
         isCompleted,

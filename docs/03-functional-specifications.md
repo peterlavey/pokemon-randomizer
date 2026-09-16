@@ -16,8 +16,9 @@ Allow the player to define the power balance of their 6-Pokémon team by selecti
    - **Ultraball**: High Tier (`A`)
    - **Masterball**: Top/Legendary Tier (`S`)
 2. **Selection**: Clicking a Pokeball adds it to the user's tray (`pokeballs` state array).
-3. **Slot Tracking**: The top HUD displays the selected Pokeballs in order (slots 1 through 6).
-4. **Transition**: Once `pokeballs.length === 6`, the application automatically transitions from `CHOOSE` to `OPEN`.
+3. **Asset Preloading**: When each Pokeball is selected, a unique Pokémon candidate is preselected and its visual assets (high-res sprite, thumbnail/sprite) and audio cry (`pokemon.cry`) are preloaded in the background into the browser cache. This ensures instant audio playback and rendering during the `REVEAL` phase, preventing loading lag even when reveal animations are fast-forwarded.
+4. **Slot Tracking**: The top HUD displays the selected Pokeballs in order (slots 1 through 6).
+5. **Transition**: Once `pokeballs.length === 6`, the application automatically transitions from `CHOOSE` to `OPEN`.
 
 ---
 
@@ -44,21 +45,28 @@ Provide suspense and tactile feedback as each member of the roster is randomly g
 Disclose the generated Pokémon's stats, type affinities, and authentic N64 audio cry.
 
 ### 3.2 Visual & Audio Specifications
-1. **Animated Entry**:
-   - The Pokémon high-res sprite scales in with animation (`revealImage`).
-   - The stat sheet slides in (`revealInfo`).
-2. **Audio Cry**: Plays the authentic Pokémon cry (`pokemon.cry`) via HTML5 Audio / Howler.
-3. **Radar Stat Visualization**:
+1. **Animated Guessing & Reveal Sequence**:
+   - **Sound-Only Guessing Phase** (`revealImage` 0%-35% / ~1.2s): The authentic Pokémon cry (`pokemon.cry`) plays via HTML5 Audio while the image remains completely hidden (`opacity: 0`), allowing players to identify the Pokémon purely by audio.
+   - **Silhouette Phase** (`revealImage` 35%-65% / ~1.0s): Pokémon sprite smoothly fades in from transparent to fully visible as an unrevealed black silhouette (`brightness(0)`), remaining as a silhouette for approximately 1 second to provide visual shape clues to guess.
+   - **Full Color Transition** (`revealImage` 65%-85% / ~0.7s): Sprite smoothly transitions its brightness from `brightness(0)` to full color (`brightness(1)`).
+   - **Stat Sheet Entry** (`revealInfo` 75%-100%): Pokémon stats, badges, and information smoothly fade in once the Pokémon reaches full color presentation.
+2. **Radar Stat Visualization**:
    - Powered by Chart.js Radar (`src/components/team/reveal/mobile/stats/radar/radar.js`).
    - Renders 6 stat axes: HP, Attack, Defense, Sp. Atk, Sp. Def, Speed.
    - Scale limits: 0 to 160 with custom RGB theming.
-4. **Information Badges**:
+3. **Information Badges**:
    - Primary and secondary Type badges.
    - Species, Height, Weight, and Pokédex summary.
-5. **Dismissal & Next Step**:
-   - Clicking anywhere on the screen clears the active `pokemon` (`setPokemon(undefined)`).
+4. **Fast-Forward & Dismissal**:
+   - Clicking anywhere on the screen (or pressing Enter/Space) while animations are in progress fast-forwards all reveal animations immediately, showing the complete Pokémon sprite with full brightness and the visible stat sheet.
+   - Clicking anywhere on the screen (or pressing Enter/Space) after animations are completed/fast-forwarded clears the active `pokemon` (`setPokemon(undefined)` / `dismissReveal`).
    - If `pokemonTeam.length < 6`, returns to `OPEN` for the next slot.
    - If `pokemonTeam.length === 6`, advances to `COMPLETED`.
+5. **Top Header Pokéball Coordination**:
+   - In the top header tray, the Pokéball slot corresponding to the current Pokémon remains in its unrevealed Pokéball state during the audio-only and silhouette phases.
+   - When the Pokémon in the main reveal starts its smooth color transition (~2.3s), the header Pokéball initiates a smooth catch animation (`catch` 0.6s ease-out), dimming the Pokéball icon, and smoothly fades in the caught Pokémon thumbnail sprite (`revealPokemon` 0.5s ease-in-out).
+   - If the user fast-forwards the reveal animation with a click or keydown, the header Pokéball slot immediately fast-forwards into its caught revealed state with full opacity.
+   - Previously caught Pokémon in earlier slots remain permanently in their caught/revealed state without replaying animations.
 
 ---
 
