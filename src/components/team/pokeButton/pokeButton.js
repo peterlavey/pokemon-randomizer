@@ -1,33 +1,70 @@
-import React, {useRef} from "react";
-import {delay} from "../../../utils/utils";
-import {useSoundContext} from "../../../contexts/soundContext";
+import React, { useState, useCallback, useRef, useEffect } from "react";
+import { delay } from "../../../utils/utils";
+import { useSoundContext } from "../../../contexts/soundContext";
 import './pokeButton.styles.scss';
 
+export const PokeButton = ({ pokeball, onClick }) => {
+    const [phase, setPhase] = useState('SHAKING'); // 'SHAKING' | 'BLINKING' | 'ZOOMING'
+    const { playOpen, openSfx } = useSoundContext();
+    const isHandlingClick = useRef(false);
 
-export const PokeButton = ({pokeball, onClick}) => {
-    const pokeballRef = useRef();
-    const pokeballButton = useRef();
-    const {openSfx} = useSoundContext();
-    const blink = async () => {
-        openSfx?.play();
-        pokeballRef?.current?.classList?.remove('shaking');
-        window.requestAnimationFrame(() => pokeballButton?.current?.classList?.add('blink'));
+    useEffect(() => {
+        return () => {
+            isHandlingClick.current = false;
+        };
+    }, []);
+
+    const handleClick = useCallback(async () => {
+        if (isHandlingClick.current) return;
+        isHandlingClick.current = true;
+
+        if (playOpen) {
+            playOpen();
+        } else if (openSfx) {
+            try {
+                openSfx.play();
+            } catch (e) {}
+        }
+
+        setPhase('BLINKING');
         await delay(500);
-        window.requestAnimationFrame(() => pokeballRef?.current?.classList?.add('zoom'));
+
+        setPhase('ZOOMING');
         await delay(800);
-        onClick();
-    }
+
+        onClick?.();
+    }, [playOpen, openSfx, onClick]);
+
+    const containerClasses = [
+        phase === 'SHAKING' ? 'shaking' : '',
+        phase === 'ZOOMING' ? 'zoom' : ''
+    ].filter(Boolean).join(' ');
+
+    const buttonClasses = [
+        'pokeball__button',
+        phase === 'BLINKING' ? 'blink' : ''
+    ].filter(Boolean).join(' ');
 
     return (
-        <div className="pokeButton" onClick={blink}>
+        <div
+            className="pokeButton"
+            onClick={handleClick}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    handleClick();
+                }
+            }}
+        >
             <div className="center-on-page">
-                <div className="shaking" ref={pokeballRef}>
-                    <img src={pokeball?.img} alt={pokeball?.name}/>
-                    <div className="pokeball__button" ref={pokeballButton}/>
+                <div className={containerClasses}>
+                    <img src={pokeball?.img} alt={pokeball?.name || 'Pokeball'} />
+                    <div className={buttonClasses} />
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default PokeButton;

@@ -1,40 +1,37 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import './reveal.styles.scss';
 import Mobile from "./mobile/mobile";
 
-export const TYPE = {
+export const TYPE = Object.freeze({
     MOBILE: 'MOBILE'
-};
+});
 
-export const Reveal = ({type, pokemon, setPokemon}) => {
-    const imageRef = useRef(null);
-    const infoRef = useRef(null);
+export const Reveal = ({ type = TYPE.MOBILE, pokemon, setPokemon, onDismiss }) => {
+    const handleDismiss = () => {
+        if (onDismiss) {
+            onDismiss();
+        } else if (setPokemon) {
+            setPokemon(undefined);
+        }
+    };
 
-    const clean = () => {
-        setPokemon(undefined);
-    }
-
-    const reveal = () => {
-        imageRef?.current?.classList?.remove('revealImage');
-        window.requestAnimationFrame(() => imageRef.current?.classList?.add('revealImage'));
-
-        infoRef?.current?.classList?.remove('revealInfo');
-        window.requestAnimationFrame(() => infoRef?.current?.classList?.add('revealInfo'));
-    }
-
-    useEffect(() => {
-        if(pokemon) reveal();
-    }, [pokemon]);
+    if (!pokemon) return null;
 
     return (
-        <div className='reveal' onClick={clean}>
-            {
-                {
-                    [TYPE.MOBILE]: pokemon && <Mobile infoRef={infoRef} imageRef={imageRef} {...pokemon}/>
-                }[type]
-            }
+        <div
+            className='reveal'
+            onClick={handleDismiss}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    handleDismiss();
+                }
+            }}
+        >
+            {type === TYPE.MOBILE && <Mobile {...pokemon} />}
         </div>
-    )
+    );
 };
 
 export default Reveal;

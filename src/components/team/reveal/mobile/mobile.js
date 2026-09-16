@@ -4,43 +4,45 @@ import Type from "./type/type";
 import Stats from "./stats/stats";
 
 export const Mobile = ({
-    infoRef,
-    imageRef,
     id,
-    image: { hires },
+    image,
     cry,
     name,
     species,
-    type,
+    type = [],
     description,
     height,
     weight,
     base
 }) => {
+    const hires = image?.hires || '';
+    const englishName = name?.english || '';
+    const primaryType = type[0]?.toLowerCase() || 'normal';
+
     return (
         <div className='mobile'>
-            <div className={'container ' + type[0].toLowerCase()}>
-                <img src={hires} alt={''} ref={imageRef}/>
+            <div className={`container ${primaryType}`}>
+                <img src={hires} alt={englishName} className='revealImage' />
 
-                <div ref={infoRef} align='center' className='info'>
-                    <h1>{`#${id}-${name.english}`}</h1>
+                <div align='center' className='info revealInfo'>
+                    <h1>{`#${id}-${englishName}`}</h1>
 
                     <div className='stats'>
-                        {type.map((_type) => <Type type={_type} key={_type}/>)}
+                        {type.map((_type) => <Type type={_type} key={_type} />)}
                         <p>
                             <strong>{species}</strong> - {description}
                         </p>
                         <p>
                             <strong>Height:</strong> {height}m - <strong>Weight:</strong> {weight}kg
                         </p>
-                        <Stats stats={base}/>
+                        {base && <Stats stats={base} />}
                     </div>
                 </div>
 
-                <audio src={cry} autoPlay/>
+                {cry && <audio src={cry} autoPlay />}
             </div>
         </div>
-    )
+    );
 };
 
 export default Mobile;

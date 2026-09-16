@@ -1,78 +1,88 @@
-import React, {useCallback, useEffect, useState} from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import './presentation.styles.scss';
-import {delay} from "../../../utils/utils";
+import { delay } from "../../../utils/utils";
 import TeamInfo from "./teamInfo/teamInfo";
-import {useSoundContext} from "../../../contexts/soundContext";
+import { useSoundContext } from "../../../contexts/soundContext";
+import { arrangeStageLineup, calculateScaledHeight } from "../../../services/pokemonService";
 
-// isFlying top: 5%
-// isJumping top: 25%
-export const Presentation = ({team}) => {
-    const {introSong, teamCompleteSong} = useSoundContext();
-    const [members, setMembers] = useState([]);
-    const [maxHeight, setMaxHeight] = useState();
-    const byHeight = (a,b) => a.height - b.height;
-    const adjustHeight = pokemons => pokemons.map((pokemon) => ({...pokemon, height: pokemon.height / pokemon.rolls}));
+export const Presentation = ({ team = [] }) => {
+    const { pauseIntro, playTeamComplete, introSong, teamCompleteSong } = useSoundContext();
+    const audioRefs = useRef([]);
 
-    const prepareMembers = useCallback(() => {
-        const _members = [];
-        const ordered = team.sort(byHeight);
-        _members.push(ordered[5]);
-        _members.push(ordered[2]);
-        _members.push(ordered[4]);
-        _members.push(ordered[1]);
-        _members.push(ordered[3]);
-        _members.push(ordered[0]);
-        setMembers(adjustHeight(_members));
-    }, [team]);
-    
-    const getScaleHeight = (pokemon) => {
-        const scale = 200;
-        return (pokemon.height / maxHeight) * scale;
-    };
-    
-    const teamCry = useCallback(async () => {
-        await delay(1000);
-        introSong.pause();
-        document.querySelectorAll('audio').forEach((audio) => audio.play());
-        teamCompleteSong.play();
-    }, [introSong, teamCompleteSong]);
+    const members = useMemo(() => arrangeStageLineup(team), [team]);
 
-    useEffect(() => {
-        setMaxHeight(Math.max(...members.map(({height}) => height)));
+    const maxHeight = useMemo(() => {
+        if (!members.length) return 1;
+        return Math.max(...members.map(({ height }) => height || 0), 1);
     }, [members]);
 
     useEffect(() => {
-        if (team.length) {
-            prepareMembers();
-            teamCry();
+        let isCancelled = false;
+
+        const playStadiumAudio = async () => {
+            await delay(1000);
+            if (isCancelled) return;
+
+            if (pauseIntro) {
+                pauseIntro();
+            } else if (introSong?.pause) {
+                introSong.pause();
+            }
+
+            audioRefs.current.forEach((audio) => {
+                if (audio) {
+                    try {
+                        audio.currentTime = 0;
+                        const playPromise = audio.play();
+                        if (playPromise?.catch) playPromise.catch(() => {});
+                    } catch (e) {}
+                }
+            });
+
+            if (playTeamComplete) {
+                playTeamComplete();
+            } else if (teamCompleteSong?.play) {
+                teamCompleteSong.play();
+            }
+        };
+
+        if (team.length > 0) {
+            playStadiumAudio();
         }
-    }, [team.length, prepareMembers, teamCry]);
+
+        return () => {
+            isCancelled = true;
+        };
+    }, [team.length, pauseIntro, playTeamComplete, introSong, teamCompleteSong]);
 
     return (
         <div className='presentation'>
-            {
-                members.map((pokemon, index) => {
-                    const zIndex = Math.round(maxHeight - pokemon.height) * 10;
-                    let top = 'initial';
-                    if (pokemon.isFlying) {
-                        top = '5%';
-                    } else if (pokemon.isJumping) {
-                        top = '25%';
-                    }
-                    return (
-                        <div key={pokemon.id}>
-                            <img
-                                src={pokemon.image.hires}
-                                width={getScaleHeight(pokemon)}
-                                className={`member${index}`}
-                                style={{zIndex, top}}
-                                alt={pokemon.name.english}
-                            />
-                            <audio src={pokemon.cry} autoPlay/>
-                        </div>
-                    );
-                })
-            }
+            {members.map((pokemon, index) => {
+                const zIndex = Math.round((maxHeight - (pokemon.height || 0)) * 10);
+                let top = 'initial';
+                if (pokemon.isFlying) {
+                    top = '5%';
+                } else if (pokemon.isJumping) {
+                    top = '25%';
+                }
+
+                return (
+                    <div key={`${pokemon.id}-${index}`}>
+                        <img
+                            src={pokemon.image?.hires}
+                            width={calculateScaledHeight(pokemon.height, maxHeight)}
+                            className={`member${index}`}
+                            style={{ zIndex, top }}
+                            alt={pokemon.name?.english || ''}
+                        />
+                        <audio
+                            ref={(el) => (audioRefs.current[index] = el)}
+                            src={pokemon.cry}
+                            autoPlay
+                        />
+                    </div>
+                );
+            })}
             <TeamInfo team={team} />
         </div>
     );

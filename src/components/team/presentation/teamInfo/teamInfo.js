@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useMemo } from "react";
 import MemberInfo from "./memberInfo/memberInfo";
-import "./teamInfo.styles.scss"
+import "./teamInfo.styles.scss";
 
-const TeamInfo = ({team}) => {
-    const byId = (a, b) => a.id - b.id;
+export const TeamInfo = ({ team = [] }) => {
+    const sortedTeam = useMemo(() => {
+        return [...team].sort((a, b) => (a.id || 0) - (b.id || 0));
+    }, [team]);
+
     return (
         <div className="teamInfo background">
-            {
-                team.sort(byId).map(member => <MemberInfo {...member} key={member.id}/>)
-            }
+            {sortedTeam.map((member) => (
+                <MemberInfo {...member} key={member.id} />
+            ))}
         </div>
     );
 };

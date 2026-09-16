@@ -1,38 +1,38 @@
-import pokemons from "../resources/pokemons.json";
-import {POKEBALL} from "../components/team/pokeballs/pokeball/pokeball";
-import {Howl} from "howler";
+import {
+    getPokemonsByTiers,
+    getPokeballByTier as getPokeballByTierService,
+    getRandomItem
+} from "../services/pokemonService";
+import { Howl } from "howler";
 
-export const delay = ms => new Promise(res => setTimeout(res, ms));
+export const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
-export const getRandom = arr => arr[Math.floor(Math.random() * arr.length)];
+export const getRandom = (arr) => getRandomItem(arr);
 
-export const getByTier = tiers => pokemons.filter((pokemon) => ~tiers.indexOf(pokemon.tier));
+export const getByTier = (tiers) => getPokemonsByTiers(tiers);
 
-export const getPokeballByTier = tier => Object.values(POKEBALL).find(({tiers}) => tiers.includes(tier));
+export const getPokeballByTier = (tier) => getPokeballByTierService(tier);
 
-export const isIOS = () => [
-        'iPad Simulator',
-        'iPhone Simulator',
-        'iPod Simulator',
-        'iPad',
-        'iPhone',
-        'iPod'
-    ].includes(navigator.platform)
-    // iPad on iOS 13 detection
-    || (navigator.userAgent.includes("Mac") && "ontouchend" in document);
+export const isIOS = () => {
+    if (typeof navigator === "undefined") return false;
+    return (
+        ['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'].includes(navigator.platform) ||
+        (navigator.userAgent.includes("Mac") && typeof document !== "undefined" && "ontouchend" in document)
+    );
+};
 
-export const preloadAudio = arr => new Promise(resolve => {
+export const preloadAudio = (arr) => new Promise((resolve) => {
     let count = 0;
     let audios = [];
 
     const audioLoaded = () => {
         count++;
-        if(count === arr.length) {
+        if (count === arr.length) {
             resolve(audios);
         }
     };
 
-    audios = arr.map(src => {
+    audios = arr.map((src) => {
         const audio = new Audio();
         audio.addEventListener('canplaythrough', audioLoaded, false);
         audio.src = src;
@@ -40,7 +40,7 @@ export const preloadAudio = arr => new Promise(resolve => {
     });
 });
 
-export const preloadAudioIos = arr => {
+export const preloadAudioIos = (arr) => {
     if (typeof arr === "string") {
         return new Howl({
             src: [arr],
@@ -48,8 +48,8 @@ export const preloadAudioIos = arr => {
         });
     }
 
-    return arr.map(src => new Howl({
+    return arr.map((src) => new Howl({
         src: [src],
         html5: true
     }));
-}
+};
