@@ -1,94 +1,72 @@
-# Ideas
-**Mejoras**
-- [ ] Mostrar un fondo distinto segun el tipo, mostrarlo junto con el grito https://commons.wikimedia.org/wiki/Category:Pok%C3%A9mon_types_icons
-- [ ] Actualizar lista con datos del stadium 1
-- [x] Mostrar los Stats y Tier
-- [x] Reemplazar pokeball css con imagenes para mostrar los otros tipos
-- [ ] Calcular tier por stats, ataques y tipo
-- [x] Mejorar fondo e instrucciones al seleccionar pokebolas
-- [x] Añadir un hud para mostrar en que columna se encuentra el pokemon (3 lineas horizontales, una encendida verde)
+# Pokémon Stadium Team Randomizer
 
-**Modos de juego**
-- [x] Dar la opción de combate igualado usando el tier de los pokemon
-- [ ] Dar opción de probabilidad según pokeball
+A React application designed to build balanced 6-Pokémon teams categorized by competitive tiers for **Nintendo 64's Pokémon Stadium** (with support for **Pokémon Stadium 2** planned for future releases).
 
-## Bugs
-- [x] Pokeball de fondo gris queda fija, lo demas no
+---
 
-## Fuentes
-- https://nintendo.fandom.com/wiki/Category:First_generation_Pok%C3%A9mon_images
-- https://www.sounds-resource.com/nintendo_64/pokemonstadium/sound/34243/
-- https://github.com/Purukitto/pokemon-data.json/tree/master
-- https://tiermaker.com/categories/pokemon/pokemon-first-generation-62534
-- https://pokemon.fandom.com/es/wiki/Lista_de_Pok%C3%A9mon_de_la_primera_generaci%C3%B3n
+## 📖 Spec-Driven Development (SDD) Documentation
 
-# Getting Started with Create React App
+Comprehensive architectural and functional specifications are available in the [`docs/`](./docs/README.md) directory:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [**01. System Architecture & Design**](./docs/01-system-architecture.md)
+- [**02. Domain Models & Data Schemas**](./docs/02-domain-models-and-schemas.md)
+- [**03. Functional Specifications & User Flows**](./docs/03-functional-specifications.md)
+- [**04. Future Extensions & Roadmap (Stadium 2)**](./docs/04-future-extensions-roadmap.md)
+- [**05. SDD Change Management Guide**](./docs/05-sdd-change-management-guide.md)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Getting Started
 
-### `npm start`
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v14+ recommended)
+- `npm` or `yarn`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation & Run
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository and navigate to the project root:
+   ```bash
+   cd pokemon-randomizer
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💡 Ideas & Roadmap
 
-### `npm run build`
+### Improvements
+- [ ] Display different backgrounds according to Pokémon type, accompanied by the cry audio ([Type icons](https://commons.wikimedia.org/wiki/Category:Pok%C3%A9mon_types_icons))
+- [ ] Update Pokémon dataset with accurate Stadium 1 stats and data
+- [x] Display base stats and tier badges
+- [x] Replace CSS Pokéball styling with images to represent other Pokéball types
+- [ ] Calculate dynamic tier ratings based on base stats, movesets, and types
+- [x] Improve background styling and interactive instructions when selecting Pokéballs
+- [x] Add HUD indicator to show which column the Pokémon is positioned in (3 horizontal lines with active green highlight)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Game Modes
+- [x] Balanced matchmaking mode based on Pokémon tier distribution
+- [ ] Probability-based draft mode weighted by Pokéball tier
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🐛 Bug Tracker
 
-### `npm run eject`
+- [x] Gray background Pokéball remained fixed while other components scrolled
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📚 Sources & References
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Nintendo Fandom — First Generation Pokémon Images](https://nintendo.fandom.com/wiki/Category:First_generation_Pok%C3%A9mon_images)
+- [The Sounds Resource — Pokémon Stadium Sound Effects & Cries](https://www.sounds-resource.com/nintendo_64/pokemonstadium/sound/34243/)
+- [GitHub — Purukitto/pokemon-data.json](https://github.com/Purukitto/pokemon-data.json/tree/master)
+- [TierMaker — First Generation Pokémon Tier List](https://tiermaker.com/categories/pokemon/pokemon-first-generation-62534)
+- [Pokémon Fandom — Generation I Pokémon List](https://pokemon.fandom.com/es/wiki/Lista_de_Pok%C3%A9mon_de_la_primera_generaci%C3%B3n)
