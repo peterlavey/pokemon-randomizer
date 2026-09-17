@@ -28,6 +28,7 @@
       width: 18px;
       height: 18px;
       position: initial;
+      flex-shrink: 0;
     }
   }
 
@@ -42,6 +43,7 @@
       object-fit: contain;
       position: initial;
       transform-origin: bottom center;
+      flex-shrink: 0;
 
       &.crying {
         animation: spriteCry 0.8s ease-in-out;
@@ -66,12 +68,25 @@
   > .thirdColumn {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 4px;
 
     > .type {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      line-height: 1.2;
       font-size: 9px;
-      padding: 2px 6px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin: 0;
+      box-sizing: border-box;
+
+      &:before {
+        display: none;
+      }
     }
   }
 

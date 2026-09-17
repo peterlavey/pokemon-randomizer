@@ -1,33 +1,44 @@
 .memberColumn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  line-height: 1;
 
   > .badge {
-    display: flex;
-    padding: 2px 4px;
-    font-size: 10px;
+    display: inline-flex;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    padding: 0;
+    font-size: 9px;
     line-height: 1;
     color: slategray;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: white;
     align-items: center;
     justify-content: center;
     position: relative;
     left: 1px;
+    box-sizing: border-box;
+    flex-shrink: 0;
   }
 
   > .active {
-    width: 1.4em;
-    height: 0.4em;
+    width: 1.3em;
+    height: 0.35em;
     background-color: greenyellow;
     border: solid 1px darkgrey;
+    box-sizing: border-box;
+    flex-shrink: 0;
   }
 
   > .inactive {
-    width: 1.4em;
-    height: 0.4em;
+    width: 1.3em;
+    height: 0.35em;
     background-color: lightgrey;
     border: solid 1px darkgrey;
+    box-sizing: border-box;
+    flex-shrink: 0;
   }
 
   :last-child {
