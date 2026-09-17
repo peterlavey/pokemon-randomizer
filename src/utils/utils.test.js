@@ -8,9 +8,12 @@ import {
     preloadAudioIos,
     preloadImage,
     preloadPokemonAssets,
+    isPresentationUrlParam,
+    getTeamFromUrlParams,
+    getInitialTeamStateFromUrl,
 } from './utils';
 import * as pokemonService from '../services/pokemonService';
-import { POKEBALL, TIER } from '../constants/gameConstants';
+import { POKEBALL, TIER, TEAM_SIZE, TEAM_STATE } from '../constants/gameConstants';
 import { Howl } from 'howler';
 
 jest.mock('howler', () => ({
@@ -233,6 +236,91 @@ describe('utils.js Unit Tests', () => {
 
             preloadPokemonAssets(mockPokemon);
             expect(window.Audio).toHaveBeenCalled();
+        });
+    });
+
+    describe('isPresentationUrlParam', () => {
+        test('returns true for presentation flags', () => {
+            expect(isPresentationUrlParam('?presentation=true')).toBe(true);
+            expect(isPresentationUrlParam('?presentation')).toBe(true);
+            expect(isPresentationUrlParam('?presentation=1')).toBe(true);
+            expect(isPresentationUrlParam('?presentation=random')).toBe(true);
+            expect(isPresentationUrlParam('?view=presentation')).toBe(true);
+            expect(isPresentationUrlParam('?mode=presentation')).toBe(true);
+            expect(isPresentationUrlParam('?stage=presentation')).toBe(true);
+            expect(isPresentationUrlParam('?screen=presentation')).toBe(true);
+            expect(isPresentationUrlParam('?skip=presentation')).toBe(true);
+            expect(isPresentationUrlParam('?hof=true')).toBe(true);
+            expect(isPresentationUrlParam('?halloffame=true')).toBe(true);
+            expect(isPresentationUrlParam('?hall-of-fame=true')).toBe(true);
+        });
+
+        test('returns false when no presentation flag or false value', () => {
+            expect(isPresentationUrlParam('')).toBe(false);
+            expect(isPresentationUrlParam('?foo=bar')).toBe(false);
+            expect(isPresentationUrlParam('?presentation=false')).toBe(false);
+            expect(isPresentationUrlParam('?presentation=0')).toBe(false);
+            expect(isPresentationUrlParam('?hof=false')).toBe(false);
+        });
+
+        test('reads from window.location.search when no argument is provided', () => {
+            const originalLocation = window.location;
+            delete window.location;
+            window.location = new URL('http://localhost:3000/?presentation=true');
+
+            expect(isPresentationUrlParam()).toBe(true);
+
+            window.location = new URL('http://localhost:3000/');
+            expect(isPresentationUrlParam()).toBe(false);
+
+            window.location = originalLocation;
+        });
+    });
+
+    describe('getTeamFromUrlParams', () => {
+        test('parses numeric pokemon IDs from url', () => {
+            const team = getTeamFromUrlParams('?team=1,4,7');
+            expect(team).toBeDefined();
+            expect(team.length).toBe(3);
+            expect(team[0].id).toBe(1);
+            expect(team[1].id).toBe(4);
+            expect(team[2].id).toBe(7);
+        });
+
+        test('parses pokemon names from url', () => {
+            const team = getTeamFromUrlParams('?pokemon=Pikachu,Charizard');
+            expect(team).toBeDefined();
+            expect(team.length).toBe(2);
+            expect(team.some((p) => p.name.english === 'Pikachu')).toBe(true);
+            expect(team.some((p) => p.name.english === 'Charizard')).toBe(true);
+        });
+
+        test('returns null when no team param is present', () => {
+            expect(getTeamFromUrlParams('?presentation=true')).toBeNull();
+        });
+    });
+
+    describe('getInitialTeamStateFromUrl', () => {
+        test('returns null when URL does not have presentation param', () => {
+            expect(getInitialTeamStateFromUrl('?other=123')).toBeNull();
+        });
+
+        test('returns COMPLETED state with 6 random pokemons when presentation param is present', () => {
+            const state = getInitialTeamStateFromUrl('?presentation=true');
+            expect(state).toBeDefined();
+            expect(state.state).toBe(TEAM_STATE.COMPLETED);
+            expect(state.pokemonTeam.length).toBe(TEAM_SIZE);
+            expect(state.pokeballs.length).toBe(TEAM_SIZE);
+        });
+
+        test('completes team with random pokemons if custom team has fewer than TEAM_SIZE', () => {
+            const state = getInitialTeamStateFromUrl('?presentation=true&team=25');
+            expect(state).toBeDefined();
+            expect(state.state).toBe(TEAM_STATE.COMPLETED);
+            expect(state.pokemonTeam.length).toBe(TEAM_SIZE);
+            expect(state.pokemonTeam[0].id).toBe(25);
+            const uniqueIds = new Set(state.pokemonTeam.map((p) => p.id));
+            expect(uniqueIds.size).toBe(TEAM_SIZE);
         });
     });
 });

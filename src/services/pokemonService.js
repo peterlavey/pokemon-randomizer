@@ -1,5 +1,5 @@
 import pokemonsData from '../resources/pokemons.json';
-import { POKEBALL } from '../constants/gameConstants';
+import { POKEBALL, TEAM_SIZE, TEAM_STATE } from '../constants/gameConstants';
 
 /**
  * Returns all available Pokémon from the dataset.
@@ -137,4 +137,43 @@ export const arrangeStageLineup = (team = []) => {
         ...pokemon,
         height: pokemon.rolls ? (pokemon.height / pokemon.rolls) : pokemon.height,
     }));
+};
+
+/**
+ * Generates a randomized team of unique Pokémon.
+ * @param {number} [size=TEAM_SIZE] - Desired team size
+ * @returns {Array} Array of unique Pokémon objects
+ */
+export const getRandomTeam = (size = TEAM_SIZE) => {
+    const all = getAllPokemons();
+    if (!all || all.length === 0) return [];
+
+    const pool = [...all];
+    const count = Math.min(size, pool.length);
+    const team = [];
+
+    for (let i = 0; i < count; i++) {
+        const index = Math.floor(Math.random() * pool.length);
+        const [pokemon] = pool.splice(index, 1);
+        team.push(pokemon);
+    }
+
+    return team;
+};
+
+/**
+ * Creates a COMPLETED team state object for presentation display.
+ * @param {Array} [team] - Optional array of Pokémon (defaults to random team)
+ * @returns {Object} Team state object configured for presentation
+ */
+export const createPresentationTeamState = (team = getRandomTeam(TEAM_SIZE)) => {
+    const pokeballs = team.map((pokemon) => getPokeballByTier(pokemon.tier));
+
+    return {
+        state: TEAM_STATE.COMPLETED,
+        pokeballs,
+        pokemonTeam: team,
+        preselectedTeam: team,
+        currentPokemon: null,
+    };
 };

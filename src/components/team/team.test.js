@@ -69,4 +69,39 @@ describe('Team Component Integration', () => {
             expect(container.querySelector('.pokeButton')).toBeInTheDocument();
         });
     });
+
+    test('jumps directly to presentation screen with random pokemons when url param is present', () => {
+        const originalLocation = window.location;
+        delete window.location;
+        window.location = new URL('http://localhost:3000/?presentation=true');
+
+        const { container } = render(
+            <SoundContextProvider>
+                <Team />
+            </SoundContextProvider>
+        );
+
+        expect(container.querySelector('.startScreen')).not.toBeInTheDocument();
+        expect(container.querySelector('.presentation')).toBeInTheDocument();
+        expect(container.querySelectorAll('.pokemon-wrapper').length).toBe(6);
+
+        window.location = originalLocation;
+    });
+
+    test('jumps directly to presentation with custom team when specified in url', () => {
+        const originalLocation = window.location;
+        delete window.location;
+        window.location = new URL('http://localhost:3000/?presentation=true&team=1,4,7,25,150,151');
+
+        const { container } = render(
+            <SoundContextProvider>
+                <Team />
+            </SoundContextProvider>
+        );
+
+        expect(container.querySelector('.presentation')).toBeInTheDocument();
+        expect(container.querySelectorAll('.pokemon-wrapper').length).toBe(6);
+
+        window.location = originalLocation;
+    });
 });

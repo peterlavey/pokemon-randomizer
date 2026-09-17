@@ -38,6 +38,17 @@ Comprehensive architectural and functional specifications are available in the [
    ```
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### URL Parameters & Shortcuts
+
+You can jump directly to the Hall of Fame presentation stage with a randomized or pre-configured team using URL query parameters:
+
+- **Jump to Presentation with Random Team**:
+  - `http://localhost:3000/?presentation=true`
+  - Shortcuts supported: `?presentation`, `?view=presentation`, `?mode=presentation`, `?stage=presentation`, `?skip=presentation`, `?hof=true`, `?halloffame=true`
+- **Jump to Presentation with Custom Team (IDs or Names)**:
+  - `http://localhost:3000/?presentation=true&team=1,4,7,25,150,151`
+  - `http://localhost:3000/?presentation=true&team=Bulbasaur,Charizard,Blastoise,Pikachu,Mewtwo,Mew`
+
 ---
 
 ## 💡 Ideas & Roadmap

@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useMemo } from "react";
 import Pokeballs from "./pokeballs/pokeballs";
 import PokeButton from "./pokeButton/pokeButton";
 import Reveal, { TYPE } from "./reveal/reveal";
@@ -9,9 +9,26 @@ import StartScreen from "./startScreen/startScreen";
 import { useTeam } from "../../hooks/useTeam";
 import { useSoundContext } from "../../contexts/soundContext";
 import { TEAM_STATE } from "../../constants/gameConstants";
+import { isPresentationUrlParam, getInitialTeamStateFromUrl } from "../../utils/utils";
 import './team.styles.scss';
 
-export const Team = ({ initialStarted = false }) => {
+export const Team = ({ initialStarted, initialTeamState = null }) => {
+    const isDirectPresentation = useMemo(() => isPresentationUrlParam(), []);
+    const resolvedInitialStarted = initialStarted !== undefined
+        ? initialStarted
+        : isDirectPresentation;
+
+    const [hasStarted, setHasStarted] = useState(resolvedInitialStarted);
+    const [isAnimationFinished, setIsAnimationFinished] = useState(false);
+
+    const [resolvedInitialState] = useState(() => {
+        if (initialTeamState) return initialTeamState;
+        if (isDirectPresentation) {
+            return getInitialTeamStateFromUrl();
+        }
+        return undefined;
+    });
+
     const {
         state,
         pokeballs,
@@ -21,11 +38,9 @@ export const Team = ({ initialStarted = false }) => {
         choosePokeball,
         openCurrentPokeball,
         dismissReveal,
-    } = useTeam();
+    } = useTeam(resolvedInitialState);
 
     const { playIntro } = useSoundContext();
-    const [hasStarted, setHasStarted] = useState(initialStarted);
-    const [isAnimationFinished, setIsAnimationFinished] = useState(false);
 
     const handleStart = useCallback(() => {
         if (playIntro) {

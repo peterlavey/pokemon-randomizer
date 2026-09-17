@@ -103,3 +103,11 @@ To prevent visual crowding and produce an authentic stadium team photo:
 3. Plays the Stadium victory fanfare (`SFX_POKEMON_TEAM`).
 4. Displays the `TeamInfo` summary grid with base stats for each Pokémon sorted by Pokédex ID.
 5. **Interactive Cry Animation**: Clicking on a Pokémon card in `TeamInfo` or on the Pokémon in the stage lineup plays its authentic N64 cry audio and triggers a dynamic roar/leap bounce animation (`pokemonCry` / `spriteCry`) for the corresponding Pokémon.
+
+### 4.4 Direct URL Navigation & Developer Shortcuts
+Users and developers can jump directly to Phase 4 (`COMPLETED`) bypassing earlier phases:
+- **Query Parameter**: `?presentation=true` (also supported: `?presentation`, `?view=presentation`, `?mode=presentation`, `?stage=presentation`, `?skip=presentation`, `?hof=true`, `?halloffame=true`).
+- **Team Population**:
+  - Without team param: automatically samples 6 unique random Pokémon from the entire Pokédex.
+  - With `?team=` / `?pokemon=`: accepts comma-separated IDs (e.g., `?team=1,4,7,25,150,151`) or English names. If fewer than 6 Pokémon are provided, the remaining slots are completed with random unique Pokémon.
+- **Asset Preloading**: Assets for all team members are preloaded automatically during initialization.

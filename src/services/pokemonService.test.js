@@ -10,9 +10,11 @@ import {
     getPokeballByTier,
     getMemberColumnIndex,
     calculateScaledHeight,
-    arrangeStageLineup
+    arrangeStageLineup,
+    getRandomTeam,
+    createPresentationTeamState
 } from './pokemonService';
-import { POKEBALL, TIER } from '../constants/gameConstants';
+import { POKEBALL, TIER, TEAM_SIZE, TEAM_STATE } from '../constants/gameConstants';
 
 describe('pokemonService', () => {
     test('getAllPokemons returns all 151 pokemons', () => {
@@ -153,5 +155,32 @@ describe('pokemonService', () => {
         expect(lineup[3].id).toBe(5);
         expect(lineup[4].id).toBe(4);
         expect(lineup[5].id).toBe(2);
+    });
+
+    test('getRandomTeam generates unique random team of default TEAM_SIZE', () => {
+        const team = getRandomTeam();
+        expect(team.length).toBe(TEAM_SIZE);
+        const uniqueIds = new Set(team.map((p) => p.id));
+        expect(uniqueIds.size).toBe(TEAM_SIZE);
+    });
+
+    test('getRandomTeam supports custom size and handles edge cases', () => {
+        const team3 = getRandomTeam(3);
+        expect(team3.length).toBe(3);
+
+        const emptyTeam = getRandomTeam(0);
+        expect(emptyTeam).toEqual([]);
+    });
+
+    test('createPresentationTeamState constructs COMPLETED state with corresponding pokeballs', () => {
+        const state = createPresentationTeamState();
+        expect(state.state).toBe(TEAM_STATE.COMPLETED);
+        expect(state.pokemonTeam.length).toBe(TEAM_SIZE);
+        expect(state.pokeballs.length).toBe(TEAM_SIZE);
+        expect(state.currentPokemon).toBeNull();
+
+        state.pokemonTeam.forEach((pokemon, idx) => {
+            expect(state.pokeballs[idx].tiers).toContain(pokemon.tier);
+        });
     });
 });
