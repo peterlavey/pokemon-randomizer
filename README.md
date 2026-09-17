@@ -54,13 +54,14 @@ You can jump directly to the Hall of Fame presentation stage with a randomized o
 ## 💡 Ideas & Roadmap
 
 ### Improvements
-- [ ] Display different backgrounds according to Pokémon type, accompanied by the cry audio ([Type icons](https://commons.wikimedia.org/wiki/Category:Pok%C3%A9mon_types_icons))
+- [x] Display different backgrounds according to Pokémon type, accompanied by the cry audio ([Type icons](https://commons.wikimedia.org/wiki/Category:Pok%C3%A9mon_types_icons))
 - [ ] Update Pokémon dataset with accurate Stadium 1 stats and data
 - [x] Display base stats and tier badges
 - [x] Replace CSS Pokéball styling with images to represent other Pokéball types
 - [ ] Calculate dynamic tier ratings based on base stats, movesets, and types
 - [x] Improve background styling and interactive instructions when selecting Pokéballs
 - [x] Add HUD indicator to show which column the Pokémon is positioned in (3 horizontal lines with active green highlight)
+- [ ] Detect browser and show button to get mobile app
 
 ### Game Modes
 - [x] Balanced matchmaking mode based on Pokémon tier distribution
@@ -71,7 +72,6 @@ You can jump directly to the Hall of Fame presentation stage with a randomized o
 ## 🐛 Bug Tracker
 
 - [x] Gray background Pokéball remained fixed while other components scrolled
-- [ ] Detect browser and show button to get mobile app
 - [ ] Fix color in IOS/dark mode, shows black lines like light grey
 
 
