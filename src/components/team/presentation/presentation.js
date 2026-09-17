@@ -89,9 +89,9 @@ export const Presentation = ({ team = [] }) => {
                     const zIndex = Math.round((maxHeight - (pokemon.height || 0)) * 10);
                     let top = 'initial';
                     if (pokemon.isFlying) {
-                        top = '5%';
+                        top = '15%';
                     } else if (pokemon.isJumping) {
-                        top = '25%';
+                        top = '45%';
                     }
 
                     const cryKey = cryingMap[pokemon.id] || 0;
