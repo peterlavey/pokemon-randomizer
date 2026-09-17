@@ -4,10 +4,9 @@
 
   > .badge {
     display: flex;
-    padding: 3px;
-    font-size: x-small;
-    width: 15%;
-    height: 50%;
+    padding: 2px 4px;
+    font-size: 10px;
+    line-height: 1;
     color: slategray;
     border-radius: 100%;
     background-color: white;
@@ -18,14 +17,14 @@
   }
 
   > .active {
-    width: 1.5em;
+    width: 1.4em;
     height: 0.4em;
     background-color: greenyellow;
     border: solid 1px darkgrey;
   }
 
   > .inactive {
-    width: 1.5em;
+    width: 1.4em;
     height: 0.4em;
     background-color: lightgrey;
     border: solid 1px darkgrey;

@@ -2,9 +2,15 @@
   position: fixed;
   background-color: #DEF4F6;
   top: 0;
-  box-shadow: 0 1px 3px black;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   z-index: 99;
-  margin-bottom: 10%;
+  margin: 0;
+  margin-bottom: 0;
+  text-align: left;
+  padding: 0 8px;
+  box-sizing: border-box;
 
   > .pokeballContainer:last-child {
     visibility: hidden;

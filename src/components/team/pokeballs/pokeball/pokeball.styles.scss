@@ -1,12 +1,18 @@
 .pokeballContainer {
-  display: inline;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
 
   img {
-    width: 7%;
-    margin: 5px 3px;
+    width: clamp(24px, 5.5vw, 36px);
+    height: clamp(24px, 5.5vw, 36px);
+    object-fit: contain;
+    margin: 4px 2px;
 
     &:first-child {
       position: absolute;
+      top: 0;
+      left: 0;
     }
 
     &:last-child {

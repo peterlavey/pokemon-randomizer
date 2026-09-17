@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState, useCallback } from "react"
 import './presentation.styles.scss';
 import { delay } from "../../../utils/utils";
 import TeamInfo from "./teamInfo/teamInfo";
+import Confetti from "./confetti/confetti";
 import { useSoundContext } from "../../../contexts/soundContext";
 import { arrangeStageLineup, calculateScaledHeight } from "../../../services/pokemonService";
 
@@ -80,44 +81,53 @@ export const Presentation = ({ team = [] }) => {
     }, [team.length, pauseIntro, playTeamComplete, introSong, teamCompleteSong, members, handlePlayCry]);
 
     return (
-        <div className='presentation'>
-            {members.map((pokemon, index) => {
-                const zIndex = Math.round((maxHeight - (pokemon.height || 0)) * 10);
-                let top = 'initial';
-                if (pokemon.isFlying) {
-                    top = '5%';
-                } else if (pokemon.isJumping) {
-                    top = '25%';
-                }
+        <div className='presentation hall-of-fame'>
+            <div className="hof-header" />
+            <div className="hof-stage">
+                <Confetti count={55} />
+                {members.map((pokemon, index) => {
+                    const zIndex = Math.round((maxHeight - (pokemon.height || 0)) * 10);
+                    let top = 'initial';
+                    if (pokemon.isFlying) {
+                        top = '5%';
+                    } else if (pokemon.isJumping) {
+                        top = '25%';
+                    }
 
-                const cryKey = cryingMap[pokemon.id] || 0;
+                    const cryKey = cryingMap[pokemon.id] || 0;
 
-                return (
-                    <div key={`${pokemon.id}-${index}`}>
-                        <img
-                            key={`${pokemon.id}-${cryKey}`}
-                            src={pokemon.image?.hires}
-                            width={calculateScaledHeight(pokemon.height, maxHeight)}
-                            className={`member${index}${cryKey > 0 ? ' crying' : ''}`}
-                            style={{ zIndex, top }}
-                            alt={pokemon.name?.english || ''}
-                            onClick={() => handleStagePokemonClick(pokemon, index)}
-                            role="button"
-                            tabIndex={0}
-                            onKeyDown={(e) => {
-                                if (e.key === 'Enter' || e.key === ' ') {
-                                    handleStagePokemonClick(pokemon, index);
-                                }
-                            }}
-                        />
-                        <audio
-                            ref={(el) => (audioRefs.current[index] = el)}
-                            src={pokemon.cry}
-                        />
-                    </div>
-                );
-            })}
-            <TeamInfo team={team} onPlayCry={handlePlayCry} activeCryMap={cryingMap} />
+                    return (
+                        <div key={`${pokemon.id}-${index}`} className={`pokemon-wrapper slot-${index}`}>
+                            <img
+                                key={`${pokemon.id}-${cryKey}`}
+                                src={pokemon.image?.hires}
+                                width={calculateScaledHeight(pokemon.height, maxHeight)}
+                                className={`member${index}${cryKey > 0 ? ' crying' : ''}`}
+                                style={{ zIndex, top }}
+                                alt={pokemon.name?.english || ''}
+                                onClick={() => handleStagePokemonClick(pokemon, index)}
+                                role="button"
+                                tabIndex={0}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter' || e.key === ' ') {
+                                        handleStagePokemonClick(pokemon, index);
+                                    }
+                                }}
+                            />
+                            <audio
+                                ref={(el) => (audioRefs.current[index] = el)}
+                                src={pokemon.cry}
+                            />
+                        </div>
+                    );
+                })}
+            </div>
+            <div className="hof-banner">
+                <h1 className="hof-title">Welcome to the HALL OF FAME!</h1>
+            </div>
+            <div className="hof-footer">
+                <TeamInfo team={team} onPlayCry={handlePlayCry} activeCryMap={cryingMap} />
+            </div>
         </div>
     );
 };

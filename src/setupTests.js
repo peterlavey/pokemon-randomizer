@@ -10,6 +10,7 @@ window.HTMLMediaElement.prototype.addTextTrack = () => {};
 // Mock HTMLCanvasElement getContext for Jest/JSDOM
 window.HTMLCanvasElement.prototype.getContext = () => ({
     clearRect: () => {},
+    fillRect: () => {},
     save: () => {},
     restore: () => {},
     beginPath: () => {},
@@ -22,6 +23,7 @@ window.HTMLCanvasElement.prototype.getContext = () => ({
     stroke: () => {},
     translate: () => {},
     rotate: () => {},
+    scale: () => {},
 });
 
 // Mock react-chartjs-2 for test environments without HTML5 Canvas engine
