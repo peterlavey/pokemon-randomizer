@@ -71,6 +71,9 @@ You can jump directly to the Hall of Fame presentation stage with a randomized o
 ## 🐛 Bug Tracker
 
 - [x] Gray background Pokéball remained fixed while other components scrolled
+- [ ] Detect browser and show button to get mobile app
+- [ ] Fix color in IOS/dark mode, shows black lines like light grey
+
 
 ---
 
