@@ -6,12 +6,51 @@ import Confetti from "./confetti/confetti";
 import { useSoundContext } from "../../../contexts/soundContext";
 import { arrangeStageLineup, calculateScaledHeight } from "../../../services/pokemonService";
 
+const getHorizontalPositions = (count) => {
+    switch (count) {
+        case 1:
+            return ['50%'];
+        case 2:
+            return ['38%', '62%'];
+        case 3:
+            return ['25%', '50%', '75%'];
+        case 4:
+            return ['20%', '40%', '60%', '80%'];
+        case 5:
+            return ['16%', '33%', '50%', '67%', '84%'];
+        case 6:
+        default:
+            return ['13%', '28%', '43%', '57%', '72%', '87%'];
+    }
+};
+
 export const Presentation = ({ team = [] }) => {
     const { pauseIntro, playTeamComplete, introSong, teamCompleteSong } = useSoundContext();
     const audioRefs = useRef([]);
     const [cryingMap, setCryingMap] = useState({});
 
     const members = useMemo(() => arrangeStageLineup(team), [team]);
+
+    const memberPositions = useMemo(() => {
+        const flyingMembers = members.filter((p) => p.isFlying);
+        const groundMembers = members.filter((p) => !p.isFlying);
+
+        const flyingPositions = getHorizontalPositions(flyingMembers.length);
+        const groundPositions = getHorizontalPositions(groundMembers.length);
+
+        let flyingIndex = 0;
+        let groundIndex = 0;
+
+        return members.map((pokemon) => {
+            if (pokemon.isFlying) {
+                const left = flyingPositions[flyingIndex++];
+                return { left, top: '15%' };
+            }
+            const left = groundPositions[groundIndex++];
+            const top = pokemon.isJumping ? '45%' : 'initial';
+            return { left, top };
+        });
+    }, [members]);
 
     const maxHeight = useMemo(() => {
         if (!members.length) return 1;
@@ -87,12 +126,7 @@ export const Presentation = ({ team = [] }) => {
                 <Confetti count={55} />
                 {members.map((pokemon, index) => {
                     const zIndex = Math.round((maxHeight - (pokemon.height || 0)) * 10);
-                    let top = 'initial';
-                    if (pokemon.isFlying) {
-                        top = '15%';
-                    } else if (pokemon.isJumping) {
-                        top = '45%';
-                    }
+                    const { left, top } = memberPositions[index] || { left: 'initial', top: 'initial' };
 
                     const cryKey = cryingMap[pokemon.id] || 0;
 
@@ -103,7 +137,7 @@ export const Presentation = ({ team = [] }) => {
                                 src={pokemon.image?.hires}
                                 width={calculateScaledHeight(pokemon.height, maxHeight)}
                                 className={`member${index}${cryKey > 0 ? ' crying' : ''}`}
-                                style={{ zIndex, top }}
+                                style={{ zIndex, top, left }}
                                 alt={pokemon.name?.english || ''}
                                 onClick={() => handleStagePokemonClick(pokemon, index)}
                                 role="button"

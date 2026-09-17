@@ -120,6 +120,38 @@ describe('Presentation Component Unit Tests', () => {
         expect(screen.getByAltText('Charizard').className).toContain('crying');
     });
 
+    test('positions ground and flying pokemons independently so ground pokemons fill space under flying pokemons', () => {
+        const teamWithFlyingAndGround = [
+            { id: 150, name: { english: 'Mewtwo' }, height: 2.0, isFlying: false, image: { hires: '150.png' }, cry: '150.mp3' },
+            { id: 68, name: { english: 'Machamp' }, height: 1.6, isFlying: false, image: { hires: '68.png' }, cry: '68.mp3' },
+            { id: 42, name: { english: 'Golbat' }, height: 1.6, isFlying: true, image: { hires: '42.png' }, cry: '42.mp3' },
+            { id: 15, name: { english: 'Beedrill' }, height: 1.0, isFlying: true, image: { hires: '15.png' }, cry: '15.mp3' },
+            { id: 73, name: { english: 'Tentacruel' }, height: 1.6, isFlying: false, image: { hires: '73.png' }, cry: '73.mp3' },
+            { id: 29, name: { english: 'NidoranF' }, height: 0.4, isFlying: false, image: { hires: '29.png' }, cry: '29.mp3' },
+        ];
+
+        render(<Presentation team={teamWithFlyingAndGround} />);
+
+        const golbatImg = screen.getByAltText('Golbat');
+        const beedrillImg = screen.getByAltText('Beedrill');
+        const mewtwoImg = screen.getByAltText('Mewtwo');
+        const machampImg = screen.getByAltText('Machamp');
+        const tentacruelImg = screen.getByAltText('Tentacruel');
+        const nidoranImg = screen.getByAltText('NidoranF');
+
+        // Flying pokemons in the air
+        expect(golbatImg.style.top).toBe('15%');
+        expect(beedrillImg.style.top).toBe('15%');
+        expect(beedrillImg.style.left).toBe('38%');
+        expect(golbatImg.style.left).toBe('62%');
+
+        // 4 ground pokemons distributed evenly across the bottom space
+        expect(mewtwoImg.style.left).toBe('20%');
+        expect(machampImg.style.left).toBe('40%');
+        expect(tentacruelImg.style.left).toBe('60%');
+        expect(nidoranImg.style.left).toBe('80%');
+    });
+
     test('handles empty team without crashing', () => {
         const { container } = render(<Presentation team={[]} />);
         expect(container.querySelector('.presentation')).toBeInTheDocument();
