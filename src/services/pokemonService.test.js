@@ -104,13 +104,14 @@ describe('pokemonService', () => {
         expect(getPokeballByTier('UNKNOWN')).toEqual(POKEBALL.NORMAL);
     });
 
-    test('getMemberColumnIndex calculates (id - 1) % 3 correctly and handles invalid id', () => {
+    test('getMemberColumnIndex calculates (id - 1) % 4 correctly and handles invalid id', () => {
         expect(getMemberColumnIndex(1)).toBe(0);
         expect(getMemberColumnIndex(2)).toBe(1);
         expect(getMemberColumnIndex(3)).toBe(2);
-        expect(getMemberColumnIndex(4)).toBe(0);
-        expect(getMemberColumnIndex(150)).toBe(2);
-        expect(getMemberColumnIndex(151)).toBe(0);
+        expect(getMemberColumnIndex(4)).toBe(3);
+        expect(getMemberColumnIndex(5)).toBe(0);
+        expect(getMemberColumnIndex(150)).toBe(1);
+        expect(getMemberColumnIndex(151)).toBe(2);
         expect(getMemberColumnIndex(null)).toBe(0);
         expect(getMemberColumnIndex(undefined)).toBe(0);
     });

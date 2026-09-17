@@ -10,6 +10,7 @@ describe('MemberColumn Component', () => {
         expect(col1Divs[1].className).toBe('active');
         expect(col1Divs[2].className).toBe('inactive');
         expect(col1Divs[3].className).toBe('inactive');
+        expect(col1Divs[4].className).toBe('inactive');
 
         // ID 2 -> Column 1 active
         const { container: c2 } = render(<MemberColumn id={2} />);
@@ -18,6 +19,7 @@ describe('MemberColumn Component', () => {
         expect(col2Divs[1].className).toBe('inactive');
         expect(col2Divs[2].className).toBe('active');
         expect(col2Divs[3].className).toBe('inactive');
+        expect(col2Divs[4].className).toBe('inactive');
 
         // ID 3 -> Column 2 active
         const { container: c3 } = render(<MemberColumn id={3} />);
@@ -26,5 +28,15 @@ describe('MemberColumn Component', () => {
         expect(col3Divs[1].className).toBe('inactive');
         expect(col3Divs[2].className).toBe('inactive');
         expect(col3Divs[3].className).toBe('active');
+        expect(col3Divs[4].className).toBe('inactive');
+
+        // ID 4 -> Column 3 active
+        const { container: c4 } = render(<MemberColumn id={4} />);
+        const col4Divs = c4.querySelectorAll('.memberColumn > div');
+        expect(col4Divs[0].textContent).toBe('4');
+        expect(col4Divs[1].className).toBe('inactive');
+        expect(col4Divs[2].className).toBe('inactive');
+        expect(col4Divs[3].className).toBe('inactive');
+        expect(col4Divs[4].className).toBe('active');
     });
 });

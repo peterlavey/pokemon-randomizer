@@ -54,10 +54,10 @@ describe('Presentation Component Unit Tests', () => {
         expect(images.length).toBe(3);
 
         const charizardImg = screen.getByAltText('Charizard');
-        expect(charizardImg.style.top).toBe('5%');
+        expect(charizardImg.style.top).toBe('15%');
 
         const pikachuImg = screen.getByAltText('Pikachu');
-        expect(pikachuImg.style.top).toBe('25%');
+        expect(pikachuImg.style.top).toBe('45%');
 
         const bulbasaurImg = screen.getByAltText('Bulbasaur');
         expect(bulbasaurImg.style.top === '' || bulbasaurImg.style.top === 'initial').toBe(true);

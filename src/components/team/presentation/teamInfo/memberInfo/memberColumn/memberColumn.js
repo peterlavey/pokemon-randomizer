@@ -12,6 +12,7 @@ export const MemberColumn = ({ id }) => {
             <div className={getColumnClass(0)} />
             <div className={getColumnClass(1)} />
             <div className={getColumnClass(2)} />
+            <div className={getColumnClass(3)} />
         </span>
     );
 };

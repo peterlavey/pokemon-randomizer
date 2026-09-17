@@ -88,12 +88,12 @@ export const getPokeballByTier = (tier) => {
 };
 
 /**
- * Calculates which of the 3 columns (0, 1, 2) in the Stadium lineup a Pokémon ID belongs to.
- * Formula: (id - 1) % 3
+ * Calculates which of the 4 columns (0, 1, 2, 3) in the Stadium lineup a Pokémon ID belongs to.
+ * Formula: (id - 1) % 4
  */
 export const getMemberColumnIndex = (pokemonId) => {
     if (!pokemonId || typeof pokemonId !== 'number') return 0;
-    return (pokemonId - 1) % 3;
+    return (pokemonId - 1) % 4;
 };
 
 /**
