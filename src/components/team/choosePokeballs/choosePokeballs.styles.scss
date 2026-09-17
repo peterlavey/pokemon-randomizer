@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 680px;
-    margin: 0 auto;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 30%, #1b2838 0%, #0a0e17 100%) no-repeat fixed;
+    background-color: #0a0e17;
     padding: 76px 16px 36px 16px;
     box-sizing: border-box;
     animation: chooseFadeIn 0.5s ease-out;
@@ -16,6 +17,8 @@
         text-align: center;
         margin-bottom: 24px;
         user-select: none;
+        max-width: 680px;
+        width: 100%;
     }
 
     &__badge {
@@ -23,13 +26,13 @@
         font-size: 11px;
         letter-spacing: 3px;
         color: #ffcb05;
-        background: rgba(0, 0, 0, 0.45);
-        padding: 4px 14px;
+        background: rgba(0, 0, 0, 0.65);
+        padding: 5px 16px;
         border-radius: 20px;
-        border: 1px solid rgba(255, 203, 5, 0.4);
+        border: 1px solid rgba(255, 203, 5, 0.6);
         margin-bottom: 8px;
-        text-shadow: 0 0 8px rgba(255, 203, 5, 0.4);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        text-shadow: 0 0 10px rgba(255, 203, 5, 0.5), 0 1px 2px rgba(0, 0, 0, 0.8);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
     }
 
     &__title {
@@ -39,22 +42,23 @@
         color: #ffffff;
         margin: 0 0 6px 0;
         text-transform: uppercase;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 0 20px rgba(129, 212, 250, 0.3);
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 0 20px rgba(129, 212, 250, 0.4);
     }
 
     &__subtitle {
         font-size: clamp(12px, 2.8vw, 14px);
-        color: #b0bec5;
+        color: #e2e8f0;
         margin: 0;
         font-weight: 500;
         letter-spacing: 0.5px;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         width: 100%;
+        max-width: 680px;
         gap: 18px;
     }
 }

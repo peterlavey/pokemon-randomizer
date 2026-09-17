@@ -132,7 +132,7 @@
     font-size: clamp(14px, 3.5vw, 17px);
     letter-spacing: 1px;
     color: #ffffff;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
     white-space: nowrap;
   }
 
@@ -151,8 +151,8 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.06);
-    color: #90caf9;
+    background: rgba(255, 255, 255, 0.1);
+    color: #b3e5fc;
     flex-shrink: 0;
     transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 
@@ -164,7 +164,7 @@
 
   &:hover &__arrow {
     transform: translateX(3px);
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
   }
 }
@@ -178,7 +178,7 @@
   border-radius: 12px;
   font-weight: 900;
   text-transform: uppercase;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -186,32 +186,36 @@
   &--S {
     background: linear-gradient(135deg, #e91e63 0%, #ab47bc 100%);
     color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
   }
 
   &--A {
     background: linear-gradient(135deg, #ffb300 0%, #f57c00 100%);
-    color: #1a1a1a;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #111827;
+    font-weight: 900;
+    border: 1px solid rgba(255, 255, 255, 0.4);
   }
 
   &--B {
     background: linear-gradient(135deg, #00e676 0%, #00b0ff 100%);
     color: #0b1f28;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 900;
+    border: 1px solid rgba(255, 255, 255, 0.4);
   }
 
   &--C {
-    background: linear-gradient(135deg, #29b6f6 0%, #0288d1 100%);
+    background: linear-gradient(135deg, #0288d1 0%, #01579b 100%);
     color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
   }
 
   &--D {
-    background: linear-gradient(135deg, #90a4ae 0%, #607d8b 100%);
+    background: linear-gradient(135deg, #546e7a 0%, #37474f 100%);
     color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
   }
 }
 
