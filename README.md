@@ -62,6 +62,7 @@ You can jump directly to the Hall of Fame presentation stage with a randomized o
 - [x] Improve background styling and interactive instructions when selecting Pokéballs
 - [x] Add HUD indicator to show which column the Pokémon is positioned in (3 horizontal lines with active green highlight)
 - [ ] Detect browser and show button to get mobile app
+- [ ] Fix Pokemon images to display correctly (in the ground)
 
 ### Game Modes
 - [x] Balanced matchmaking mode based on Pokémon tier distribution
