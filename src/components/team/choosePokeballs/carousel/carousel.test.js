@@ -20,13 +20,16 @@ describe('Carousel Component Unit Tests', () => {
         jest.restoreAllMocks();
     });
 
-    test('renders pokeball item with image and roulette items inside track', () => {
+    test('renders pokeball item with image, name, tier badges and roulette items inside track', () => {
         const onSelectMock = jest.fn();
         const { container } = render(
             <Carousel pokeball={POKEBALL.NORMAL} onSelect={onSelectMock} />
         );
 
         expect(container.querySelector('#Pokeball')).toBeInTheDocument();
+        expect(screen.getByText('Poké Ball')).toBeInTheDocument();
+        expect(screen.getByText('TIER D')).toBeInTheDocument();
+        expect(screen.getByText('TIER C')).toBeInTheDocument();
         const rouletteTrack = container.querySelector('.roulette .rouletteTrack');
         expect(rouletteTrack).toBeInTheDocument();
         const rouletteImages = container.querySelectorAll('.roulette img');

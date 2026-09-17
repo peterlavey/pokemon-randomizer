@@ -4,6 +4,16 @@ import ChoosePokeballs from './choosePokeballs';
 import { POKEBALL } from '../../../constants/gameConstants';
 
 describe('ChoosePokeballs Component Unit Tests', () => {
+    test('renders header with current team pick indicator and title', () => {
+        const { container } = render(
+            <ChoosePokeballs pokeballs={[POKEBALL.NORMAL, POKEBALL.SUPER]} />
+        );
+
+        expect(screen.getByText('MEMBER 3 OF 6')).toBeInTheDocument();
+        expect(screen.getByText('CHOOSE A TIER')).toBeInTheDocument();
+        expect(screen.getByText(/Select a Pokéball tier to spin/i)).toBeInTheDocument();
+    });
+
     test('renders 4 pokeball carousels and triggers onSelectPokeball when each is clicked', () => {
         const onSelectMock = jest.fn();
         const { container } = render(

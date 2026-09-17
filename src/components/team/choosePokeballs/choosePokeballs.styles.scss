@@ -1,5 +1,71 @@
 .choosePokeballs {
     display: flex;
-    margin-top: 25%;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 76px 16px 36px 16px;
+    box-sizing: border-box;
+    animation: chooseFadeIn 0.5s ease-out;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 24px;
+        user-select: none;
+    }
+
+    &__badge {
+        font-family: 'Arial Black', Impact, sans-serif;
+        font-size: 11px;
+        letter-spacing: 3px;
+        color: #ffcb05;
+        background: rgba(0, 0, 0, 0.45);
+        padding: 4px 14px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 203, 5, 0.4);
+        margin-bottom: 8px;
+        text-shadow: 0 0 8px rgba(255, 203, 5, 0.4);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &__title {
+        font-family: 'Impact', 'Arial Black', sans-serif;
+        font-size: clamp(26px, 6vw, 36px);
+        letter-spacing: 2px;
+        color: #ffffff;
+        margin: 0 0 6px 0;
+        text-transform: uppercase;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 0 20px rgba(129, 212, 250, 0.3);
+    }
+
+    &__subtitle {
+        font-size: clamp(12px, 2.8vw, 14px);
+        color: #b0bec5;
+        margin: 0;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 18px;
+    }
+}
+
+@keyframes chooseFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
